@@ -12,8 +12,13 @@
 - Build the site by navigating to `/docs` and running `./make html`.
   - Note that `/` is the root of this project, and `./` refers to the current directory.
 
+#### Editing
+- It is recommended to install the [MyST extension](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight) as this is the flavor of Markdown being used for our documentation.
+  - After installation, when editing a Markdown file in VS Code, you can press `Ctrl+K`, then `V`
 
 ### Resources
 - https://www.sphinx-doc.org/en/master/usage/markdown.html
+- https://cerodell.github.io/sphinx-quickstart-guide/build/html/markdown.html
+- https://myst-parser.readthedocs.io/en/latest/index.html
 - https://docs.readthedocs.io/en/latest/tutorial/index.html
 - https://www.writethedocs.org/guide/
