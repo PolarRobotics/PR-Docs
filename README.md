@@ -1,9 +1,10 @@
 # PR-Docs
 ## Polar Robotics Documentation
 ### Local Installation
-- Install `python3` and `pip` via your preferred method 
-  - For Windows, via Microsoft Store or online installer
-  - For Linux or WSL, `sudo apt-get install python3` and `sudo apt-get install python3-pip`
+- Install `python3` and `pip` via your preferred method.
+  - For Windows, via Microsoft Store or an online installer (Google "python 3")
+  - For Linux or WSL, `sudo apt-get install python3` and `sudo apt-get install python3-pip` (or use appropriate package manager for your distro)
+    - You may also be able to directly install Sphinx using your package manager.
 - Install `sphinx` with `pip install -U sphinx`
   - `sphinx-build --version` to check version and ensure sphinx installed properly
   - For completeness, the command to start a new documentation project/repo is `sphinx-quickstart`, but don't do this in this repo.
