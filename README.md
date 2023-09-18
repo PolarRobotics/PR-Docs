@@ -17,6 +17,11 @@
 - It is recommended to install the [MyST extension](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight) as this is the flavor of Markdown being used for our documentation.
   - After installation, when editing a Markdown file in VS Code, you can press `Ctrl+K`, then `V`
 
+#### Troubleshooting
+- https://pip.pypa.io/en/stable/installation/
+- Windows: If `pip` is not registered as a command, run `py -m ensurepip --upgrade`. This should install pip. 
+  - You will need to restart your shell and possibly your computer before `pip` will function.
+
 ### Resources
 - https://www.sphinx-doc.org/en/master/usage/markdown.html
 - https://cerodell.github.io/sphinx-quickstart-guide/build/html/markdown.html
