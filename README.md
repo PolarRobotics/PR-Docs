@@ -26,6 +26,8 @@ user@desktop:~$
 
 #### Installing Python and Sphinx
 - The following steps should be done inside WSL (or in your terminal, if on Linux or MacOS).
+- Update your packages via your package manager.
+  - For Ubuntu, run `sudo apt-get update` and then `sudo apt-get upgrade`.
 - Install `python3` and `pip` via your package manager.
   - For Ubuntu, run `sudo apt-get install python3` and `sudo apt-get install python3-pip`.
   - For MacOS, you will need to install Homebrew, and use `brew` to install these packages.
