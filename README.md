@@ -25,25 +25,37 @@ user@desktop:~$
 - From here, you can continue to the next section to install Python and Sphinx.
 
 #### Installing Python and Sphinx
+- The following steps should be done inside WSL (or in your terminal, if on Linux or MacOS).
 - Install `python3` and `pip` via your package manager.
   - For Ubuntu, run `sudo apt-get install python3` and `sudo apt-get install python3-pip`.
+  - For MacOS, you will need to install Homebrew, and use `brew` to install these packages.
 - Install `sphinx` with `pip install -U sphinx`
   - `sphinx-build --version` to check version and ensure sphinx installed properly
   - For completeness, the command to start a new documentation project/repo is `sphinx-quickstart`, but don't do this in this repo.
 - Install the ReadTheDocs theme with `pip install -U sphinx-rtd-theme`.
 - Install the MyST-Parser Markdown parser with `pip install -U myst-parser`.
-- Build the site by navigating to `/docs` and running `./make html`.
-  - Note that `/` is the root of this project, and `./` refers to the current directory.
-
-#### Editing
 - It is recommended to install the [MyST extension](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight) as this is the flavor of Markdown being used for our documentation.
   - After installation, when editing a Markdown file in VS Code, you can press `Ctrl+K`, then `V` to open a pane to render the Markdown source file, providing you a preview of the file you are working on.
 
-#### Troubleshooting
-- https://pip.pypa.io/en/stable/installation/
-- Windows: If `pip` is not registered as a command, run `py -m ensurepip --upgrade`. This should install pip. 
-  - You will need to restart your shell and possibly your computer before `pip` will function.
-  - `sphinx` may be installed in a path similar to `%appdata%\..\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages` or `%appdata%\..\Local\Programs\Python\Python310\Scripts`.
+#### Contributing
+- First, clone this repo (`PR-Docs`) to a suitable location on your computer. 
+  - **Make note of the location you clone to.** 
+  - For Windows, this tutorial assumes you use the default location of `C:\Users\<YourUsername>\Documents\GitHub`, but realistically you should use a different directory.
+    - For the purposes of this tutorial, "directory" is essentially synonymous with "folder" that you may be used to.
+    - `<YourUsername>` should be replaced with whatever your Windows username is.
+- From here, all terminal commands should be ran inside WSL (or your terminal, for Linux and MacOS).
+- On startup, your current working directory will likely be `~`, which is your 'home' directory.
+  - You can view your current working directory at any time by using the command `pwd` (print working directory).
+  - If on WSL, this is inside your Linux environment, which is effectively separate from the rest of your computer.
+- A few things to note:
+  1. You can view files and folders in the current directory using `ls`.
+  2. `.` refers to the current directory (visible via `pwd`)
+  3. `..` refers to the directory one level above (the directory containing the current directory).
+- Change your current working directory to the location you cloned using `cd`. 
+  - In WSL, you can do this with `cd /mnt/c/Users/<YourUsername>/Documents/GitHub`. Note that Linux filesystems use forward slashes, while Windows uses backslashes (but will generally convert forward slashes to backslashes).
+  - On Linux or MacOS, you should be able to navigate to the target location from your home directory more easily.
+- Once your current working directory is `PR-Docs`, you will be able to build the site by navigating to `./docs` and running `./make html`.
+- You can edit the files in the directory normally with VS Code natively from your operating system, but you will need to build them using the terminal.
 
 ### Resources
 - https://www.sphinx-doc.org/en/master/usage/markdown.html
