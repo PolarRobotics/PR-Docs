@@ -33,6 +33,7 @@ user@desktop:~$
   - For MacOS, you will need to install Homebrew, and use `brew` to install these packages.
 - Install `sphinx` with `pip install -U sphinx`
   - `sphinx-build --version` to check version and ensure sphinx installed properly
+    - You may also be able to install `sphinx` or `python3-sphinx` directly from your package manager.
   - For completeness, the command to start a new documentation project/repo is `sphinx-quickstart`, but don't do this in this repo.
 - Install the ReadTheDocs theme with `pip install -U sphinx-rtd-theme`.
 - Install the MyST-Parser Markdown parser with `pip install -U myst-parser`.
