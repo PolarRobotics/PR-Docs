@@ -57,7 +57,8 @@ user@desktop:~$
 - Change your current working directory to the location you cloned using `cd`. 
   - In WSL, you can do this with `cd /mnt/c/Users/<YourUsername>/Documents/GitHub`. Note that Linux filesystems use forward slashes, while Windows uses backslashes (but will generally convert forward slashes to backslashes).
   - On Linux or MacOS, you should be able to navigate to the target location from your home directory more easily.
-- Once your current working directory is `PR-Docs`, you will be able to build the site by navigating to `./docs` and running `./make html`.
+- Once your current working directory is `PR-Docs`, you will be able to build the site by navigating to `./docs` and running `make html`.
+  - You can also run `make.bat` from Windows Powershell from the same directory using `./make html`.
 - You can edit the files in the directory normally with VS Code natively from your operating system, but you will need to build them using the terminal.
 
 ### Resources
