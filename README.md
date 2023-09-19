@@ -37,7 +37,7 @@ user@desktop:~$
 
 #### Editing
 - It is recommended to install the [MyST extension](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight) as this is the flavor of Markdown being used for our documentation.
-  - After installation, when editing a Markdown file in VS Code, you can press `Ctrl+K`, then `V`
+  - After installation, when editing a Markdown file in VS Code, you can press `Ctrl+K`, then `V` to open a pane to render the Markdown source file, providing you a preview of the file you are working on.
 
 #### Troubleshooting
 - https://pip.pypa.io/en/stable/installation/
