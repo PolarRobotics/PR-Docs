@@ -61,6 +61,12 @@ user@desktop:~$
   - You can also run `make.bat` from Windows Powershell from the same directory using `./make html`.
 - You can edit the files in the directory normally with VS Code natively from your operating system, but you will need to build them using the terminal.
 
+#### Launching Webserver
+- In the root directory (`/`) run the following command:
+```sh
+python3 -m http.server
+```
+
 ### Resources
 - https://www.sphinx-doc.org/en/master/usage/markdown.html
 - https://cerodell.github.io/sphinx-quickstart-guide/build/html/markdown.html
