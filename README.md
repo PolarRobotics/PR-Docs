@@ -57,15 +57,22 @@ user@desktop:~$
 - Change your current working directory to the location you cloned using `cd`. 
   - In WSL, you can do this with `cd /mnt/c/Users/<YourUsername>/Documents/GitHub`. Note that Linux filesystems use forward slashes, while Windows uses backslashes (but will generally convert forward slashes to backslashes).
   - On Linux or MacOS, you should be able to navigate to the target location from your home directory more easily.
-- Once your current working directory is `PR-Docs`, you will be able to build the site by navigating to `./docs` and running `make html`.
+- Change your working directory to `PR-Docs/docs` (or `/docs` with respect to the repository).
+
+#### Building the Website Pages
+- In general your working directory should be `/docs`. You can check this with `pwd`.
+- From `/docs`, you will be able to build the site by running `make html`.
   - You can also run `make.bat` from Windows Powershell from the same directory using `./make html`.
 - You can edit the files in the directory normally with VS Code natively from your operating system, but you will need to build them using the terminal.
 
 #### Launching Webserver
-- In the root directory (`/`) run the following command:
+- The webserver should be launched from the directory `/docs/build/html`.
+- To launch the webserver while working in the `docs` directory, run the following command:
 ```sh
-python3 -m http.server
+python3 -m http.server -d build/html
 ```
+- `-m` specifies a *module name*, in this case, the HTTP server module, which launches a local web server.
+- `-d`, or `--directory`, specifies a relative location to launch the webserver from.3
 
 ### Resources
 - https://www.sphinx-doc.org/en/master/usage/markdown.html
