@@ -59,6 +59,14 @@ user@desktop:~$
   - On Linux or MacOS, you should be able to navigate to the target location from your home directory more easily.
 - Change your working directory to `PR-Docs/docs` (or `/docs` with respect to the repository).
 
+#### VSCode Extensions
+- You should install the following VSCode Extensions into your VSCode Workspace (or globally, but it is recommended to use workspaces to avoid having all extensions installed all the time).
+  - [MyST-Markdown](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight)
+  - [myst-lsp](https://marketplace.visualstudio.com/items?itemName=chrisjsewell.myst-lsp)
+  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+  - [Markdown Table](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable)
+  - [Markdown Table Prettify](https://marketplace.visualstudio.com/items?itemName=darkriszty.markdown-table-prettify)
+
 #### Building the Website Pages
 - In general your working directory should be `/docs`. You can check this with `pwd`.
 - From `/docs`, you will be able to build the site by running `make html`.
