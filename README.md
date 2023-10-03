@@ -72,7 +72,24 @@ user@desktop:~$
 python3 -m http.server -d build/html
 ```
 - `-m` specifies a *module name*, in this case, the HTTP server module, which launches a local web server.
-- `-d`, or `--directory`, specifies a relative location to launch the webserver from.3
+- `-d`, or `--directory`, specifies a relative location to launch the webserver from.
+- You can run this command more easily via `./serv` from `/docs`.
+
+#### Using a Virtual Environment
+- If desired, you can create a Python virtual environment to gain access to some more useful tools.
+- First, `cd` to `/` (the `PR-Docs` folder).
+- Next, run the following commands on Linux or in WSL:
+
+```
+python3 -m venv ./.venv
+source ./.venv/bin/activate
+pip install "rst-to-myst[sphinx]"
+```
+
+- The `rst-to-myst` command will allow you to convert ReStructuredText to MyST (MarkedlyStructuredTest).
+  - If not already present, this will also install Sphinx etc.
+    - You may still need to (re)install the `readthedocs` theme and `myst-parser` (see 'Installing Python and Sphinx').
+    - You will then also be able to build the docs from within the virtual environment.
 
 ### Resources
 - https://www.sphinx-doc.org/en/master/usage/markdown.html
