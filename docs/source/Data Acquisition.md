@@ -1,5 +1,5 @@
 # Router Setup
-To begin using the data acquisition script, we need to setup our NETGEAR router in order to SSH into the Raspberry Pi.
+To begin using the data acquisition program, we need to setup our NETGEAR router in order to SSH into the Raspberry Pi.
 
 1. Make sure the NETGEAR router is plugged in and the "2.4GHz" light is on. Using a laptop, connect to the NETGEAR router using WiFi:
 	![data-aq-wifi.png](./_static/images/data-aq-wifi.png)
@@ -27,7 +27,7 @@ Password: password
 	
 7. We have now successfully reserved the IP address for your computer, and it will always maintain the same local IPv4 address, making it much easier to connect with. Repeat this process if the Raspberry Pi you want to connect to is not listed under "Address Reservation."
 # Raspberry Pi SSH
-In order to run our data acquisition script, we will use a handy Pi Zero as it is tiny and can fit into the robot while it is driving, and a laptop does not have this "being small" functionality.
+In order to run our data acquisition program, we will use a handy Pi Zero as it is tiny and can fit into the robot while it is driving, and a laptop does not have this "being small" functionality.
 
 1. Plug in the Raspberry Pi Zero and ensure the green light is on. At the time of writing, the only Pi Zero available is 'zerozero'. This may differ in the future, there should be a label on your Pi telling you the name of it. It will follow the naming scheme of 'zerozero', 'zeroone', 'zerotwo', etc. 
 	![data-aq-pi-front.png](./_static/images/data-aq-pi-front.png)
@@ -44,12 +44,14 @@ In order to run our data acquisition script, we will use a handy Pi Zero as it i
 5. Enter the username after "login as: ". The username is the same name as the label and the one listed in Address Reservation. In our case, it will be 'zerozero'. ![data-aq-ssh-password.png](./_static/images/data-aq-ssh-password.png)
 6. When prompted for the password, it should be on the back of your Pi. In our case, it will be 'rhysisfine69'. You will then be sent to the Linux terminal for the Pi Zero!
 	 ![data-aq-ssh-terminal.png](./_static/images/data-aq-ssh-terminal.png)
-# Serial Monitor Script
-Now we are going to acquire the script and get it into our home directory. 
+# Serial Monitor Program
+Now we are going to RUN THE PROGRAM!!!!
 
-1.  Using FileZilla or any other file transfer means, copy the most recent "SerialMonitor.py" script into the Pi's home directory.
-	![data-aq-list.png](./_static/images/data-aq-list.png)
-2. Run the script using the following command:
+1.  Using FileZilla or any other file transfer means, copy the most recent "SerialMonitor.py" program from GitHub into the Pi's home directory.
+	
+2. Run the program using the following command:
 ```bash
 python ./SerialMonitor.py
 ```
+
+3. The program will begin running and should look something like this: 
