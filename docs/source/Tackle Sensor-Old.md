@@ -1,8 +1,8 @@
 # Old Tackle Sensors
 ### Diagrams
-![Old Sensor Sheet-1](image-2.png)
-![Old Sensor Sheet-2](image-3.png)
-![Tackle Sensor Rev 3 2016](image-1.png)
+![TS Sheet1](<_static/images/TS Sheet1.png>)
+![TS Sheet2](<_static/images/TS sheet2.png>)
+![TS Rev3](<_static/images/TS Rev3.png>)
 ### Rules related to tackle sensor and LED’s:
 1. A specified digital accelerometer (tackle sensor) is required to sense if an upsetting event (knockdown, fall down, or tackle) has occurred. The code determining if an upsetting event has occurred, based on the accelerometer's output, will be provided. The tackle sensor must be rigidly mounted in a horizontal orientation to a horizontal interior surface of each Player's base plate in a manner that enables a trainer to manually activate the reset button on the tackle sensor within 10 seconds and a cable to be attached to reload the tackle sensor software within 1 minute. The tackle sensor must also be mounted so that when the unit faces directly downfield, the tackle sensor is square to the end zone.
     - Only the quarterback, wide receivers, and running backs will be required to have tackle sensors. Other units do not require tackle sensors, but any unit that carries the ball will be required to have a tackle sensor regardless of that unit’s functional designation. Any violation of this rule results in an “ineligible player” violation and a 5’ penalty.
