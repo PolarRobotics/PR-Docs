@@ -57,9 +57,47 @@ user@desktop:~$
 - Change your current working directory to the location you cloned using `cd`. 
   - In WSL, you can do this with `cd /mnt/c/Users/<YourUsername>/Documents/GitHub`. Note that Linux filesystems use forward slashes, while Windows uses backslashes (but will generally convert forward slashes to backslashes).
   - On Linux or MacOS, you should be able to navigate to the target location from your home directory more easily.
-- Once your current working directory is `PR-Docs`, you will be able to build the site by navigating to `./docs` and running `make html`.
+- Change your working directory to `PR-Docs/docs` (or `/docs` with respect to the repository).
+
+#### VSCode Extensions
+- You should install the following VSCode Extensions into your VSCode Workspace (or globally, but it is recommended to use workspaces to avoid having all extensions installed all the time).
+  - [MyST-Markdown](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight)
+  - [myst-lsp](https://marketplace.visualstudio.com/items?itemName=chrisjsewell.myst-lsp)
+  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+  - [Markdown Table](https://marketplace.visualstudio.com/items?itemName=TakumiI.markdowntable)
+  - [Markdown Table Prettify](https://marketplace.visualstudio.com/items?itemName=darkriszty.markdown-table-prettify)
+
+#### Building the Website Pages
+- In general your working directory should be `/docs`. You can check this with `pwd`.
+- From `/docs`, you will be able to build the site by running `make html`.
   - You can also run `make.bat` from Windows Powershell from the same directory using `./make html`.
 - You can edit the files in the directory normally with VS Code natively from your operating system, but you will need to build them using the terminal.
+
+#### Launching Webserver
+- The webserver should be launched from the directory `/docs/build/html`.
+- To launch the webserver while working in the `docs` directory, run the following command:
+```sh
+python3 -m http.server -d build/html
+```
+- `-m` specifies a *module name*, in this case, the HTTP server module, which launches a local web server.
+- `-d`, or `--directory`, specifies a relative location to launch the webserver from.
+- You can run this command more easily via `./serv` from `/docs`.
+
+#### Using a Virtual Environment
+- If desired, you can create a Python virtual environment to gain access to some more useful tools.
+- First, `cd` to `/` (the `PR-Docs` folder).
+- Next, run the following commands on Linux or in WSL:
+
+```
+python3 -m venv ./.venv
+source ./.venv/bin/activate
+pip install "rst-to-myst[sphinx]"
+```
+
+- The `rst-to-myst` command will allow you to convert ReStructuredText to MyST (MarkedlyStructuredTest).
+  - If not already present, this will also install Sphinx etc.
+    - You may still need to (re)install the `readthedocs` theme and `myst-parser` (see 'Installing Python and Sphinx').
+    - You will then also be able to build the docs from within the virtual environment.
 
 ### Resources
 - https://www.sphinx-doc.org/en/master/usage/markdown.html
