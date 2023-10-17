@@ -31,7 +31,7 @@ Misc: Refer to your distro's guide on building packages.
 
 ![data-aq-filezilla-ipconfig.png](./_static/images/data-aq-filezilla-ipconfig.png)
 
-2. You want to use the same information that you used in the Raspberry SSH tutorial section of `Data Acquisition.md`. It should look something like this:
+2. You want to use the same information that you used in `Raspberry-Pi-SSH.md`. It should look something like this:
 
 ![data-aq-filezilla-ipconfig-2.png](./_static/images/data-aq-filezilla-ipconfig-2.png)
 
