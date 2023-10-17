@@ -1,17 +1,21 @@
 # Bot Types
+## Controls Summary
+| Stick        | Action                      |
+| ------------ | --------------------------- |
+| Left Y-Axis  | Forward/backward movement   | 
+| Right X-Axis | Turning/rotational movement |
 
-## General
-### Drive Controls
-- Left Stick: Y-Axis Movement
-- Right Stick: X-Axis Movement
-- R1: Enter Boost Mode
-- L1: Enter Slow Mode
 
-## Lineman
+| Button | Action           |
+| ------ | ---------------- |
+| R1     | Enter Boost Mode |
+| L1     | Enter Slow Mode  |
+
+## Linemen
 ### Description
-- This bot type is the most basic in terms of functionality. Their primary purpose is to move and initiate physical contact with other bots. They has no unique features, and the only controllable aspect is its movement.
+- Linemen are the most basic in terms of functionality. Their primary purpose is to initiate physical contact with opposing bots. They have no unique features and their only controllable aspect is basic movement.
 
-- Current Bots:
+- Current Linemen:
     - `i++`
     - `sqrt(-1)`
     - `pi`
@@ -20,61 +24,78 @@
     - `:)`
     - `>=`
 
-## Receiver
+## Receivers
 ### Description
-- This bot type is similar in function to a lineman, but they are equipped with nets, which are mounted to the tops of the bots. Their primary purpose is to catch footballs thrown by the quarterback using their top-mounted nets. Like the linemen, these bots only have the basic movement controls.
+- Receivers are similar in function to linemen, but also have nets mounted to their tops. Their primary purpose is to catch footballs thrown by the quarterback using the aforementioned nets. Like the linemen, these bots only have the basic movement controls.
 
-- Current Bots:
+- Current Receivers:
     - `32.2`
     - `9.8`
 
 ## Runningback
 ### Description
-- This bot type is smaller and faster than the others. Their primary purpose is to carry the football along the ground. Like the linemen and receivers, these bots have only the basic movement controls.
+- The runningback is smaller and faster than the other robots. Its primary purpose is to quickly carry the football along the ground (i.e., to *run*). Like the linemen and receivers, the runningback has only the basic movement controls.
 
-- Current Bots:
+- Current Runningback:
     - `c`
 
 ## Center
 ### Description
-- This bot type features a large claw device that is able to reach to the ground directly in front of the bot, pick up objects, and deposit those objects behind the bot. Their primary purpose is to use the claw device to pick up the football from the ground and hand it off to the quarterback to initiate a play. In addition to the basic movement controls, the driver is also able to control the arm and the claw of the claw device.
+- The "old" center features a large claw that can pick up objects off the ground directly in front of the bot, and deposit those objects behind the it. The center's primary purpose is pick up the football from the ground and pass it to the quarterback to initiate a play. In addition to the basic movement controls, the driver is also able to control the arm and the claw of the claw device.
 
 - Current Bots:
     - `phi`
 
 ### Center Controls
-- Triangle: Raise Arm
-- Cross: Lower Arm
-- Circle: Hold Arm
-- Up: Open Claw
-- Down: Close Claw
+
+| Button     | Action     |
+| ---------- | ---------- |
+| Triangle   | Raise Arm  |
+| Cross      | Lower Arm  |
+| Circle     | Hold Arm   |
+| D-Pad Up   | Open Claw  |
+| D-Pad Down | Close Claw |
 
 ## Mecanum Center
 ### Description
-- This bot type features Mecanum Wheels for movement and a conveyor belt with flywheels for picking up objects from the ground. Their primary purpose, similar to the standard center, is to pick up the football using the flywheels and use the conveyor belt to hand it off to the quarterback. In addition to the basic movement controls, the driver is also able to control the conveyor belt and flywheels.
+- The "new" mecanum center features mecanum wheels for movement and a conveyor belt with flywheels for picking up objects from the ground. Its primary purpose, similar to the "old" center, is to pick up the football using the flywheels and use the conveyor belt to hand it off to the quarterback. In addition to the basic movement controls, the driver is also able to control the conveyor belt and flywheels.
 
-- Current Bots:
+- Current Mecanum Center:
+	- (under construction)
 
-### MC Controls
-- Square: Toggle Conveyor
-- Circle: Toggle Flywheels
-- Triangle: Raise Flywheel Speed
-- Cross: Lower Flywheel Speed
+### Mecanum Center Controls
+
+| Stick        | Action                       |
+| ------------ | ---------------------------- |
+| Left Y-Axis  | Forward/backward movement    |
+| Left X-Axis  | Strafing/horizontal movement | 
+| Right X-Axis | Turning/rotational movement  |
+
+
+| Button   | Action               |
+| -------- | -------------------- |
+| Square   | Toggle Conveyor      |
+| Circle   | Toggle Flywheels     |
+| Triangle | Raise Flywheel Speed |
+| Cross    | Lower Flywheel Speed |
 
 ## Quarterback
 ### Description
-- This bot type features a conveyor belt and flywheels that can propel objects held by the bot. Their primary purpose is to throw the football via flywheel propulsion. In addition to the basic movement controls, the driver is also able to control the conveyer belt and flywheels.
+- The quarterback features a conveyor belt and flywheels that can propel objects held by the bot. Their primary purpose is to throw the football via flywheel propulsion. In addition to the basic movement controls, the driver is also able to control the conveyer belt and flywheels.
 
 - Current Bots:
     - `infinity`
 
-### QB Controls
-- Square: Toggle Conveyor
-- Circle: Toggle Flywheels
-- Triangle: Raise Flywheel Speed
-- Cross: Lower Flywheel Speed
-- Up: Raise Launch Angle
-- Down: Lower Launch Angle
+### Quarterback Controls
+
+| Button     | Action               |
+| ---------- | -------------------- |
+| Square     | Toggle Conveyor      |
+| Circle     | Toggle Flywheels     |
+| Triangle   | Raise Flywheel Speed |
+| Cross      | Lower Flywheel Speed |
+| D-Pad Up   | Raise Launch Angle   |
+| D-Pad Down | Lower Launch Angle   |
 
 ## Kicker
 ### Description
@@ -84,5 +105,8 @@
     - `theta`
 
 ### Kicker Controls
-- Triangle: Turn Kicker Motor Forward
-- Cross: Turn Kicker Motor Backward
+
+| Button   | Action                     |
+| -------- | -------------------------- |
+| Triangle | Turn Kicker Motor Forward  | 
+| Cross    | Turn Kicker Motor Backward |
