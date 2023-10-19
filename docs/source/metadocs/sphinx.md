@@ -48,4 +48,3 @@ tree -if --noreport hardware | sed 's/\.[^.]*$//'
       - It was also necessary to uncomment the bottom section to install python requirements.
     - `/docs/requirements.txt`
       - This is configured to be in `/docs`, per the above file.
-      - This is generated with `pip freeze > requirements.txt`.
