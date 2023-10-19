@@ -43,7 +43,9 @@ tree -if --noreport hardware | sed 's/\.[^.]*$//'
 - This documentation page is hosted via ReadTheDocs.
   - This requires a few things in order to build successfully:
     - `/.readthedocs.yaml`, a configuration file
+      - This must be in the root directory of the project.
       - In our case, it was necessary to change the path to `conf.py` appropriately.
       - It was also necessary to uncomment the bottom section to install python requirements.
-    - `/requirements.txt`
+    - `/docs/requirements.txt`
+      - This is configured to be in `/docs`, per the above file.
       - This is generated with `pip freeze > requirements.txt`.
