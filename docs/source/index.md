@@ -8,6 +8,8 @@
 ```{toctree}
 :caption: 'Contents:'
 :maxdepth: 2
+
+  bot-types
 ```
 
 # Indices and tables
