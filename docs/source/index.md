@@ -6,10 +6,21 @@
 # Welcome to the Polar Robotics documentation!
 
 ```{toctree}
-:caption: 'Contents:'
-:maxdepth: 2
+---
+caption: High-level robot documentation
+maxdepth: 2
+---
 
-  bot-types
+/bot-types
+```
+
+```{toctree}
+---
+caption: Meta-documentation
+maxdepth: 2
+---
+
+/metadocs/sphinx
 ```
 
 # Indices and tables
