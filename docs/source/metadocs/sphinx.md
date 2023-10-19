@@ -38,3 +38,12 @@ websites
 # from /docs/source
 tree -if --noreport hardware | sed 's/\.[^.]*$//'
 ```
+
+## Hosting on ReadTheDocs
+- This documentation page is hosted via ReadTheDocs.
+  - This requires a few things in order to build successfully:
+    - `/.readthedocs.yaml`, a configuration file
+      - In our case, it was necessary to change the path to `conf.py` appropriately.
+      - It was also necessary to uncomment the bottom section to install python requirements.
+    - `/requirements.txt`
+      - This is generated with `pip freeze > requirements.txt`.
