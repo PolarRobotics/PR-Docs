@@ -12,7 +12,7 @@
 - An example of the `toctree` syntax from [this resource](https://coderefinery.github.io/sphinx-lesson/toctree/) is below.
   - Essentially, this is a codeblock with a unique language ID that tells MyST to parse it differently.
 
-````MyST
+````
 ```{toctree}
 ---
 caption: Contents
@@ -27,3 +27,14 @@ doi
 websites
 ```
 ````
+
+### Generating TOCs
+- It is easier to generate TOCs using `tree`.
+  - For instance, to list all the files in `docs/source/hardware` in the format needed to place in the TOC in `index.md`, use the command below.
+    - The `sed` command uses regex to remove the extensions from any files (including `.md` in the `toctree` doesn't work).
+
+
+```sh
+# from /docs/source
+tree -if --noreport hardware | sed 's/\.[^.]*$//'
+```

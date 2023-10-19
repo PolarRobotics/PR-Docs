@@ -7,21 +7,37 @@
 
 ```{toctree}
 ---
-caption: High-level robot documentation
+caption: High-Level Robot Documentation
 maxdepth: 2
 ---
 
-/bot-types
+highlevel/bot-types
 ```
 
 ```{toctree}
 ---
-caption: Meta-documentation
+caption: Hardware Documentation
+maxdepth: 1
+---
+
+hardware/esp32
+hardware/falcons
+hardware/sabertooth-2x32
+hardware/tackle-sensor-rev3
+hardware/tackle-sensor-rev4
+hardware/wiring
+```
+
+```{toctree}
+---
+caption: Meta-Documentation
 maxdepth: 2
 ---
 
-/metadocs/sphinx
+metadocs/sphinx
 ```
+
+
 
 # Indices and tables
 
