@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bot Types &mdash; PR-Docs 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PR-Docs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Bot Types</a><ul>
+<li><a class="reference internal" href="#controls-summary">Controls Summary</a></li>
+<li><a class="reference internal" href="#linemen">Linemen</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#receivers">Receivers</a><ul>
+<li><a class="reference internal" href="#id1">Description</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#runningback">Runningback</a><ul>
+<li><a class="reference internal" href="#id2">Description</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#center">Center</a><ul>
+<li><a class="reference internal" href="#id3">Description</a></li>
+<li><a class="reference internal" href="#center-controls">Center Controls</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mecanum-center">Mecanum Center</a><ul>
+<li><a class="reference internal" href="#id4">Description</a></li>
+<li><a class="reference internal" href="#mecanum-center-controls">Mecanum Center Controls</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#quarterback">Quarterback</a><ul>
+<li><a class="reference internal" href="#id5">Description</a></li>
+<li><a class="reference internal" href="#quarterback-controls">Quarterback Controls</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#kicker">Kicker</a><ul>
+<li><a class="reference internal" href="#id6">Description</a></li>
+<li><a class="reference internal" href="#kicker-controls">Kicker Controls</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PR-Docs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Bot Types</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/BotTypes.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bot-types">
+<h1>Bot Types<a class="headerlink" href="#bot-types" title="Link to this heading"></a></h1>
+<section id="controls-summary">
+<h2>Controls Summary<a class="headerlink" href="#controls-summary" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Stick</p></th>
+<th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Left Y-Axis</p></td>
+<td><p>Forward/backward movement</p></td>
+</tr>
+<tr class="row-odd"><td><p>Right X-Axis</p></td>
+<td><p>Turning/rotational movement</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Button</p></th>
+<th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R1</p></td>
+<td><p>Enter Boost Mode</p></td>
+</tr>
+<tr class="row-odd"><td><p>L1</p></td>
+<td><p>Enter Slow Mode</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="linemen">
+<h2>Linemen<a class="headerlink" href="#linemen" title="Link to this heading"></a></h2>
+<section id="description">
+<h3>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Linemen are the most basic in terms of functionality. Their primary purpose is to initiate physical contact with opposing bots. They have no unique features and their only controllable aspect is basic movement.</p></li>
+<li><p>Current Linemen:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">i++</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sqrt(-1)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pi</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rho</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">2.72</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&gt;=</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="receivers">
+<h2>Receivers<a class="headerlink" href="#receivers" title="Link to this heading"></a></h2>
+<section id="id1">
+<h3>Description<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Receivers are similar in function to linemen, but also have nets mounted to their tops. Their primary purpose is to catch footballs thrown by the quarterback using the aforementioned nets. Like the linemen, these bots only have the basic movement controls.</p></li>
+<li><p>Current Receivers:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">32.2</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">9.8</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="runningback">
+<h2>Runningback<a class="headerlink" href="#runningback" title="Link to this heading"></a></h2>
+<section id="id2">
+<h3>Description<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The runningback is smaller and faster than the other robots. Its primary purpose is to quickly carry the football along the ground (i.e., to <em>run</em>). Like the linemen and receivers, the runningback has only the basic movement controls.</p></li>
+<li><p>Current Runningback:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">c</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="center">
+<h2>Center<a class="headerlink" href="#center" title="Link to this heading"></a></h2>
+<section id="id3">
+<h3>Description<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The “old” center features a large claw that can pick up objects off the ground directly in front of the bot, and deposit those objects behind the it. The center’s primary purpose is pick up the football from the ground and pass it to the quarterback to initiate a play. In addition to the basic movement controls, the driver is also able to control the arm and the claw of the claw device.</p></li>
+<li><p>Current Bots:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">phi</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="center-controls">
+<h3>Center Controls<a class="headerlink" href="#center-controls" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Button</p></th>
+<th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Triangle</p></td>
+<td><p>Raise Arm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cross</p></td>
+<td><p>Lower Arm</p></td>
+</tr>
+<tr class="row-even"><td><p>Circle</p></td>
+<td><p>Hold Arm</p></td>
+</tr>
+<tr class="row-odd"><td><p>D-Pad Up</p></td>
+<td><p>Open Claw</p></td>
+</tr>
+<tr class="row-even"><td><p>D-Pad Down</p></td>
+<td><p>Close Claw</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="mecanum-center">
+<h2>Mecanum Center<a class="headerlink" href="#mecanum-center" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>Description<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The “new” mecanum center features mecanum wheels for movement and a conveyor belt with flywheels for picking up objects from the ground. Its primary purpose, similar to the “old” center, is to pick up the football using the flywheels and use the conveyor belt to hand it off to the quarterback. In addition to the basic movement controls, the driver is also able to control the conveyor belt and flywheels.</p></li>
+<li><p>Current Mecanum Center:</p>
+<ul>
+<li><p>(under construction)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="mecanum-center-controls">
+<h3>Mecanum Center Controls<a class="headerlink" href="#mecanum-center-controls" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Stick</p></th>
+<th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Left Y-Axis</p></td>
+<td><p>Forward/backward movement</p></td>
+</tr>
+<tr class="row-odd"><td><p>Left X-Axis</p></td>
+<td><p>Strafing/horizontal movement</p></td>
+</tr>
+<tr class="row-even"><td><p>Right X-Axis</p></td>
+<td><p>Turning/rotational movement</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Button</p></th>
+<th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Square</p></td>
+<td><p>Toggle Conveyor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Circle</p></td>
+<td><p>Toggle Flywheels</p></td>
+</tr>
+<tr class="row-even"><td><p>Triangle</p></td>
+<td><p>Raise Flywheel Speed</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cross</p></td>
+<td><p>Lower Flywheel Speed</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="quarterback">
+<h2>Quarterback<a class="headerlink" href="#quarterback" title="Link to this heading"></a></h2>
+<section id="id5">
+<h3>Description<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The quarterback features a conveyor belt and flywheels that can propel objects held by the bot. Their primary purpose is to throw the football via flywheel propulsion. In addition to the basic movement controls, the driver is also able to control the conveyer belt and flywheels.</p></li>
+<li><p>Current Bots:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">infinity</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="quarterback-controls">
+<h3>Quarterback Controls<a class="headerlink" href="#quarterback-controls" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Button</p></th>
+<th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Square</p></td>
+<td><p>Toggle Conveyor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Circle</p></td>
+<td><p>Toggle Flywheels</p></td>
+</tr>
+<tr class="row-even"><td><p>Triangle</p></td>
+<td><p>Raise Flywheel Speed</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cross</p></td>
+<td><p>Lower Flywheel Speed</p></td>
+</tr>
+<tr class="row-even"><td><p>D-Pad Up</p></td>
+<td><p>Raise Launch Angle</p></td>
+</tr>
+<tr class="row-odd"><td><p>D-Pad Down</p></td>
+<td><p>Lower Launch Angle</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="kicker">
+<h2>Kicker<a class="headerlink" href="#kicker" title="Link to this heading"></a></h2>
+<section id="id6">
+<h3>Description<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>This bot type features a large paddle connected to a motor. Their primary purpose is to use the paddle to propel the football forward and upward by smacking it. In addition to the basic movement controls, the driver can also control the motor, therefore also indirectly controlling the paddle.</p></li>
+<li><p>Current Bots:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">theta</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="kicker-controls">
+<h3>Kicker Controls<a class="headerlink" href="#kicker-controls" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Button</p></th>
+<th class="head"><p>Action</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Triangle</p></td>
+<td><p>Turn Kicker Motor Forward</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cross</p></td>
+<td><p>Turn Kicker Motor Backward</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Polar Robotics Documentation Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
