@@ -10,4 +10,4 @@
     - A Player in possession of the ball is tackled when an upset-event has been detected by the tackle sensor and activates the RED light, which shall remain lit for 2-seconds minimum.
     - Offensive Linemen must be clearly distinguished by a BLUE light visible from all directions so referees can determine eligibility. Offensive Linemen must be within 6 feet on either side of the ball and on the line of scrimmage at the snap.
 
-![ND tackle sensor](<_static/images/ND sensor diagram.png>)
+![ND-sensor-diagram](_static/images/ND-sensor-diagram.png)
