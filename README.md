@@ -69,8 +69,8 @@ user@desktop:~$
 
 #### Building the Website Pages
 - In general your working directory should be `/docs`. You can check this with `pwd`.
-- From `/docs`, you will be able to build the site by running `make html`.
-  - You can also run `make.bat` from Windows Powershell from the same directory using `./make html`.
+- From `/docs`, you will be able to build the site by running `make clean html`.
+  - You can also run `make.bat` from Windows Powershell from the same directory using `./make clean html`.
 - You can edit the files in the directory normally with VS Code natively from your operating system, but you will need to build them using the terminal.
 
 #### Launching Webserver
