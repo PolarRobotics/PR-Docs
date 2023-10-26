@@ -21,3 +21,6 @@
 |Built-In Encoder Feedback | 2048 Steps Per Rotation |
 ### Motor Performance Graph
 ![Motor Performance Graph](https://cdn11.bigcommerce.com/s-7cuph2j78p/images/stencil/original/image-manager/motorcurve-trap.png?t=1674755976)
+(https://drive.google.com/file/d/1UBxdGv3v115T3rHMyfHVFymWECYNS-Hj/view)
+
+[Falcon 500 User's Manual](https://drive.google.com/file/d/1UBxdGv3v115T3rHMyfHVFymWECYNS-Hj/view)
