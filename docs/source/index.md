@@ -30,6 +30,18 @@ hardware/wiring
 
 ```{toctree}
 ---
+caption: Data Acquisition
+maxdepth: 1
+---
+data-aq/filezilla.md
+data-aq/raspberry_pi_ssh.md
+data-aq/router_setup.md
+data-aq/serial_printing.md
+data-aq/standalone_serial_monitor.md
+```
+
+```{toctree}
+---
 caption: Meta-Documentation
 maxdepth: 2
 ---
