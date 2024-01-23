@@ -1,7 +1,6 @@
-# Intro
+# Raspberry Pi SSH
 This guide goes over how to SSH into a Raspberry Pi using PuTTy.
 
-# Raspberry Pi SSH
 In order to run our data acquisition program, we will use a handy Pi Zero as it is tiny and can fit into the robot while it is driving, and a laptop does not have this "being small" functionality.
 
 1. Plug in the Raspberry Pi Zero and ensure the green light is on. At the time of writing, the only Pi Zero available is 'zerozero'. This may differ in the future, there should be a label on your Pi telling you the name of it. It will follow the naming scheme of 'zerozero', 'zeroone', 'zerotwo', etc. 

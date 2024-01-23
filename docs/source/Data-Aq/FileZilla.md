@@ -1,8 +1,6 @@
-# Intro
+# Installing FileZilla
 
 This guide goes over how to use FileZilla to transfer files between a Raspberry Pi and your computer. This guide may also apply to other computers as well.
-
-# Installing FileZilla
 
 ## Windows
 

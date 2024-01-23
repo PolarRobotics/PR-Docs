@@ -1,7 +1,7 @@
-# Intro
+# Router Setup
 This guide goes over the basics of address reservation on routers. It allows us to setup our router properly for SSH'ing into a Raspberry Pi.
 
-# Router Setup
+
 To begin using the data acquisition program, we need to setup our NETGEAR router in order to SSH into the Raspberry Pi.
 
 1. Make sure the NETGEAR router is plugged in and the "2.4GHz" light is on. Using a laptop, connect to the NETGEAR router using WiFi:

@@ -1,8 +1,6 @@
-# Intro
-
+# Comma Separated Values
 This guide will show you how to correctly print headers and values to serial so that the `SerialMonitor.py` program will print it correctly to a .csv file. 
 
-# Comma Separated Values
 1. Your data should follow a comma-separated values format, meaning that each header and value should be separated with commas. 
 
 2. Under the `dev/data-aq` branch of the `ESP32PRCodebase` repository, you can find the following `printCsvInfo` function on lines 384-400 of `Drive.cpp`. This is an example of how to print basic information. This function can be changed however you like.
