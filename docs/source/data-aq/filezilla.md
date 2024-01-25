@@ -25,7 +25,7 @@ Arch:
 
 Misc: Refer to your distro's guide on building packages.
 
-# IP Configuration
+## IP Configuration
 
 1. Open FileZilla. You will find the following boxes at the top of your screen:
 
