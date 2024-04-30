@@ -1,7 +1,18 @@
-# TODO: Add General Overview about UART 
+# The Universal Asynchronous Receiver-Transmitter Protocol
+UART stands for the Universal Asynchronous Receiver-Transmitter protocol, which is an OSI Layer 2 serial communications protocol. It is byte level and little-endian, sending and thus receiving the least significant byte first in a given transmission. However, most libraries built for UART communication will parse the data as expected.
 
+Any UART circuit between two devices requires three wires; a common ground, a TX to RX connection, and an RX to TX connection.
 
-# Enabling UART on a Pi Pico Zero W / Pi 4
+## TODO: add image of an example circuit
+
+# UART Communication w/ ESP32
+With the Platformio Arduino framework, the ESP32 can utilize the [HardwareSerial](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h) library to establish UART communication and read/write data over the serial bus. 
+
+An ESP32 generally has three available UART interfaces, UART0, UART1, AND UART2.
+
+UART1 is used by the ESP's serial monitor by default, and the pins UART1 is generally reserved for flash memory, leaving UART2 as the primary UART channel available. Its worth noting that pin definitions for the UART channels can vary by model, so its important to consult available documentation for the specific board your working with.
+
+# UART Communication w/ Pi Zero / Pi 4 
 You can check if UART is enabled by searching through your available ports and looking for a port ending in "S0"
 See the figure below for an example of how to check this
 
@@ -38,3 +49,26 @@ To use pigpiod in your Python program, simply import the module and initalize an
 [pigpio instantiation](../_static/images/hardware/UART/pigpio.png)
 
 Documentation for pigpio can be found at the site hyperlinked above.
+
+# ESP32 to Pi Zero / 4 Communication
+Communication between an ESP32 and a Pi Zero over UART is relatively straightforward, as both devices have robust libraries to facilitate UART communications.
+
+A system created for testing this communication can be currently found in the PR-Encoder-Submodule-ESP32 repository, under the pi4_uart branch.
+
+The ESP32's code waits for a user to input a message to send. It then determines the length of the message in characters, which correspond to bytes. This number is then transmit to the Pi, as the pigpio module requires a specification of how many bytes it expects to receive for a given message, or else it defaults to expecting 1000 bytes, according to the documentation avaialable at [](https://abyz.me.uk/rpi/pigpio/python.html#serial_read) 
+
+Allowing this default value doesn't seem to pose any real issues based on the basic testing conducted thus far, but is highly inefficient. 
+
+It then sends the message itself, and waits for a message to be sent by the pi, and finally displaying this message before the program finishes. Though it is an embedded program, running as a loop, multiple flags are used to make the code only run once in a defined sequence of events, requiring the board to be reset to send new data. This is not required by any means, but simply makes testing communication more convenient.
+
+On the Pi side, a "serial handle" is created by specifying the UART port, baudrate, and an optional 'serial flag' parameter. This handle is passed as a parameter to all subsequent UART reading/writing function calls.
+
+[](../_static/images/hardware/UART/serial-handle.png)
+
+More information can be found at [](http://abyz.me.uk/rpi/pigpio/python.html#serial_open). 
+
+The script was written to wait for the first message to be sent (the number of bytes to expect for the subsequent message, in this case). Reading this byte number itself requires a number of expected bytes to be specified, and to avoid using the default value of 1000 a sensible value of 32 is hardcoded into the function call.
+
+Pigpio's 'serial_read' returns two values, a count of the number of bytes read and the data itself, stored in a bytearray. For the sake of this demonstration program, the byte count received is parsed into an integer value, and this value is then used for the next 'serial_read' function call, which receives the message specified by the user interfacing with the ESP32. This message data is then parsed into utf-8 encoding and printed as terminal output by the python program.
+
+Finally, the script sends a decoded string (defined within the program) as an acknowledgement message.  
