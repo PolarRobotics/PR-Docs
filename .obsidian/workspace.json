@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/source/highlevel/bot-types.md",
+                "file": "docs/source/Data-Aq/standalone_serial_monitor.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/source/highlevel/bot-types.md",
+                "file": "docs/source/Data-Aq/standalone_serial_monitor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/source/highlevel/bot-types.md",
+                "file": "docs/source/Data-Aq/standalone_serial_monitor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/source/highlevel/bot-types.md"
+                "file": "docs/source/Data-Aq/standalone_serial_monitor.md"
               }
             }
           }
@@ -169,6 +169,14 @@
   },
   "active": "b3b54f8a2d24fe6c",
   "lastOpenFiles": [
+    "docs/source/Data-Aq/serial_printing.md",
+    "docs/source/Data-Aq/standalone_serial_monitor.md",
+    "docs/source/Data-Aq/router_setup.md",
+    "docs/source/Data-Aq/raspberry_pi_ssh.md",
+    "docs/source/Data-Aq/FileZilla.md",
+    "docs/source/index.md",
+    "docs/source/metadocs/sphinx.md",
+    "docs/source/highlevel/bot-types.md",
     "Vault Configuration Notes.md",
     "Meeting Minutes/Meeting Minutes.md",
     "tmp.md",

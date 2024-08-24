@@ -31,7 +31,8 @@ websites
 ### Generating TOCs
 - It is easier to generate TOCs using `tree`.
   - For instance, to list all the files in `docs/source/hardware` in the format needed to place in the TOC in `index.md`, use the command below.
-    - The `sed` command uses regex to remove the extensions from any files (including `.md` in the `toctree` doesn't work).
+    - The `sed` command uses regex to remove the extensions from any files.
+	    - Including `.md` or other file extensions in the filenames within the `toctree` will prevent them from linking properly.
 
 
 ```sh
@@ -41,7 +42,7 @@ tree -if --noreport hardware | sed 's/\.[^.]*$//'
 
 ## Hosting on ReadTheDocs
 - This documentation page is hosted via ReadTheDocs.
-  - This requires a few things in order to build successfully:
+  - This requires a few files in order to build successfully:
     - `/.readthedocs.yaml`, a configuration file
       - This must be in the root directory of the project.
       - In our case, it was necessary to change the path to `conf.py` appropriately.
