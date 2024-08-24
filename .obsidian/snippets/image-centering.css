@@ -1,0 +1,6 @@
+/* Credit: u/Ministrelle - https://www.reddit.com/r/ObsidianMD/comments/v1fs0f/centering_images_in_reading_mode/ */
+img[alt*="center"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

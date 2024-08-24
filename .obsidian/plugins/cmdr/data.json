@@ -1,0 +1,82 @@
+{
+  "confirmDeletion": false,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "obsidian-git:pull",
+      "icon": "download",
+      "name": "Git: Pull",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-hotkeys-for-templates:templater:DCN/New Excalidraw from DCN Title.md",
+      "icon": "pen-tool",
+      "name": "New Excalidraw from DCN Title",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-hotkeys-for-templates:templater:PageBreak.md",
+      "icon": "align-vertical-space-around",
+      "name": "Insert Page Break",
+      "mode": "any"
+    },
+    {
+      "id": "cmdr:macro-0",
+      "icon": "git-commit",
+      "name": "Git: Commit and Push",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-hotkeys-for-templates:templater:DCN/DCN Menu Spring 2024.md",
+      "icon": "bookmark-plus",
+      "name": "DCN Menu Spring 2024",
+      "mode": "any",
+      "color": "#000000"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [
+    {
+      "macro": [
+        {
+          "action": 0,
+          "commandId": "obsidian-git:commit"
+        },
+        {
+          "action": 0,
+          "commandId": "obsidian-git:push2"
+        }
+      ],
+      "name": "Commit and Push",
+      "icon": "git-commit",
+      "startup": false
+    }
+  ],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": [
+      "Open today's daily note",
+      "Open format converter",
+      "Create new canvas",
+      "Open quick switcher"
+    ]
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

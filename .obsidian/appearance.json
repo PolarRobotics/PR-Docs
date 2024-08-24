@@ -1,0 +1,30 @@
+{
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "bigger-link-popup-preview",
+    "subtler-folding-gutter-arrows",
+    "custom-icons-differing-files-and-folders",
+    "inline-block-embeds",
+    "alignment",
+    "image-centering",
+    "latex-mathjax-code-font",
+    "phoenix-print",
+    "phoenix-file-outlines",
+    "phoenix-checkboxes",
+    "phoenix-callouts",
+    "MCL Wide Views",
+    "MCL Multi Column",
+    "MCL Gallery Cards",
+    "no-codeblock-ligatures"
+  ],
+  "cssTheme": "Phoenix",
+  "baseFontSizeAction": false,
+  "theme": "obsidian",
+  "translucency": false,
+  "monospaceFontFamily": "JetBrains Mono",
+  "interfaceFontFamily": "SF Pro Text",
+  "textFontFamily": "SF Pro Text",
+  "accentColor": "#ed5b0f",
+  "showViewHeader": true,
+  "nativeMenus": false
+}

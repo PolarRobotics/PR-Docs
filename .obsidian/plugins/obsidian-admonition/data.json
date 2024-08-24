@@ -1,0 +1,1898 @@
+{
+  "userAdmonitions": {
+    "notation": {
+      "type": "notation",
+      "color": "181, 155, 253",
+      "icon": {
+        "name": "ruler",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Notation",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "formula": {
+      "type": "formula",
+      "color": "251, 227, 142",
+      "icon": {
+        "name": "equals",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Formula",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "def": {
+      "type": "def",
+      "color": "255, 172, 128",
+      "icon": {
+        "name": "book-open",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Definition",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "tldr": {
+      "type": "tldr",
+      "color": "255, 111, 0",
+      "icon": {
+        "name": "list-ul",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "TL;DR",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "ex": {
+      "type": "ex",
+      "color": "255, 191, 117",
+      "icon": {
+        "name": "hand-point-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Example",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "exs": {
+      "type": "exs",
+      "color": "255, 206, 122",
+      "icon": {
+        "type": "obsidian",
+        "name": "star-list"
+      },
+      "command": false,
+      "title": "Examples",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "ops": {
+      "type": "ops",
+      "color": "224, 227, 255",
+      "icon": {
+        "name": "divide",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Operations",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "langs": {
+      "type": "langs",
+      "color": "240, 222, 213",
+      "icon": {
+        "name": "java",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Languages",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "moc": {
+      "type": "moc",
+      "color": "217, 18, 18",
+      "icon": {
+        "name": "map-marked-alt",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Map of Content",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "link": {
+      "type": "link",
+      "color": "159, 210, 254",
+      "icon": {
+        "name": "link",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Link",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "java": {
+      "type": "java",
+      "color": "255, 170, 66",
+      "icon": {
+        "name": "java",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Java",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "inst": {
+      "type": "inst",
+      "color": "211, 255, 194",
+      "icon": {
+        "name": "plus-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Instantiation",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "import": {
+      "type": "import",
+      "color": "255, 179, 209",
+      "icon": {
+        "name": "arrow-circle-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Importing",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "imp": {
+      "type": "imp",
+      "color": "255, 227, 189",
+      "icon": {
+        "name": "hammer",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Implementation",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "error": {
+      "type": "error",
+      "color": "255, 82, 82",
+      "icon": {
+        "name": "times-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Error",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "part": {
+      "type": "part",
+      "color": "222, 222, 222",
+      "icon": {
+        "name": "list",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Component",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "img": {
+      "type": "img",
+      "color": "247, 243, 243",
+      "icon": {
+        "name": "image",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Image",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "p": {
+      "type": "p",
+      "color": "255, 111, 0",
+      "icon": {
+        "name": "list-ul",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true
+    },
+    "book": {
+      "type": "book",
+      "color": "255, 230, 138",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Textbook",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "code": {
+      "type": "code",
+      "color": "204, 204, 204",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-code-2"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "detail": {
+      "type": "detail",
+      "color": "255, 179, 87",
+      "icon": {
+        "name": "list",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Details",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "p2": {
+      "type": "p2",
+      "color": "255, 195, 92",
+      "icon": {
+        "name": "list",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": false
+    },
+    "topics": {
+      "type": "topics",
+      "color": "243, 57, 57",
+      "icon": {
+        "name": "sitemap",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Topics",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "bulb": {
+      "type": "bulb",
+      "color": "255, 220, 122",
+      "icon": {
+        "name": "lightbulb",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Idea",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "sun": {
+      "type": "sun",
+      "color": "255, 224, 66",
+      "icon": {
+        "name": "sun",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "network": {
+      "type": "network",
+      "color": "184, 188, 255",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-share-2"
+      },
+      "command": false,
+      "title": "Connections",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "contact": {
+      "type": "contact",
+      "color": "110, 213, 247",
+      "icon": {
+        "type": "octicons",
+        "name": "person"
+      },
+      "command": false,
+      "title": "Contact Information",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "prof": {
+      "type": "prof",
+      "color": "105, 206, 221",
+      "icon": {
+        "name": "graduation-cap",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Professor",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "wave": {
+      "type": "wave",
+      "color": "247, 247, 247",
+      "icon": {
+        "name": "wave-square",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Waveform",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "graph": {
+      "type": "graph",
+      "color": "255, 235, 235",
+      "icon": {
+        "type": "octicons",
+        "name": "graph"
+      },
+      "command": false,
+      "title": "Graph",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "kt": {
+      "type": "kt",
+      "color": "242, 95, 215",
+      "icon": {
+        "name": "korvue",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Kotlin",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "syntax": {
+      "type": "syntax",
+      "color": "230, 184, 255",
+      "icon": {
+        "type": "obsidian",
+        "name": "code-glyph"
+      },
+      "command": false,
+      "title": "Syntax",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "cpp": {
+      "type": "cpp",
+      "color": "132, 193, 240",
+      "icon": {
+        "name": "copyright",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "C++",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "text": {
+      "type": "text",
+      "color": "171, 171, 171",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-layout-list"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": false
+    },
+    "cycle": {
+      "type": "cycle",
+      "color": "214, 250, 255",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-refresh-cw"
+      },
+      "command": false,
+      "title": "Cycle",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "bolt": {
+      "type": "bolt",
+      "color": "255, 232, 117",
+      "icon": {
+        "name": "bolt",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Speed",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "lock": {
+      "type": "lock",
+      "color": "196, 217, 222",
+      "icon": {
+        "name": "lock",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Security",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "proof": {
+      "type": "proof",
+      "color": "255, 235, 133",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-clipboard-check"
+      },
+      "command": false,
+      "title": "Proof",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "case": {
+      "type": "case",
+      "color": "255, 219, 199",
+      "icon": {
+        "name": "briefcase",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Case",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "function": {
+      "type": "function",
+      "color": "197, 219, 226",
+      "icon": {
+        "type": "obsidian",
+        "name": "formula"
+      },
+      "command": false,
+      "title": "Function",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "android": {
+      "type": "android",
+      "color": "164, 198, 57",
+      "icon": {
+        "name": "android",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "alert": {
+      "type": "alert",
+      "color": "239, 46, 46",
+      "icon": {
+        "type": "octicons",
+        "name": "stop"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "search": {
+      "type": "search",
+      "color": "148, 245, 239",
+      "icon": {
+        "name": "search",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "thm": {
+      "type": "thm",
+      "color": "254, 235, 113",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-book-open-check"
+      },
+      "command": false,
+      "title": "Theorem",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "wifi": {
+      "type": "wifi",
+      "color": "87, 190, 255",
+      "icon": {
+        "name": "wifi",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "wired": {
+      "type": "wired",
+      "color": "137, 225, 220",
+      "icon": {
+        "name": "network-wired",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "router": {
+      "type": "router",
+      "color": "240, 106, 229",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-router"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "count-up": {
+      "type": "count-up",
+      "color": "97, 194, 255",
+      "icon": {
+        "name": "sort-numeric-up-alt",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Counter",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "steps": {
+      "type": "steps",
+      "color": "255, 122, 213",
+      "icon": {
+        "name": "list-ol",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Steps",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "instruction": {
+      "type": "instruction",
+      "color": "255, 147, 46",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-list-start"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "critical": {
+      "type": "critical",
+      "color": "255, 0, 0",
+      "icon": {
+        "name": "exclamation-triangle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Critical",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "stub": {
+      "type": "stub",
+      "color": "255, 143, 143",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-puzzle"
+      },
+      "command": false,
+      "title": "This topic is a stub and requires elaboration.",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "clarify": {
+      "type": "clarify",
+      "color": "248, 192, 155",
+      "icon": {
+        "name": "question-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "This section or topic requires clarification.",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "note": {
+      "type": "note",
+      "color": "255, 217, 163",
+      "icon": {
+        "name": "sticky-note",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "switch": {
+      "type": "switch",
+      "color": "101, 204, 230",
+      "icon": {
+        "type": "octicons",
+        "name": "arrow-switch"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "bug": {
+      "type": "bug",
+      "color": "255, 128, 128",
+      "icon": {
+        "name": "bug",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Debugging",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "time": {
+      "type": "time",
+      "color": "245, 117, 234",
+      "icon": {
+        "type": "octicons",
+        "name": "clock"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "up-down": {
+      "type": "up-down",
+      "color": "220, 122, 255",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-arrow-up-down"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "qrcode": {
+      "type": "qrcode",
+      "color": "204, 211, 215",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-qr-code"
+      },
+      "command": false,
+      "title": "QR Code",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "table": {
+      "type": "table",
+      "color": "171, 191, 172",
+      "icon": {
+        "type": "octicons",
+        "name": "table"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "clone": {
+      "type": "clone",
+      "color": "254, 154, 194",
+      "icon": {
+        "name": "clone",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "curve": {
+      "type": "curve",
+      "color": "171, 255, 148",
+      "icon": {
+        "name": "bezier-curve",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "dice": {
+      "type": "dice",
+      "color": "255, 223, 179",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-dices"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "simplicity": {
+      "type": "simplicity",
+      "color": "254, 169, 113",
+      "icon": {
+        "name": "connectdevelop",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "binfile": {
+      "type": "binfile",
+      "color": "148, 255, 243",
+      "icon": {
+        "type": "octicons",
+        "name": "file-binary"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "github": {
+      "type": "github",
+      "color": "255, 255, 255",
+      "icon": {
+        "name": "github",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "figma": {
+      "type": "figma",
+      "color": "128, 200, 255",
+      "icon": {
+        "name": "figma",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "arrows-dot": {
+      "type": "arrows-dot",
+      "color": "237, 148, 255",
+      "icon": {
+        "name": "compress-arrows-alt",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Collect",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "group": {
+      "type": "group",
+      "color": "227, 227, 227",
+      "icon": {
+        "type": "obsidian",
+        "name": "create-group"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "select": {
+      "type": "select",
+      "color": "255, 194, 194",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-text-selection"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "align": {
+      "type": "align",
+      "color": "255, 252, 168",
+      "icon": {
+        "name": "align-left",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "balance": {
+      "type": "balance",
+      "color": "244, 221, 108",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-scale"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "contrast": {
+      "type": "contrast",
+      "color": "255, 0, 0",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-contrast"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "branch": {
+      "type": "branch",
+      "color": "254, 179, 255",
+      "icon": {
+        "type": "octicons",
+        "name": "git-branch"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "cost": {
+      "type": "cost",
+      "color": "244, 254, 98",
+      "icon": {
+        "name": "dollar-sign",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "asterisk": {
+      "type": "asterisk",
+      "color": "254, 134, 244",
+      "icon": {
+        "name": "asterisk",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "green": {
+      "type": "green",
+      "color": "220, 255, 122",
+      "icon": {
+        "name": "list",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "List",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "paint": {
+      "type": "paint",
+      "color": "232, 100, 208",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-paintbrush"
+      },
+      "command": false,
+      "title": "Color",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "filter": {
+      "type": "filter",
+      "color": "255, 199, 102",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-filter"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "sln": {
+      "type": "sln",
+      "color": "187, 236, 81",
+      "icon": {
+        "name": "check-double",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Solution",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "blue": {
+      "type": "blue",
+      "color": "87, 221, 255",
+      "icon": {
+        "name": "list",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "cam": {
+      "type": "cam",
+      "color": "251, 239, 239",
+      "icon": {
+        "name": "camera",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Camera",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "apps": {
+      "type": "apps",
+      "color": "211, 189, 244",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-list-video"
+      },
+      "command": false,
+      "title": "Applications",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "key": {
+      "type": "key",
+      "color": "255, 241, 92",
+      "icon": {
+        "type": "octicons",
+        "name": "key"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "cpu": {
+      "type": "cpu",
+      "color": "229, 255, 255",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-cpu"
+      },
+      "command": false,
+      "title": "Processor",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "shift": {
+      "type": "shift",
+      "color": "179, 255, 184",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "diff": {
+      "type": "diff",
+      "color": "255, 209, 218",
+      "icon": {
+        "type": "octicons",
+        "name": "diff"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "star": {
+      "type": "star",
+      "color": "86, 240, 238",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-stars"
+      },
+      "command": false,
+      "title": "Important Concept",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "num": {
+      "type": "num",
+      "color": "255, 179, 252",
+      "icon": {
+        "type": "octicons",
+        "name": "hash"
+      },
+      "command": false,
+      "title": "Number",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "tri": {
+      "type": "tri",
+      "color": "255, 234, 97",
+      "icon": {
+        "type": "rpg",
+        "name": "triforce"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "unlock": {
+      "type": "unlock",
+      "color": "255, 179, 179",
+      "icon": {
+        "name": "unlock",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "server": {
+      "type": "server",
+      "color": "207, 247, 213",
+      "icon": {
+        "name": "server",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "host": {
+      "type": "host",
+      "color": "224, 255, 253",
+      "icon": {
+        "name": "laptop",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Host",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "hw": {
+      "type": "hw",
+      "color": "222, 255, 219",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-circuit-board"
+      },
+      "command": false,
+      "title": "Hardware",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "shield": {
+      "type": "shield",
+      "color": "255, 251, 240",
+      "icon": {
+        "name": "shield-alt",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "tree": {
+      "type": "tree",
+      "color": "61, 173, 0",
+      "icon": {
+        "type": "rpg",
+        "name": "dead-tree"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "home": {
+      "type": "home",
+      "color": "255, 221, 163",
+      "icon": {
+        "name": "home",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "disk": {
+      "type": "disk",
+      "color": "207, 207, 207",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-hard-drive"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "hex": {
+      "type": "hex",
+      "color": "199, 244, 255",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-hexagon"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "schedule": {
+      "type": "schedule",
+      "color": "255, 236, 168",
+      "icon": {
+        "name": "calendar-day",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "msg": {
+      "type": "msg",
+      "color": "194, 255, 195",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-messages-square"
+      },
+      "command": false,
+      "title": "Message",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "cube": {
+      "type": "cube",
+      "color": "14, 183, 196",
+      "icon": {
+        "name": "cube",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "docs": {
+      "type": "docs",
+      "color": "237, 237, 237",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-file-text"
+      },
+      "command": false,
+      "title": "Documents",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "test": {
+      "type": "test",
+      "color": "119, 255, 82",
+      "icon": {
+        "name": "flask",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "archive": {
+      "type": "archive",
+      "color": "184, 184, 184",
+      "icon": {
+        "type": "octicons",
+        "name": "archive"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "keyboard": {
+      "type": "keyboard",
+      "color": "138, 253, 255",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-keyboard"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "db": {
+      "type": "db",
+      "color": "255, 214, 224",
+      "icon": {
+        "name": "database",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Database",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "minus": {
+      "type": "minus",
+      "color": "255, 184, 184",
+      "icon": {
+        "name": "minus-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Delete",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "sword": {
+      "type": "sword",
+      "color": "240, 240, 240",
+      "icon": {
+        "type": "rpg",
+        "name": "broadsword"
+      },
+      "command": false,
+      "title": "Attack",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "ring": {
+      "type": "ring",
+      "color": "255, 232, 82",
+      "icon": {
+        "name": "ring",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "expand": {
+      "type": "expand",
+      "color": "204, 235, 255",
+      "icon": {
+        "name": "expand-arrows-alt",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "kf": {
+      "type": "kf",
+      "color": "87, 221, 255",
+      "icon": {
+        "name": "equals",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Key Formula",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "rocket": {
+      "type": "rocket",
+      "color": "217, 38, 193",
+      "icon": {
+        "type": "octicons",
+        "name": "rocket"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "fall-down": {
+      "type": "fall-down",
+      "color": "60, 172, 221",
+      "icon": {
+        "type": "rpg",
+        "name": "fall-down"
+      },
+      "command": false,
+      "title": "Down",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "arrow-right": {
+      "type": "arrow-right",
+      "color": "167, 231, 236",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-move-right"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "exclamation": {
+      "type": "exclamation",
+      "color": "253, 83, 83",
+      "icon": {
+        "name": "exclamation",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Important",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "circle": {
+      "type": "circle",
+      "color": "227, 193, 160",
+      "icon": {
+        "type": "octicons",
+        "name": "circle"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "skull": {
+      "type": "skull",
+      "color": "214, 214, 214",
+      "icon": {
+        "type": "rpg",
+        "name": "skull"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "input": {
+      "type": "input",
+      "color": "212, 231, 207",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-file-input"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "output": {
+      "type": "output",
+      "color": "229, 200, 200",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-file-output"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "world": {
+      "type": "world",
+      "color": "142, 211, 245",
+      "icon": {
+        "name": "globe-americas",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "info": {
+      "type": "info",
+      "color": "136, 175, 205",
+      "icon": {
+        "name": "info-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "stealth": {
+      "type": "stealth",
+      "color": "70, 72, 93",
+      "icon": {
+        "type": "rpg",
+        "name": "cloak-and-dagger"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "robot": {
+      "type": "robot",
+      "color": "227, 195, 165",
+      "icon": {
+        "type": "rpg",
+        "name": "robot-arm"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "fish": {
+      "type": "fish",
+      "color": "194, 228, 240",
+      "icon": {
+        "name": "fish",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "target": {
+      "type": "target",
+      "color": "255, 92, 92",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-target"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "door": {
+      "type": "door",
+      "color": "230, 185, 122",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-door-open"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "toolbox": {
+      "type": "toolbox",
+      "color": "230, 173, 173",
+      "icon": {
+        "name": "toolbox",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "memory": {
+      "type": "memory",
+      "color": "139, 202, 134",
+      "icon": {
+        "name": "memory",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "langle": {
+      "type": "langle",
+      "color": "222, 222, 222",
+      "icon": {
+        "type": "obsidian",
+        "name": "left-arrow"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "rangle": {
+      "type": "rangle",
+      "color": "222, 222, 222",
+      "icon": {
+        "type": "obsidian",
+        "name": "right-arrow"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "brackets": {
+      "type": "brackets",
+      "color": "222, 175, 223",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-brackets"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "and": {
+      "type": "and",
+      "color": "243, 241, 180",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-ampersand"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "atom": {
+      "type": "atom",
+      "color": "234, 230, 210",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-atom"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "list-tree": {
+      "type": "list-tree",
+      "color": "229, 215, 184",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-list-tree"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "parallel": {
+      "type": "parallel",
+      "color": "211, 169, 146",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-align-vertical-distribute-center"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "gear": {
+      "type": "gear",
+      "color": "224, 224, 224",
+      "icon": {
+        "type": "octicons",
+        "name": "gear"
+      },
+      "command": false,
+      "title": "Components",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "blocks": {
+      "type": "blocks",
+      "color": "197, 213, 190",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-blocks"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "stop": {
+      "type": "stop",
+      "color": "221, 75, 75",
+      "icon": {
+        "type": "octicons",
+        "name": "stop"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "question": {
+      "type": "question",
+      "color": "248, 192, 155",
+      "icon": {
+        "name": "question-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "sound": {
+      "type": "sound",
+      "color": "142, 203, 215",
+      "icon": {
+        "name": "volume-up",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "split": {
+      "type": "split",
+      "color": "194, 211, 224",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-split"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "grid": {
+      "type": "grid",
+      "color": "208, 225, 224",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-layout-grid"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "compare": {
+      "type": "compare",
+      "color": "190, 123, 209",
+      "icon": {
+        "type": "octicons",
+        "name": "git-compare"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "people": {
+      "type": "people",
+      "color": "151, 204, 211",
+      "icon": {
+        "type": "octicons",
+        "name": "people"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "plus": {
+      "type": "plus",
+      "color": "181, 229, 133",
+      "icon": {
+        "name": "plus-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "fix": {
+      "type": "fix",
+      "color": "247, 162, 105",
+      "icon": {
+        "name": "wrench",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "why": {
+      "type": "why",
+      "color": "248, 192, 155",
+      "icon": {
+        "name": "question-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Why?",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "orangestar": {
+      "type": "orangestar",
+      "color": "235, 135, 20",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-stars"
+      },
+      "command": false,
+      "title": "DAYBREAK FRONTLINE",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "card": {
+      "type": "card",
+      "color": "196, 0, 255",
+      "icon": {
+        "type": "rpg",
+        "name": "spades-card"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "drawing": {
+      "type": "drawing",
+      "color": "227, 99, 150",
+      "icon": {
+        "name": "pen-nib",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "fireshield": {
+      "type": "fireshield",
+      "color": "212, 128, 33",
+      "icon": {
+        "type": "rpg",
+        "name": "fire-shield"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "fork": {
+      "type": "fork",
+      "color": "219, 132, 201",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-git-fork"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "result": {
+      "type": "result",
+      "color": "205, 166, 231",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-corner-down-right"
+      },
+      "command": false,
+      "title": "Results",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "support": {
+      "type": "support",
+      "color": "210, 193, 162",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-package-plus"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "whermst": {
+      "type": "whermst",
+      "color": "106, 233, 236",
+      "icon": {
+        "name": "search-location",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "whermst",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "stack": {
+      "type": "stack",
+      "color": "214, 220, 245",
+      "icon": {
+        "type": "octicons",
+        "name": "stack"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "blueprint": {
+      "type": "blueprint",
+      "color": "144, 182, 223",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-map"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": false,
+  "version": "10.1.2",
+  "autoCollapse": true,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": true
+  },
+  "icons": [
+    "octicons",
+    "rpg"
+  ],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": false,
+  "snippetPath": "custom-admonitions.70ae0d",
+  "syncLinks": true,
+  "allowMSSyntax": true,
+  "msSyntaxIndented": true,
+  "livePreviewMS": true,
+  "warnedAboutNC": true,
+  "enableMarkdownProcessor": false
+}

@@ -1,0 +1,27 @@
+{
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "attachmentFolderPath": "998 Assets",
+  "foldHeading": true,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "autoPairBrackets": false,
+  "strictLineBreaks": false,
+  "foldIndent": true,
+  "legacyEditor": false,
+  "livePreview": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "999 Root",
+  "autoPairMarkdown": false,
+  "showInlineTitle": false,
+  "showUnsupportedFiles": true,
+  "tabSize": 2,
+  "spellcheck": false,
+  "propertiesInDocument": "visible",
+  "vimMode": false,
+  "readableLineLength": true
+}

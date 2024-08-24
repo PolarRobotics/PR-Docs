@@ -1,0 +1,9 @@
+/* code,
+.HyperMD-codeblock {
+  font-variant-ligatures: none;
+} */
+
+code.language-vhdl,
+.HyperMD-codeblock.languge-vhdl {
+  font-variant-ligatures: none;
+}
