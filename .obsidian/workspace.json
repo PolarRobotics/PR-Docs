@@ -11,8 +11,12 @@
             "id": "efc55e06d082c341",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/source/index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/source/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/source/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/source/index.md"
+              }
             }
           }
         ]
@@ -161,6 +169,10 @@
   },
   "active": "efc55e06d082c341",
   "lastOpenFiles": [
+    "docs/source/high-level/bot_types.md",
+    "docs/source/high-level",
+    "docs/source/highlevel/bot_types.md",
+    "docs/source/highlevel",
     "docs/source/data-aq/filezilla.md",
     "docs/source/data-aq/standalone_serial_monitor.md",
     "docs/source/data-aq/serial_printing.md",
@@ -180,7 +192,6 @@
     "docs/source/_static/images/hardware/wiring/quarterback_wiring.png",
     "docs/source/_static/images/hardware/ts-rev3/ts_rev3.png",
     "docs/source/metadocs/documentation_style_guide.md",
-    "docs/source/highlevel/bot_types.md",
     "docs/source/hardware/tackle_sensor_rev4.md",
     "docs/source/hardware/tackle_sensor_rev3.md",
     "docs/source/hardware/sabertooth_2x32.md",
@@ -203,9 +214,6 @@
     "docs/source/hardware/sabertooth-2x25.md",
     "docs/source/hardware/falcons.md",
     "docs/source/_static/files/hardware/esp/esp32-solo-1_datasheet_en.pdf",
-    "docs/source/_static/files/hardware/esp",
-    "docs/source/_static/files/hardware",
-    "docs/source/_static/files",
-    "docs/source/tackle-sensor-old.md"
+    "docs/source/_static/files/hardware/esp"
   ]
 }

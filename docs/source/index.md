@@ -11,7 +11,7 @@ caption: High-Level Robot Documentation
 maxdepth: 2
 ---
 
-highlevel/bot-types
+high-level/bot-types
 ```
 
 ```{toctree}
@@ -22,9 +22,9 @@ maxdepth: 1
 
 hardware/esp32
 hardware/falcons
-hardware/sabertooth-2x32
-hardware/tackle-sensor-rev3
-hardware/tackle-sensor-rev4
+hardware/sabertooth_2x32
+hardware/tackle_sensor_rev3
+hardware/tackle_sensor_rev4
 hardware/wiring
 ```
 
