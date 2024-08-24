@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "90fe5c0d68d385a6",
+        "id": "d0dc109be690d796",
         "type": "tabs",
         "children": [
           {
-            "id": "b3b54f8a2d24fe6c",
+            "id": "efc55e06d082c341",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/source/Data-Aq/standalone_serial_monitor.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 482.5
   },
   "right": {
     "id": "61a1a67d498da8af",
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/source/Data-Aq/standalone_serial_monitor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/source/Data-Aq/standalone_serial_monitor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/source/Data-Aq/standalone_serial_monitor.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -150,49 +142,70 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false,
       "homepage:Open homepage": false,
       "cmdr:Git: Pull": false,
       "cmdr:New Excalidraw from DCN Title": false,
       "cmdr:Insert Page Break": false,
       "cmdr:Git: Commit and Push": false,
-      "cmdr:DCN Menu Spring 2024": false
+      "cmdr:DCN Menu Spring 2024": false,
+      "markdown-importer:Open format converter": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "b3b54f8a2d24fe6c",
+  "active": "efc55e06d082c341",
   "lastOpenFiles": [
-    "docs/source/Data-Aq/serial_printing.md",
-    "docs/source/Data-Aq/standalone_serial_monitor.md",
-    "docs/source/Data-Aq/router_setup.md",
-    "docs/source/Data-Aq/raspberry_pi_ssh.md",
+    "docs/source/data-aq/filezilla.md",
+    "docs/source/data-aq/standalone_serial_monitor.md",
+    "docs/source/data-aq/serial_printing.md",
+    "docs/source/data-aq/raspberry_pi_ssh.md",
+    "docs/source/data-aq/router_setup.md",
+    "docs/source/data-aq/FileZilla.md",
+    "docs/source/data-aq",
+    "docs/source/_static/images/hardware/ts_rev3/ts_rev3_sheet2.png",
+    "docs/source/_static/images/hardware/ts_rev3/ts_rev3_sheet1.png",
+    "docs/source/_static/images/hardware/ts_rev3/ts_rev3_schematic.png",
+    "docs/source/_static/images/hardware/motors/falcon_motor_curve.png",
+    "docs/source/_static/images/hardware/ts_rev3/ts_rev3.png",
+    "docs/source/_static/images/hardware/ts_rev3/ts_rev3-sheet2.png",
+    "docs/source/_static/images/hardware/ts_rev3/ts_rev3-sheet1.png",
+    "docs/source/_static/images/hardware/ts_rev3/ts_rev3-schematic.png",
+    "docs/source/_static/images/hardware/ts_rev3",
+    "docs/source/_static/images/hardware/wiring/quarterback_wiring.png",
+    "docs/source/_static/images/hardware/ts-rev3/ts_rev3.png",
+    "docs/source/metadocs/documentation_style_guide.md",
+    "docs/source/highlevel/bot_types.md",
+    "docs/source/hardware/tackle_sensor_rev4.md",
+    "docs/source/hardware/tackle_sensor_rev3.md",
+    "docs/source/hardware/sabertooth_2x32.md",
     "docs/source/Data-Aq/FileZilla.md",
-    "docs/source/index.md",
-    "docs/source/metadocs/sphinx.md",
     "docs/source/highlevel/bot-types.md",
-    "Vault Configuration Notes.md",
-    "Meeting Minutes/Meeting Minutes.md",
-    "tmp.md",
-    "Meeting Minutes/2024-08-23.md",
-    "Meeting Minutes/2024-05-13.md",
-    "Templates/Advisor Meeting Template.md",
-    "Meeting Minutes/PDF/2024-05-13.pdf",
-    "Meeting Minutes/PDF/2024-08-23.pdf",
-    "Meeting Minutes/PDF",
-    "Meeting Minutes/New folder",
-    "Assets/conf_2.png",
-    "Assets/conf_3.png",
-    "Assets/conf_1.png",
-    "Templates",
-    "Assets",
-    "Meeting Minutes",
-    "Welcome.md"
+    "docs/source/hardware/tackle-sensor-rev4.md",
+    "docs/source/hardware/tackle-sensor-rev3.md",
+    "docs/source/hardware/sabertooth-2x32.md",
+    "docs/source/Data-Aq/standalone_serial_monitor.md",
+    "docs/source/metadocs/sphinx.md",
+    "docs/source/hardware/uart.md",
+    "docs/source/Data-Aq/filezilla.md",
+    "docs/source/_static/images/hardware/uart",
+    "docs/source/hardware/encoders.md",
+    "docs/source/hardware/esp32.md",
+    "docs/source/_static/images/hardware/UART",
+    "docs/source/_static/images/data-aq",
+    "docs/source/Data-Aq",
+    "docs/source/hardware/wiring.md",
+    "docs/source/hardware/sabertooth-2x25.md",
+    "docs/source/hardware/falcons.md",
+    "docs/source/_static/files/hardware/esp/esp32-solo-1_datasheet_en.pdf",
+    "docs/source/_static/files/hardware/esp",
+    "docs/source/_static/files/hardware",
+    "docs/source/_static/files",
+    "docs/source/tackle-sensor-old.md"
   ]
 }

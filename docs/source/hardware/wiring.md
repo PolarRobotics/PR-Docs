@@ -6,7 +6,7 @@
 ![wd-reciever-v2](_static/images/wd-reciever-v2.png)
 
 ## Lineman-V3
-![wd-lineman-v3](_static/images/wd-lineman-V3.png)
+![wd-lineman-v3](wd-lineman-v3.png)
 
 ## Lineman-V2
 ![lineman-v2](_static/images/wd-lineman-v2.png)
