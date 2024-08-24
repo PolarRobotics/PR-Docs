@@ -4,7 +4,7 @@
 - Linemen are the most basic in terms of functionality. 
 - Their primary purpose is to initiate physical contact with opposing bots. 
 - They have no unique features and their only controllable aspect is basic movement.
-	- All other robots with the exception of the [[#Quarterback v3]] Turret have a superset of the controls listed below.
+	- All other robots with the exception of the [Quarterback v3](bot_types.md#Quarterback%20v3) Turret have a superset of the controls listed below.
 
 ### Current Linemen
 - `i++`
@@ -44,7 +44,7 @@
 ## Runningback
 ### Description
 - The runningback is smaller and faster than the other robots.
-	- It uses [[falcons|VEX Falcon 500 motors]]
+	- It uses [VEX Falcon 500 motors](../hardware/falcons)
 - Its primary purpose is to quickly carry the football along the ground (i.e., to *run*). 
 - Like the linemen and receivers, the runningback only has basic movement controls.
 	- There is one exception: the right trigger (R2) can be used to calibrate the falcon motors.
@@ -138,19 +138,19 @@
 | Left Y-Axis  | Absolute Analog Flywheel Speed Control | `setFlywheelSpeed` |
 | Right X-Axis | Aim Turret (Left = CCW, Right = CW)    | `moveTurret`       |
 
-| Button             | Action                                 | Function                     |
-| ------------------ | -------------------------------------- | ---------------------------- |
-| D-Pad Up           | Increase Flywheel Speed                | `adjustFlywheelSpeedStage`   |
-| D-Pad Down         | Decrease Flywheel Speed                | `adjustFlywheelSpeedStage`   |
-| Triangle           | Intake Ball from [[#Mecanum Center]]   | `loadFromCenter`             |
-| Cross              | Handoff to [[#Runningback]]            | `handoff`                    |
-| Square             | Toggle Power to Flywheels/Turret       | `setEnabled`                 |
-| Circle             | Startup and Zero Turret                | `reset`, `zeroTurret`        |
-| Touchpad           | Emergency Stop Turret                  | `emergencyStop`              |
-| Options            | Toggle Auto/Manual Targeting           | `switchMode`                 |
-| Right Button (R1)  | Target Receiver 2                      | `switchTarget`, `switchMode` |
-| Right Trigger (R2) | Launch (cradle forward)                | `moveCradle`                 |
-| Left Button (L1)   | Target Receiver 1                      | `switchTarget`, `switchMode` |
+| Button             | Action                                                          | Function                     |
+| ------------------ | --------------------------------------------------------------- | ---------------------------- |
+| D-Pad Up           | Increase Flywheel Speed                                         | `adjustFlywheelSpeedStage`   |
+| D-Pad Down         | Decrease Flywheel Speed                                         | `adjustFlywheelSpeedStage`   |
+| Triangle           | Intake Ball from [Mecanum Center](bot_types.md#Mecanum%20Center) | `loadFromCenter`             |
+| Cross              | Handoff to [Runningback](bot_types.md#Runningback)                                     | `handoff`                    |
+| Square             | Toggle Power to Flywheels/Turret                                | `setEnabled`                 |
+| Circle             | Startup and Zero Turret                                         | `reset`, `zeroTurret`        |
+| Touchpad           | Emergency Stop Turret                                           | `emergencyStop`              |
+| Options            | Toggle Auto/Manual Targeting                                    | `switchMode`                 |
+| Right Button (R1)  | Target Receiver 2                                               | `switchTarget`, `switchMode` |
+| Right Trigger (R2) | Launch (cradle forward)                                         | `moveCradle`                 |
+| Left Button (L1)   | Target Receiver 1                                               | `switchTarget`, `switchMode` |
 
 ## Kicker
 ### Description

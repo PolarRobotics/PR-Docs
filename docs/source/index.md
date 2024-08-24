@@ -7,11 +7,21 @@
 
 ```{toctree}
 ---
+caption: Meta-Documentation
+maxdepth: 2
+---
+
+metadocs/documentation_style_guide
+metadocs/sphinx
+```
+
+```{toctree}
+---
 caption: High-Level Robot Documentation
 maxdepth: 2
 ---
 
-highlevel/bot-types
+high-level/bot_types
 ```
 
 ```{toctree}
@@ -20,11 +30,14 @@ caption: Hardware Documentation
 maxdepth: 1
 ---
 
+hardware/encoders
 hardware/esp32
 hardware/falcons
-hardware/sabertooth-2x32
-hardware/tackle-sensor-rev3
-hardware/tackle-sensor-rev4
+hardware/sabertooth_2x25
+hardware/sabertooth_2x32
+hardware/tackle_sensor_rev3
+hardware/tackle_sensor_rev4
+hardware/uart
 hardware/wiring
 ```
 
@@ -39,17 +52,6 @@ data-aq/router_setup.md
 data-aq/serial_printing.md
 data-aq/standalone_serial_monitor.md
 ```
-
-```{toctree}
----
-caption: Meta-Documentation
-maxdepth: 2
----
-
-metadocs/sphinx
-```
-
-
 
 # Indices and tables
 

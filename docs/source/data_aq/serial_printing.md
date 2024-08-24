@@ -1,7 +1,10 @@
 # Comma Separated Values
-This guide will show you how to correctly print headers and values to serial so that the `SerialMonitor.py` program will print it correctly to a .csv file. 
+## Overview
+This guide will show you how to correctly print headers and values to serial so that the `SerialMonitor.py` program will print it correctly to a `.csv` file. 
 
-1. Your data should follow a comma-separated values format, meaning that each header and value should be separated with commas. 
+
+## Instructions
+1. Your data should follow a comma-separated values (`.csv`) format, meaning that each header and value should be separated with commas. 
 
 2. Under the `dev/data-aq` branch of the `ESP32PRCodebase` repository, you can find the following `printCsvInfo` function on lines 384-400 of `Drive.cpp`. This is an example of how to print basic information. This function can be changed however you like.
 
@@ -37,4 +40,4 @@ Serial.print(F(",Awesome Data 3,")); // Repeat this format for all data points y
 Serial.println(dataVariable3); // Finish with a data variable, make sure it is a Serial.println function.
 ```
 
-4. All data should be on **ONE LINE** in serial. This means you should only have a single `Serial.println()` statement at the end of your data.  Our `serial_monitor.py` program running on the Raspberry Pi will now be able to read and transcribe this information to a .csv file, with appropriate headers and values.
+4. All data should be on **ONE LINE** in serial. This means you should only have a single `Serial.println()` statement at the end of your data.  Our `serial_monitor.py` program running on the Raspberry Pi will now be able to read and transcribe this information to a `.csv` file, with appropriate headers and values.

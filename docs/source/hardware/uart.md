@@ -1,40 +1,41 @@
 # The Universal Asynchronous Receiver-Transmitter Protocol
+## Overview
 UART stands for the Universal Asynchronous Receiver-Transmitter protocol, which is an OSI Layer 2 serial communications protocol. It is byte level and little-endian, sending and thus receiving the least significant byte first in a given transmission. However, most libraries built for UART communication will parse the data as expected.
 
 Any UART circuit between two devices requires three wires; a common ground, a TX to RX connection, and an RX to TX connection.
 
 % TODO: add image of an example circuit
 
-## UART Communication w/ ESP32
+## UART Communication with ESP32
 With the Platformio Arduino framework, the ESP32 can utilize the [HardwareSerial](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h) library to establish UART communication and read/write data over the serial bus. 
 
 An ESP32 generally has three available UART interfaces, UART0, UART1, AND UART2.
 
 UART1 is used by the ESP's serial monitor by default, and the pins UART1 is generally reserved for flash memory, leaving UART2 as the primary UART channel available. Its worth noting that pin definitions for the UART channels can vary by model, so its important to consult available documentation for the specific board your working with.
 
-## UART Communication w/ Pi Zero / Pi 4 
+## UART Communication with Pi Zero or Pi 4 
 You can check if UART is enabled by searching through your available ports and looking for a port ending in `S0`
 See the figure below for an example of how to check this
 
 If the port isn't found, you must run `sudo raspi-config` to enter the Raspian configuration screen to enable the firmware, which brings you to following screen:
 
-![Step 1](../_static/images/hardware/UART/config-1.png)
+![Step 1](../_static/images/hardware/uart/uart_config_1.png)
 
 From there, you must navigate to `Interface Options` and then `Serial Port`, using the arrow keys for navigation and the ENTER key for selection.
 
-![Step 2](../_static/images/hardware/UART/config-2.png)
+![Step 2](../_static/images/hardware/uart/uart_config_2.png)
 
 Select "no" for the first option, 
 
-![Step 3](../_static/images/hardware/UART/config-3.png)
+![Step 3](../_static/images/hardware/uart/uart_config_3.png)
 
 Then "yes" for the second.
 
-![Step 4](../_static/images/hardware/UART/config-4.png)
+![Step 4](../_static/images/hardware/uart/uart_config_4.png)
 
 The following screen should result. 
 
-![Step 5](../_static/images/hardware/UART/config-5.png)
+![Step 5](../_static/images/hardware/uart/uart_config_5.png)
 
 When prompted to reboot, select `yes`. If you're not prompted to reboot, hit the TAB key twice and press ENTER to select `Finish`. 
 
@@ -45,8 +46,8 @@ Uart communication on [Raspbian](https://www.raspbian.org)-based Pi systems can 
 
 To run pigpio-based programs with Python in Raspbian, you must first launch the pigpio daemon with the commannd `sudo pigpiod`
 
-To use pigpiod in your Python program, simply import the module and initalize an object of the pigpio class.
-[pigpio instantiation](../_static/images/hardware/UART/pigpio.png)
+To use pigpio in your Python program, simply import the module and initalize an object of the pigpio class.
+[pigpio instantiation](../_static/images/hardware/uart/uart_init_pigpio.png)
 
 Documentation for pigpio can be found at the site hyperlinked above.
 
@@ -63,7 +64,7 @@ It then sends the message itself, and waits for a message to be sent by the pi, 
 
 On the Pi side, a "serial handle" is created by specifying the UART port, baudrate, and an optional 'serial flag' parameter. This handle is passed as a parameter to all subsequent UART reading/writing function calls.
 
-![](../_static/images/hardware/UART/serial-handle.png)
+![](../_static/images/hardware/uart/uart_serial_handle.png)
 
 More information can be found [here](http://abyz.me.uk/rpi/pigpio/python.html#serial_open). 
 
