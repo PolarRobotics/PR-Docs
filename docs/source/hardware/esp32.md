@@ -5,7 +5,7 @@
 ### Pin Layout
 - [ESP Pin Reference Spreadsheet](https://docs.google.com/spreadsheets/d/17pdff4T_3GTAkoctwm2IMg07Znoo-iJkyDGN5CqXq3w/edit#gid=0)
 
-![ESP-pinout](../_static/images/hardware/esp/esp32_Pinout.png)
+![ESP-pinout](../_static/images/hardware/esp/esp32_pinout.png)
 
 
 ### CPU and Internal Memory

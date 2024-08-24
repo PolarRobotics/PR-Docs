@@ -15,6 +15,7 @@
 ## Naming Conventions
 - Do not use spaces in any file name.
 - Do not use capital lettering for any folder or file name without explicit approval from the project manager.
+	- The reason for this is that links in the final product (on ReadTheDocs.io) are case-sensitive. Maintaining a consistent format helps reduce errors.
 - Documentation category folder names (i.e., folders under `/docs/source/`) shall use lower kebab case (ex. `data-aq`).
 - File names for both Markdown files and assets shall use lower snake case (ex. `documentation_style_guide.md`).
 	- The only exception to this is where parts of the filename may already contain dashes in a larger identifier (ex. `esp32-solo-1`).
