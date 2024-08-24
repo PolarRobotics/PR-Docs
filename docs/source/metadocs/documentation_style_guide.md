@@ -37,12 +37,12 @@
 ```
 - In order to link to a heading in the same file, use the format below.
 	- Linking to the heading in another file essentially follows the same rules as above. 
-	- Note that spaces in the heading must be escaped as with normal HTML. For instance, linking to [this header](./documentation_style_guide#Linking%20and%20Embedding) would look like this: `[this header](./documentation_style_guide#Linking%20and%20Embedding)`
+	- ReadTheDocs provides heading links for each note with forced lowercase and spaces formatted as dashes. For instance, linking to [this header](./documentation_style_guide#linking-and-embedding) would look like this: `[this header](./documentation_style_guide#linking-and-embedding)`
 ```
-[Link Display Name](./current_filename#Heading%20Escaped)
+[Link Display Name](./current_filename#lower-kebab-case-heading-name)
 ```
 - To embed an image, prefix a link to the image with an exclamation point (`!`).
 	- Some other URLs or assets can also be embedded this way, if Sphinx/ReadTheDocs supports them.
 	- For example, including `/docs/source/_static/images/klondike_facepalm.png` from *this file* would look like this: `![Image Alt Text](../_static/images/klondike_facepalm.png)`
 - Although it may be easiest to edit the documentation repository in Obsidian, regular Obsidian double-bracket links do **not** work.
-	- However, this type of HTML link does work in Obsidian.
+	- However, this type of HTML *file* link does work in Obsidian. *Header* links do not work.
