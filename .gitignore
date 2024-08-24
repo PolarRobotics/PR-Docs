@@ -1,3 +1,4 @@
 .venv/*
 docs/build/*
 PR-Docs.code-workspace
+.obsidian/workspace.json
