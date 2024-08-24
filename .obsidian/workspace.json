@@ -11,8 +11,12 @@
             "id": "b3b54f8a2d24fe6c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/source/highlevel/bot-types.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/source/highlevel/bot-types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/source/highlevel/bot-types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/source/highlevel/bot-types.md"
+              }
             }
           }
         ]
@@ -147,7 +155,16 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false
+      "markdown-importer:Open format converter": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "homepage:Open homepage": false,
+      "cmdr:Git: Pull": false,
+      "cmdr:New Excalidraw from DCN Title": false,
+      "cmdr:Insert Page Break": false,
+      "cmdr:Git: Commit and Push": false,
+      "cmdr:DCN Menu Spring 2024": false
     }
   },
   "active": "b3b54f8a2d24fe6c",
