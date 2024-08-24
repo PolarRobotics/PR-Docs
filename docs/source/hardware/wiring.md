@@ -1,21 +1,24 @@
 # Robot Wiring Diagrams
-## Quarterback
-![Quarterback Wiring Diagram](../_static/images/hardware/wiring/quarterback-wiring.png)
+## Quarterback v3
+- tbd
 
-## Reciever-V2
-![wd-reciever-v2](_static/images/wd-reciever-v2.png)
+## Quarterback v2
+![Quarterback Wiring Diagram](../_static/images/hardware/wiring/wd-quarterback.png)
 
-## Lineman-V3
-![wd-lineman-v3](_static/images/wd-lineman-V3.png)
+## Reciever v2
+![wd-reciever-v2](../_static/images/hardware/wiring/wd-reciever-v2.png)
 
-## Lineman-V2
-![lineman-v2](_static/images/wd-lineman-v2.png)
+## Lineman v3
+![wd-lineman-v3](../_static/images/hardware/wiring/wd-lineman-v3.png)
 
-## Lineman-V1
-![wd-lineman-v1](_static/images/wd-lineman-v1.png)
+## Lineman v2
+![lineman-v2](../_static/images/hardware/wiring/wd-lineman-v2.png)
+
+## Lineman v1
+![wd-lineman-v1](../_static/images/hardware/wiring/wd-lineman-v1.png)
 
 ## Kicker
-![wd-kicker](_static/images/wd-kicker.png)
+![wd-kicker](../_static/images/hardware/wiring/wd-kicker.png)
 
 ## Center-V1
-![wd-center-v1](_static/images/wd-center-v1.png)
+![wd-center-v1](../_static/images/hardware/wiring/wd-center-v1.png)
