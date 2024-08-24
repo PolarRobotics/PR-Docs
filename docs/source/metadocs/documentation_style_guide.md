@@ -45,4 +45,6 @@
 	- Some other URLs or assets can also be embedded this way, if Sphinx/ReadTheDocs supports them.
 	- For example, including `/docs/source/_static/images/klondike_facepalm.png` from *this file* would look like this: `![Image Alt Text](../_static/images/klondike_facepalm.png)`
 - Although it may be easiest to edit the documentation repository in Obsidian, regular Obsidian double-bracket links do **not** work.
-	- However, this type of HTML *file* link does work in Obsidian. *Header* links do not work.
+	- However, this type of HTML *file* link does work in Obsidian. 
+		- Header links with spaces do not work since RTD formats spaces as dashes.
+			- Since Obsidian links are case-insensitive, that part of the formatting is irrelevant.

@@ -4,7 +4,7 @@
 - Linemen are the most basic in terms of functionality. 
 - Their primary purpose is to initiate physical contact with opposing bots. 
 - They have no unique features and their only controllable aspect is basic movement.
-	- All other robots with the exception of the [Quarterback v3](bot_types.md#Quarterback%20v3) Turret have a superset of the controls listed below.
+	- All other robots with the exception of the [Quarterback v3](bot_types.md#quarterback-v3) Turret have a superset of the controls listed below.
 
 ### Current Linemen
 - `i++`
@@ -142,8 +142,8 @@
 | ------------------ | --------------------------------------------------------------- | ---------------------------- |
 | D-Pad Up           | Increase Flywheel Speed                                         | `adjustFlywheelSpeedStage`   |
 | D-Pad Down         | Decrease Flywheel Speed                                         | `adjustFlywheelSpeedStage`   |
-| Triangle           | Intake Ball from [Mecanum Center](bot_types.md#Mecanum%20Center) | `loadFromCenter`             |
-| Cross              | Handoff to [Runningback](bot_types.md#Runningback)                                     | `handoff`                    |
+| Triangle           | Intake Ball from [Mecanum Center](bot_types.md#mecanum-center) | `loadFromCenter`             |
+| Cross              | Handoff to [Runningback](bot_types.md#runningback)                                     | `handoff`                    |
 | Square             | Toggle Power to Flywheels/Turret                                | `setEnabled`                 |
 | Circle             | Startup and Zero Turret                                         | `reset`, `zeroTurret`        |
 | Touchpad           | Emergency Stop Turret                                           | `emergencyStop`              |
