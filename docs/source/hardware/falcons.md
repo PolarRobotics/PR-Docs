@@ -3,12 +3,12 @@
 
 | Syntax                             | Description                           |
 | ---------------------------------- | ------------------------------------- |
-| Motor Specs.                       | Falcon500                             |
+| Motor Specs.                       | Falcon 500                            |
 | Nominal Voltage                    | 12VDC                                 |
 | Material-Type                      | Cast Aluminum                         |
 | Material-Finish                    | Black Anodized                        |
 | Dimensions                         | 60mm (2.36") Dia. X 81mm (3.18") long |
-| Weight                             | 1.1lbs.                               |
+| Weight                             | 1.1 lbs                               |
 | Supported Communication Protocalls | PWM, CAN                              |
 | Direct Limit Switch Input          | Yes                                   |
 | PWM Input Pulse (High Time)        | 1-2 ms Nominal                        |

@@ -3,16 +3,16 @@ UART stands for the Universal Asynchronous Receiver-Transmitter protocol, which 
 
 Any UART circuit between two devices requires three wires; a common ground, a TX to RX connection, and an RX to TX connection.
 
-## TODO: add image of an example circuit
+% TODO: add image of an example circuit
 
-# UART Communication w/ ESP32
+## UART Communication w/ ESP32
 With the Platformio Arduino framework, the ESP32 can utilize the [HardwareSerial](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h) library to establish UART communication and read/write data over the serial bus. 
 
 An ESP32 generally has three available UART interfaces, UART0, UART1, AND UART2.
 
 UART1 is used by the ESP's serial monitor by default, and the pins UART1 is generally reserved for flash memory, leaving UART2 as the primary UART channel available. Its worth noting that pin definitions for the UART channels can vary by model, so its important to consult available documentation for the specific board your working with.
 
-# UART Communication w/ Pi Zero / Pi 4 
+## UART Communication w/ Pi Zero / Pi 4 
 You can check if UART is enabled by searching through your available ports and looking for a port ending in `S0`
 See the figure below for an example of how to check this
 
@@ -40,7 +40,7 @@ When prompted to reboot, select `yes`. If you're not prompted to reboot, hit the
 
 Once the device reboots you should now be able to find the "S0" port mentioned earlier. This is the port used for UART communication via the TX and RX GPIO pins present on the Pi.
 
-# Interfacing with UART through pigpio
+## Interfacing with UART through pigpio
 Uart communication on [Raspbian](https://www.raspbian.org)-based Pi systems can be achieved through use of the [pigpio library](https://abyz.me.uk/rpi/pigpio/), available as both a Python module and a C library. 
 
 To run pigpio-based programs with Python in Raspbian, you must first launch the pigpio daemon with the commannd `sudo pigpiod`
@@ -50,7 +50,7 @@ To use pigpiod in your Python program, simply import the module and initalize an
 
 Documentation for pigpio can be found at the site hyperlinked above.
 
-# ESP32 to Pi Zero / 4 Communication
+## ESP32 to Pi Zero / 4 Communication
 Communication between an ESP32 and a Pi Zero over UART is relatively straightforward, as both devices have robust libraries to facilitate UART communications.
 
 A system created for testing this communication can be currently found in the PR-Encoder-Submodule-ESP32 repository, under the pi4_uart branch.
