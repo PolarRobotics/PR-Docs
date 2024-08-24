@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/source/index.md",
+                "file": "docs/source/metadocs/documentation_style_guide.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/source/index.md",
+                "file": "docs/source/metadocs/documentation_style_guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/source/index.md",
+                "file": "docs/source/metadocs/documentation_style_guide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/source/index.md"
+                "file": "docs/source/metadocs/documentation_style_guide.md"
               }
             }
           }
@@ -169,6 +169,8 @@
   },
   "active": "efc55e06d082c341",
   "lastOpenFiles": [
+    "docs/source/metadocs/sphinx.md",
+    "docs/source/index.md",
     "docs/source/high-level/bot_types.md",
     "docs/source/high-level",
     "docs/source/highlevel/bot_types.md",
@@ -201,7 +203,6 @@
     "docs/source/hardware/tackle-sensor-rev3.md",
     "docs/source/hardware/sabertooth-2x32.md",
     "docs/source/Data-Aq/standalone_serial_monitor.md",
-    "docs/source/metadocs/sphinx.md",
     "docs/source/hardware/uart.md",
     "docs/source/Data-Aq/filezilla.md",
     "docs/source/_static/images/hardware/uart",
@@ -212,7 +213,6 @@
     "docs/source/Data-Aq",
     "docs/source/hardware/wiring.md",
     "docs/source/hardware/sabertooth-2x25.md",
-    "docs/source/hardware/falcons.md",
     "docs/source/_static/files/hardware/esp/esp32-solo-1_datasheet_en.pdf",
     "docs/source/_static/files/hardware/esp"
   ]
