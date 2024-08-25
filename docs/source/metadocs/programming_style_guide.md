@@ -11,10 +11,11 @@
 	- Many companies institute similar policies.
 	- It will help you develop good coding style.
 
-:::{admonition} The biggest takeaway
+```{admonition} The biggest takeaway
 :class: tip
+
 If you don't remember anything else from this document, at least remember this: our code must be *readable* and *maintainable*. Someone that *isn't you* should be able to pick up where you left off.
-:::
+```
 
 ## Programming Principles
 ### High-Level
