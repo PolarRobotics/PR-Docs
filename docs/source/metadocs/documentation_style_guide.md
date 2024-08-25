@@ -1,4 +1,5 @@
 # Documentation Style Guide
+## Overview
 - This document contains rules that are to be followed when creating or updating this documentation repository.
 
 ## File Locations
