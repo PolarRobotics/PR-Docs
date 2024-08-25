@@ -1,45 +1,49 @@
-# The Universal Asynchronous Receiver-Transmitter Protocol
+# The UART Protocol
 ## Overview
-UART stands for the Universal Asynchronous Receiver-Transmitter protocol, which is an OSI Layer 2 serial communications protocol. It is byte level and little-endian, sending and thus receiving the least significant byte first in a given transmission. However, most libraries built for UART communication will parse the data as expected.
-
-Any UART circuit between two devices requires three wires; a common ground, a TX to RX connection, and an RX to TX connection.
+- UART is the Universal Asynchronous Receiver-Transmitter protocol, which is an OSI Layer 2 serial communications protocol. 
+	- It is byte level and little-endian, sending and thus receiving the least significant byte first in a given transmission. 
+	- However, most libraries built for UART communication will parse the data as expected.
+- Any UART circuit between two devices requires three wires; a common ground, a TX to RX connection, and an RX to TX connection.
 
 % TODO: add image of an example circuit
 
 ## UART Communication with ESP32
-With the Platformio Arduino framework, the ESP32 can utilize the [HardwareSerial](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h) library to establish UART communication and read/write data over the serial bus. 
+- With the PlatformIO Arduino framework, the ESP32 can utilize the [HardwareSerial](https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/HardwareSerial.h) library to establish UART communication and read/write data over the serial bus. 
+- An ESP32 generally has three available UART interfaces, `UART0`, `UART1`, AND `UART2`.
+- `UART1` is used by the ESP's serial monitor by default, and the pins `UART1` is generally reserved for flash memory, leaving `UART2` as the primary UART channel available. 
+	- It is worth noting that pin definitions for the UART channels can vary by model, so it is important to consult the documentation for the specific board you are working with.
 
-An ESP32 generally has three available UART interfaces, UART0, UART1, AND UART2.
-
-UART1 is used by the ESP's serial monitor by default, and the pins UART1 is generally reserved for flash memory, leaving UART2 as the primary UART channel available. Its worth noting that pin definitions for the UART channels can vary by model, so its important to consult available documentation for the specific board your working with.
+% TODO: @quantum check this last part – doesn't seem consistent. Is UART0 used for the serial monitor? and "the pins UART1" doesn't make sense. Is UART1 a pin? Or is it supposed to be "the pins used for/by UART1"?
 
 ## UART Communication with Pi Zero or Pi 4 
-You can check if UART is enabled by searching through your available ports and looking for a port ending in `S0`
-See the figure below for an example of how to check this
+- You can check if UART is enabled by searching through your available ports and looking for a port ending in `S0`.
+	- See the figure below for an example of how to check this.
 
-If the port isn't found, you must run `sudo raspi-config` to enter the Raspian configuration screen to enable the firmware, which brings you to following screen:
+% TODO: where is this figure? @quantum
+
+- If the port isn't found, you must run `sudo raspi-config` to enter the Raspbian configuration screen and enable the firmware. This brings you to following screen:
 
 ![Step 1](../_static/images/hardware/uart/uart_config_1.png)
 
-From there, you must navigate to `Interface Options` and then `Serial Port`, using the arrow keys for navigation and the ENTER key for selection.
+- From there, you must navigate to `Interface Options` and then `Serial Port`, using the arrow keys for navigation and the `ENTER` key for selection.
 
 ![Step 2](../_static/images/hardware/uart/uart_config_2.png)
 
-Select "no" for the first option, 
+- Select `<No>` for the first option.
 
 ![Step 3](../_static/images/hardware/uart/uart_config_3.png)
 
-Then "yes" for the second.
+- Then select `<Yes>` for the second.
 
 ![Step 4](../_static/images/hardware/uart/uart_config_4.png)
 
-The following screen should result. 
+- You should then see the following screen:
 
 ![Step 5](../_static/images/hardware/uart/uart_config_5.png)
 
-When prompted to reboot, select `yes`. If you're not prompted to reboot, hit the TAB key twice and press ENTER to select `Finish`. 
-
-Once the device reboots you should now be able to find the "S0" port mentioned earlier. This is the port used for UART communication via the TX and RX GPIO pins present on the Pi.
+- When prompted to reboot, select `yes`. If you're not prompted to reboot, hit the `TAB` key twice and press `ENTER` to select `Finish`. 
+- Once the device reboots, you should now be able to find the aforementioned `S0` port.
+	- This is the port used for UART communication via the `TX` and `RX` GPIO pins present on the Pi.
 
 ## Interfacing with UART through pigpio
 Uart communication on [Raspbian](https://www.raspbian.org)-based Pi systems can be achieved through use of the [pigpio library](https://abyz.me.uk/rpi/pigpio/), available as both a Python module and a C library. 
