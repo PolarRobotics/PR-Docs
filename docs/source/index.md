@@ -10,7 +10,7 @@
 caption: Meta-Documentation
 maxdepth: 2
 ---
-
+metadocs/programming_style_guide
 metadocs/documentation_style_guide
 metadocs/sphinx
 ```
@@ -20,7 +20,6 @@ metadocs/sphinx
 caption: High-Level Robot Documentation
 maxdepth: 2
 ---
-
 high-level/bot_types
 ```
 
@@ -29,7 +28,6 @@ high-level/bot_types
 caption: Hardware Documentation
 maxdepth: 1
 ---
-
 hardware/encoders
 hardware/esp32
 hardware/falcons
