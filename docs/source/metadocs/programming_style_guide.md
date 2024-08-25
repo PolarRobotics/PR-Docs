@@ -96,6 +96,7 @@ class Foo {
 - Constants should use `MACRO_CASE`
 - Include guards must use `MACRO_CASE` with the `.` (separating the filename from the extension) replaced with `_`.
 	- For example, a file named `foo.h` would use `FOO_H` as the include guard `#define`.
+- Filenames should generally be `UpperCamelCase` if they primarily house a class, or normal `camelCase` if they do not.
 
 ## Formatting
 - Whatever you do, be consistent.
