@@ -4,7 +4,7 @@
 - Linemen are the most basic in terms of functionality. 
 - Their primary purpose is to initiate physical contact with opposing bots. 
 - They have no unique features and their only controllable aspect is basic movement.
-	- All other robots with the exception of the [Quarterback v3](bot_types.md#quarterback-v3) Turret have a superset of the controls listed below.
+	- All other robots with the exception of the [Quarterback V3](bot_types.md#quarterback-v3) Turret have a superset of the controls listed below.
 
 ### Current Linemen
 - `i++`
@@ -41,15 +41,15 @@
 - `32.2`
 - `9.8`
 
-## Runningback
+## Running Back
 ### Description
-- The runningback is smaller and faster than the other robots.
+- The running back is smaller and faster than the other robots.
 	- It uses [VEX Falcon 500 motors](../hardware/falcons)
 - Its primary purpose is to quickly carry the football along the ground (i.e., to *run*). 
-- Like the linemen and receivers, the runningback only has basic movement controls.
+- Like the linemen and receivers, the running back only has basic movement controls.
 	- There is one exception: the right trigger (R2) can be used to calibrate the falcon motors.
 
-### Current Runningback
+### Current Running Back
 - `c`
 
 ## Center
@@ -96,7 +96,7 @@
 | Triangle | Raise Flywheel Speed |
 | Cross    | Lower Flywheel Speed |
 
-## Quarterback v2
+## Quarterback V2
 ### Description
 - The "old" quarterback features a conveyor belt and flywheels that can launch the football.
 	- It also has linear actuators that can adjust the launch angle.
@@ -106,7 +106,7 @@
 ### Applicable Bots
 - `infinity`
 
-### Quarterback v2 Controls
+### Quarterback V2 Controls
 
 | Button     | Action                  |
 | ---------- | ----------------------- |
@@ -117,7 +117,7 @@
 | D-Pad Up   | Raise Launch Angle      |
 | D-Pad Down | Lower Launch Angle      |
 
-## Quarterback v3
+## Quarterback V3
 ### Description
 - The "new" quarterback is functionally two robots attached to the same chassis.
 	- The "base" is functionally identical to a lineman and is controlled the same way.
@@ -131,26 +131,26 @@
 	- launch the football
 	- run a variety of macros
 
-### Quarterback v3 Turret Controls
+### Quarterback V3 Turret Controls
 
 | Stick        | Action                                 | Function           |
 | ------------ | -------------------------------------- | ------------------ |
 | Left Y-Axis  | Absolute Analog Flywheel Speed Control | `setFlywheelSpeed` |
 | Right X-Axis | Aim Turret (Left = CCW, Right = CW)    | `moveTurret`       |
 
-| Button             | Action                                                          | Function                     |
-| ------------------ | --------------------------------------------------------------- | ---------------------------- |
-| D-Pad Up           | Increase Flywheel Speed                                         | `adjustFlywheelSpeedStage`   |
-| D-Pad Down         | Decrease Flywheel Speed                                         | `adjustFlywheelSpeedStage`   |
+| Button             | Action                                                         | Function                     |
+| ------------------ | -------------------------------------------------------------- | ---------------------------- |
+| D-Pad Up           | Increase Flywheel Speed                                        | `adjustFlywheelSpeedStage`   |
+| D-Pad Down         | Decrease Flywheel Speed                                        | `adjustFlywheelSpeedStage`   |
 | Triangle           | Intake Ball from [Mecanum Center](bot_types.md#mecanum-center) | `loadFromCenter`             |
-| Cross              | Handoff to [Runningback](bot_types.md#runningback)                                     | `handoff`                    |
-| Square             | Toggle Power to Flywheels/Turret                                | `setEnabled`                 |
-| Circle             | Startup and Zero Turret                                         | `reset`, `zeroTurret`        |
-| Touchpad           | Emergency Stop Turret                                           | `emergencyStop`              |
-| Options            | Toggle Auto/Manual Targeting                                    | `switchMode`                 |
-| Right Button (R1)  | Target Receiver 2                                               | `switchTarget`, `switchMode` |
-| Right Trigger (R2) | Launch (cradle forward)                                         | `moveCradle`                 |
-| Left Button (L1)   | Target Receiver 1                                               | `switchTarget`, `switchMode` |
+| Cross              | Handoff to [Running Back](./bot_types.md#running-back)         | `handoff`                    |
+| Square             | Toggle Power to Flywheels/Turret                               | `setEnabled`                 |
+| Circle             | Startup and Zero Turret                                        | `reset`, `zeroTurret`        |
+| Touchpad           | Emergency Stop Turret                                          | `emergencyStop`              |
+| Options            | Toggle Auto/Manual Targeting                                   | `switchMode`                 |
+| Right Button (R1)  | Target Receiver 2                                              | `switchTarget`, `switchMode` |
+| Right Trigger (R2) | Launch (cradle forward)                                        | `moveCradle`                 |
+| Left Button (L1)   | Target Receiver 1                                              | `switchTarget`, `switchMode` |
 
 ## Kicker
 ### Description

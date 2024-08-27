@@ -28,8 +28,9 @@
 	- Then put the rest of the content under another header, such as `Instructions`, depending on what it is.
 - Text should generally be bulleted and short. 
 	- Do not write long-form prose. Break it up into manageable chunks with bulleted or numbered lists.
-- Any reference to a version number such as "v3" shall be formatted with a lowercase `v`.
-	- For instance, `Quarterback v3` is formatted as such, not as `Quarterback V3`.
+- Any reference to a version number such as "V3" shall be formatted with an uppercase `V`.
+	- For instance, `Quarterback V3` is formatted as such, not as `Quarterback v3`.
+- As cursed as it is, "quarterback" is one word, and "running back" is two words. Use this and be consistent.
 
 ## Linking and Embedding
 - In order to link from one Markdown file to another, use the format below. 
