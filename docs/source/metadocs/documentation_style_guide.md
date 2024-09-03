@@ -11,7 +11,7 @@
 - All static assets shall be placed in a subfolder reflecting their reference location in the main file tree.
 	- For example, if the file `foo.png` is embedded within `/docs/source/metadocs/bar.md`, then `foo.png` shall be placed in `/docs/source/_static/images/metadocs`.
 	- If there are many related images only used in a single note within that category, it is strongly preferred to create a folder sharing the title of the note to place those images in.
-		- In the same example, `foo1.png` ... `foo20.png` would be placed in `/docs/source/_static/images/metadocs/bar`.
+		- In the same example, `foo1.png` ... `foo20.png` embedded within `bar.md` would be placed in `/docs/source/_static/images/metadocs/bar`.
 
 ## Naming Conventions
 - Do not use spaces in any file name.
@@ -31,6 +31,9 @@
 - Any reference to a version number such as "V3" shall be formatted with an uppercase `V`.
 	- For instance, `Quarterback V3` is formatted as such, not as `Quarterback v3`.
 - As cursed as it is, "quarterback" is one word, and "running back" is two words. Use this and be consistent.
+
+### Comments
+- Line comments may be added using `%`. These will appear in the source Markdown file, but will not appear in the automatically generated HTML (and by extension the webpage).
 
 ## Linking and Embedding
 - In order to link from one Markdown file to another, use the format below. 
