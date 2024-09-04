@@ -11,7 +11,8 @@
 - Upbase is free for teams of unlimited size (unlike Trello, which is limited to 10) and has a clean user interface with a suitable but not overwhelming set of features.
 ```
 
-```{seealso}
+```{admonition} See Also
+:class: seealso
 
 - The official Upbase documentation can be found here: [https://help.upbase.io/category/4-gettings-started](https://help.upbase.io/category/4-gettings-started)
 ```
@@ -19,7 +20,9 @@
 ### Glossary and Structure
 - Before discussing usage, it is important to understand what the different parts of Upbase's user interface are called and how it is structured.
 
-```{seealso}
+```{admonition} See Also
+:class: seealso
+
 - [https://help.upbase.io/article/8-workspaces-folders-and-lists-in-upbase](https://help.upbase.io/article/8-workspaces-folders-and-lists-in-upbase)
 ```
 
@@ -98,7 +101,8 @@
 	- Tasks can be moved from one list to another by using this method and then removing it from the original list.
 	- Be warned – deleting a task from one list will remove it from all lists. However, it will still go to the Trash as normal.
 
-```{seealso}
+```{admonition} See Also
+:class: seealso
 
 - [https://help.upbase.io/article/41-related-items](https://help.upbase.io/article/41-related-items)
 - [https://help.upbase.io/article/55-add-tasks-to-multiple-lists](https://help.upbase.io/article/55-add-tasks-to-multiple-lists)
@@ -119,7 +123,8 @@
 - The most important thing about tags is that they allow us to view all tasks with that tag as a list/board by clicking on the tag entry in the navigation sidebar.
 	- You can filter or sort these in various ways, similar to using the `View` menu in a normal list.
 
-```{seealso}
+```{admonition} See Also
+:class: seealso
 
 - [https://help.upbase.io/article/30-task-tags](https://help.upbase.io/article/30-task-tags)
 ```
