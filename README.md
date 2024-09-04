@@ -3,7 +3,7 @@
 ### Local Installation
 #### Installing Windows Subsystem for Linux
 - If you are not on Windows, you can skip this section and proceed directly to Python/Sphinx installation.
-- Using WSL is strongly recommended for development with Python and Sphinx.
+- If you are on Windows, using WSL is strongly recommended for development with Python and Sphinx.
 	- If you do not already have `pip` fully functional on Windows and know how to utilize it, use WSL.
 - You can either search for "Windows Subsystem for Linux" in the Microsoft Store, or run the command `wsl --install`.
 	- You will likely be prompted to grant elevation/administrator-level access - grant this.
@@ -25,6 +25,14 @@ user@desktop:~$
 - From here, you can continue to the next section to install Python and Sphinx.
 
 #### Installing Python and Sphinx
+- TL;DR – the necessary pip packages are:
+```
+pip install sphinx
+pip install sphinx-book-theme
+pip install myst-parser
+pip install "rst-to-myst[sphinx]"
+pip install sphinx-notfound-page
+```
 - The following steps should be done inside WSL (or in your terminal, if on Linux or MacOS).
 - Update your packages via your package manager.
 	- For Ubuntu, run `sudo apt-get update` and then `sudo apt-get upgrade`.
@@ -35,10 +43,11 @@ user@desktop:~$
 	- `sphinx-build --version` to check version and ensure sphinx installed properly
 		- You may also be able to install `sphinx` or `python3-sphinx` directly from your package manager.
 		- For completeness, the command to start a new documentation project/repo is `sphinx-quickstart`, but don't do this in this repo.
-- Install the ReadTheDocs theme with `pip install -U sphinx-rtd-theme`.
+- Install the ~~ReadTheDocs theme with `pip install -U sphinx-rtd-theme`.~~ Sphinx Book theme with `pip install sphinx-book-theme`.
 - Install the MyST-Parser Markdown parser with `pip install -U myst-parser`.
 - It is recommended to install the [MyST extension](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight) as this is the flavor of Markdown being used for our documentation.
 	- After installation, when editing a Markdown file in VS Code, you can press `Ctrl+K`, then `V` to open a pane to render the Markdown source file, providing you a preview of the file you are working on.
+- Install the notfound-page extension with `pip install sphinx-notfound-page`.
 
 #### Contributing
 - First, clone this repo (`PR-Docs`) to a suitable location on your computer. 

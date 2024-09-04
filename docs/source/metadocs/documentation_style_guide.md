@@ -44,13 +44,16 @@
 ```
 - In order to link to a heading in the same file, use the format below.
 	- Linking to the heading in another file essentially follows the same rules as above. 
-	- ReadTheDocs provides heading links for each note with forced lowercase and spaces formatted as dashes. For instance, linking to [this header](./documentation_style_guide#linking-and-embedding) would look like this: `[this header](./documentation_style_guide#linking-and-embedding)`
+	- ReadTheDocs provides heading links for each note with forced lowercase and spaces formatted as dashes. For instance, linking to [this header](./documentation_style_guide#linking-and-embedding) would look like this: `[this header](#linking-and-embedding)`
 ```
-[Link Display Name](./current_filename#lower-kebab-case-heading-name)
+[Link Display Name](#lower-kebab-case-heading-name)
 ```
 - To embed an image, prefix a link to the image with an exclamation point (`!`).
 	- Some other URLs or assets can also be embedded this way, if Sphinx/ReadTheDocs supports them.
 	- For example, including `/docs/source/_static/images/klondike_facepalm.png` from *this file* would look like this: `![Image Alt Text](../_static/images/klondike_facepalm.png)`
+	- To change the size or alignment of an image, use `attrs_inline` syntax.
+		- For example, to center align an image and set the width to 100 pixels: `![Image Alt Text](../_static/images/klondike_facepalm.png){w=100px align=center}`
+		- See also: https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html
 - Although it may be easiest to edit the documentation repository in Obsidian, regular Obsidian double-bracket links do **not** work.
 	- However, this type of HTML *file* link does work in Obsidian. 
 		- Header links with spaces do not work since RTD formats spaces as dashes.
