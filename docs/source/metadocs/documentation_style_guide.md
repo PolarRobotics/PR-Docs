@@ -1,6 +1,6 @@
 # Documentation Style Guide
 ## Overview
-- This document contains rules that are to be followed when creating or updating this documentation repository.
+- This document contains rules that are to be followed when creating or updating this documentation repository, as well as some related tips and syntax.
 
 ## File Locations
 - All documentation files (generally Markdown) must be located within `/docs/source/` or a subfolder.
