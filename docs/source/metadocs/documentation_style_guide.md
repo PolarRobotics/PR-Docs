@@ -14,7 +14,7 @@
 		- In the same example, `foo1.png` ... `foo20.png` embedded within `bar.md` would be placed in `/docs/source/_static/images/metadocs/bar`.
 
 ## Naming Conventions
-- Do not use spaces in any file name.
+- Do not use spaces in any folder or file name.
 - Do not use capital lettering for any folder or file name without explicit approval from the project manager.
 	- The reason for this is that links in the final product (on ReadTheDocs.io) are case-sensitive. Maintaining a consistent format helps reduce errors.
 - Documentation category folder names (i.e., folders under `/docs/source/`) shall use lower kebab case (ex. `data-aq`).
