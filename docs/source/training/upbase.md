@@ -13,14 +13,14 @@
 
 ```{seealso}
 
-- The official Upbase documentation can be found here: https://help.upbase.io/category/4-gettings-started
+- The official Upbase documentation can be found here: [https://help.upbase.io/category/4-gettings-started](https://help.upbase.io/category/4-gettings-started)
 ```
 
 ### Glossary and Structure
 - Before discussing usage, it is important to understand what the different parts of Upbase's user interface are called and how it is structured.
 
 ```{seealso}
-- https://help.upbase.io/article/8-workspaces-folders-and-lists-in-upbase
+- [https://help.upbase.io/article/8-workspaces-folders-and-lists-in-upbase](https://help.upbase.io/article/8-workspaces-folders-and-lists-in-upbase)
 ```
 
 - Upon joining a team, you will be invited to the Polar Robotics *workspace*, which is "a top-level organizational unit" containing all relevant tasks for all teams.
@@ -100,8 +100,8 @@
 
 ```{seealso}
 
-- https://help.upbase.io/article/41-related-items
-- https://help.upbase.io/article/55-add-tasks-to-multiple-lists
+- [https://help.upbase.io/article/41-related-items](https://help.upbase.io/article/41-related-items)
+- [https://help.upbase.io/article/55-add-tasks-to-multiple-lists](https://help.upbase.io/article/55-add-tasks-to-multiple-lists)
 ```
 
 ### Tags
@@ -121,7 +121,7 @@
 
 ```{seealso}
 
-- https://help.upbase.io/article/30-task-tags
+- [https://help.upbase.io/article/30-task-tags](https://help.upbase.io/article/30-task-tags)
 ```
 
 
