@@ -18,12 +18,13 @@
 - Do not use capital lettering for any folder or file name without explicit approval from the project manager.
 	- The reason for this is that links in the final product (on ReadTheDocs.io) are case-sensitive. Maintaining a consistent format helps reduce errors.
 - Documentation category folder names (i.e., folders under `/docs/source/`) shall use lower kebab case (ex. `data-aq`).
-- File names for both Markdown files and assets shall use lower snake case (ex. `documentation_style_guide.md`).
+- File names for both Markdown files and assets (i.e., images) shall use lower snake case (ex. `documentation_style_guide.md`).
 	- The only exception to this is where parts of the filename may already contain dashes in a larger identifier (ex. `esp32-solo-1`).
 
 ## Writing Conventions
 - Each Markdown file shall have only one H1 tag (`#`).
-- Sectionize Markdown files intelligently.
+- Do not add spaces between consecutive headers, or between headers and their following text.
+- Organize Markdown files intelligently.
 	- If you write a brief overview of what the file is at the top, create an H2 (`##`) titled `Overview`. 
 	- Then put the rest of the content under another header, such as `Instructions`, depending on what it is.
 - Text should generally be bulleted and short. 

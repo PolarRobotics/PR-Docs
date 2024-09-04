@@ -1,6 +1,6 @@
 # Robot Wiring Diagrams
 ## Quarterback V3
-- tbd
+- stub
 
 ## Quarterback V2
 ![Quarterback Wiring Diagram](../_static/images/hardware/wiring/wd_quarterback.png)

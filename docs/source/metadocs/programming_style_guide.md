@@ -32,8 +32,7 @@ If you don't remember anything else from this document, at least remember this: 
 
 ### Code-Level
 - No `using namespace std`.
-	- Sometimes this is taught as a way to ease learning C++.
-	- Here, we don't use this in order to enhance readability. 
+	- Sometimes this is taught as a way to ease learning C++. Here, we don't use it in order to enhance readability. 
 	- See also: https://stackoverflow.com/questions/1452721/whats-the-problem-with-using-namespace-std
 - Use `#include` guards, not `#pragma once`
 	- Include guards should be named in the following format: `FILENAME_H`
