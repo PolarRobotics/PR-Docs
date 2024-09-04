@@ -86,9 +86,10 @@ python3 -m http.server -d build/html
 #### Using a Virtual Environment
 - If desired, you can create a Python virtual environment to gain access to some more useful tools.
 - First, `cd` to `/` (the `PR-Docs` folder).
-- Next, run the following commands on Linux or in WSL:
+- Next, run the following commands individually (i.e., not all at once) on Linux or in WSL:
 
 ```
+sudo apt-get install python3-venv
 python3 -m venv ./.venv
 source ./.venv/bin/activate
 pip install "rst-to-myst[sphinx]"
