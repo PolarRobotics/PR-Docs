@@ -25,8 +25,7 @@
 - Each Markdown file shall have only one H1 tag (`#`).
 - Do not add spaces between consecutive headers, or between headers and their following text.
 - Organize Markdown files intelligently.
-	- If you write a brief overview of what the file is at the top, create an H2 (`##`) titled `Overview`. 
-	- Then put the rest of the content under another header, such as `Instructions`, depending on what it is.
+	- For example, if you write a brief overview of what the file is at the top, create an H2 (`##`) titled `Overview`. Then put the rest of the content under other headers, such as `Instructions` and `Examples`.
 - Text should generally be bulleted and short. 
 	- Do not write long-form prose. Break it up into manageable chunks with bulleted or numbered lists.
 - Any reference to a version number such as "V3" shall be formatted with an uppercase `V`.
