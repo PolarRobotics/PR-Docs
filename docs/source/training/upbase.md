@@ -126,7 +126,7 @@
 
 
 ### Subtasks
-- To add subtasks (i.e., checklist items) to a task, open the task and either 1. press `S`, or 2. press the checkmark button: <br> ![Adding a subtask|450](upbase_subtask_1_add.png)
+- To add subtasks (i.e., checklist items) to a task, open the task and either 1. press `S`, or 2. press the checkmark button: <br> ![Adding a subtask|450](../_static/images/training/upbase/upbase_subtask_1_add.png)
 - You can do essentially anything with subtasks that you can do with a normal tasks, except add subtasks. For example, you can add separate due dates, assignees, priorities, tags, and descriptions.
 	- The primary difference is that subtasks typically appear in the list as part of a normal task.
 		- If a subtask is given a tag that the parent task does not have, it can appear as if it were a normal task in that tag's list/board view.
@@ -141,7 +141,7 @@
 
 #### Adding Members to a Workspace
 - In order to access any list, a team member must create an Upbase account and be added to the workspace by an admin.
-- To invite/add users to the workspace, go to the workspace `Settings` menu in the bottom left corner of the UI, then click `People`. You will then be able to `Invite People` by email. <br> ![People menu](upbase_perms_1_menu.png)
+- To invite/add users to the workspace, go to the workspace `Settings` menu in the bottom left corner of the UI, then click `People`. You will then be able to `Invite People` by email. <br> ![People menu](../_static/images/training/upbase/upbase_perms_1_menu.png)
 - When inviting new members, be careful of two things: their role and their list permissions.
 	- You can assign new members one of two roles: `Admin` or `Member`. 
 		- `Admin` should only be given to officers and team leads, as an admin will have full access to any list they are added to. 
@@ -150,11 +150,11 @@
 			- By default, `Member`s get `Full Access` to a list they are added to. 
 				- Once added to a list, a member's permissions should be changed from `Full Access` to `Can View` (view-only) or `Can Comment` (recommended for those not on the team corresponding to the list).
 				- As of 2024-09-04, these options have `(Soon)` written next to them, but are selectable after the member is added. However, they do not seem to be functional. I noticed no difference between this and `Full Access`.
-- When inviting new members, you may also give them access to any or all existing lists: <br> ![Inviting members](upbase_perms_2_invite.png)
+- When inviting new members, you may also give them access to any or all existing lists: <br> ![Inviting members](../_static/images/training/upbase/upbase_perms_2_invite.png)
 	- New members will recieve `Full Access` to any list they are added to upon being invited.
 
 #### Adding Members to a List
-- Once again, all lists are private by default. So, to add members to a list after they are added to the workspace, you must navigate to the `People and Permissions` page corresponding to the list: <br> ![Adding members to a list](upbase_perms_3_list_menu.png)
+- Once again, all lists are private by default. So, to add members to a list after they are added to the workspace, you must navigate to the `People and Permissions` page corresponding to the list: <br> ![Adding members to a list](../_static/images/training/upbase/upbase_perms_3_list_menu.png)
 	- Then, click `Add members` in the top right corner, and you will be able to select any existing member of the workspace to add to the list.
 		- You can add multiple members by clicking the dropdown menu and selecting someone multiple times.
 		- Currently, only "Full Access" is supported, but "Can View" and "Can Comment" will allegedly be available soon.
