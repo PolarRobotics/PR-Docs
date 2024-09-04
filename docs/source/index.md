@@ -17,6 +17,15 @@ metadocs/sphinx
 
 ```{toctree}
 ---
+caption: Training
+maxdepth: 1
+---
+training/upbase
+training/git
+```
+
+```{toctree}
+---
 caption: High-Level Robot Documentation
 maxdepth: 2
 ---
