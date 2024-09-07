@@ -22,15 +22,18 @@ git clone https://github.com/PolarRobotics/ESP32PRCodebase
 https://github.com/PolarRobotics/ESP32PRCodebase
 ```
 2. Open GitHub Desktop. 
-3. Click `File -> Clone repository...` <br> ![Step 2](../_static/images/training/devenv/devenv_clone_1.png){w=250px}
-4. Switch to the `URL` tab on the right. <br>![Step 3|350](../_static/images/training/devenv/devenv_clone_2.png){w=300px}
-5. In the first box (hint text `URL or username/repository`), paste the URL you copied earlier. <br> ![[devenv_clone_3.png|400]]{w=400px}
+3. Click `File -> Clone repository...` <br> ![Step 3](../_static/images/training/devenv/devenv_clone_1.png){w=250px}
+4. Switch to the `URL` tab on the right. <br>![Step 4|350](../_static/images/training/devenv/devenv_clone_2.png){w=300px}
+5. In the first box (hint text `URL or username/repository`), paste the URL you copied earlier. <br> ![Step 5|400](../_static/images/training/devenv/devenv_clone_3.png){w=400px}
 	- Alternatively, you can simply type `PolarRobotics/ESP32PRCodebase`.
 6. Change the directory (`Local path`) to something other than `C:\Users\YourName\Documents\GitHub`. 
 	- It is recommended to create a folder on your desktop or somewhere else memorable to house all your code projects. Better yet, create a subfolder there specifically for Polar Robotics, as you will eventually use more than one repo.
 7. Click `Clone`, and wait for Git to clone the repository from GitHub.
 
 ## Installing Visual Studio Code
+1. Download and run the VSCode installer from [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) <br> ![[devenv_vscode_1.png|550]]
+2. 
+
 
 
 ## Installing PlatformIO
