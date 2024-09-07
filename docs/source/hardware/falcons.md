@@ -22,4 +22,4 @@
 | Built-In Encoder Feedback          | 2048 Steps Per Rotation               |
 
 ## Motor Performance Graph
-![Motor Performance Graph](../_static/images/hardware/motors/falcon_motor_curve.png)
+![Motor Performance Graph](../_static/images/hardware/motors/falcon-motor-curve.png)

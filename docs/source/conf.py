@@ -36,8 +36,8 @@ html_css_files = ['css/custom.css']
 # https://pydata-sphinx-theme.readthedocs.io/en/latest/user_guide/branding.html
 html_theme_options = {
    "logo": {
-      "image_light": "_static/images/polar_robotics_logo_t_light.png",
-      "image_dark": "_static/images/polar_robotics_logo_t.png"
+      "image_light": "_static/images/polar-robotics-logo-t-light.png",
+      "image_dark": "_static/images/polar-robotics-logo-t.png"
    }
 }
 

@@ -10,8 +10,8 @@
 caption: Meta-Documentation
 maxdepth: 2
 ---
-metadocs/programming_style_guide
-metadocs/documentation_style_guide
+metadocs/programming-style-guide
+metadocs/documentation-style-guide
 metadocs/sphinx
 ```
 
@@ -30,7 +30,7 @@ training/devenv
 caption: High-Level Robot Documentation
 maxdepth: 2
 ---
-high-level/bot_types
+high-level/bot-types
 ```
 
 ```{toctree}
@@ -41,10 +41,10 @@ maxdepth: 1
 hardware/encoders
 hardware/esp32
 hardware/falcons
-hardware/sabertooth_2x25
-hardware/sabertooth_2x32
-hardware/tackle_sensor_rev3
-hardware/tackle_sensor_rev4
+hardware/sabertooth-2x25
+hardware/sabertooth-2x32
+hardware/tackle-sensor-rev3
+hardware/tackle-sensor-rev4
 hardware/uart
 hardware/wiring
 ```
@@ -55,10 +55,10 @@ caption: Data Acquisition
 maxdepth: 1
 ---
 data-aq/filezilla.md
-data-aq/raspberry_pi_ssh.md
-data-aq/router_setup.md
-data-aq/serial_printing.md
-data-aq/standalone_serial_monitor.md
+data-aq/raspberry-pi-ssh.md
+data-aq/router-setup.md
+data-aq/serial-printing.md
+data-aq/standalone-serial-monitor.md
 ```
 
 # Indices and tables

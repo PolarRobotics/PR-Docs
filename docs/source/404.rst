@@ -6,4 +6,4 @@
 
 Sorry, your documentation is in another castle.
 
-.. image:: _static/images/klondike_facepalm.png
+.. image:: _static/images/klondike-facepalm.png

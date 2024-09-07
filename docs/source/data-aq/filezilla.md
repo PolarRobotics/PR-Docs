@@ -7,7 +7,7 @@
 ### Windows
 - Click [here](https://filezilla-project.org/download.php?show_all=1) to go to FileZilla's download page. Download the setup.exe for 64bit x86: 
 
-![data_aq_filezilla_win_dl.png](../_static/images/data-aq/data_aq_filezilla_win_dl.png)
+![data-aq-filezilla-win-dl.png](../_static/images/data-aq/data-aq-filezilla-win-dl.png)
 
 - Run the installer and you're good to go.
 
@@ -32,9 +32,9 @@ Refer to your distro's guide on building/installing packages.
 
 ## IP Configuration
 1. Open FileZilla. You will find the following boxes at the top of your screen:
-![data_aq_filezilla_ipconfig.png](../_static/images/data-aq/data_aq_filezilla_ipconfig.png)
+![data-aq-filezilla-ipconfig.png](../_static/images/data-aq/data-aq-filezilla-ipconfig.png)
 
 2. You want to use the same information that you used in `Raspberry-Pi-SSH.md`. It should look something like this:
-![data_aq_filezilla_ipconfig_2.png](../_static/images/data-aq/data_aq_filezilla_ipconfig_2.png)
+![data-aq-filezilla-ipconfig-2.png](../_static/images/data-aq/data-aq-filezilla-ipconfig-2.png)
 
 3. When you press `Quickconnect` it will automatically connect to the Raspberry Pi/other device and show it's directory. This will allow you to download the testing `.csv` files from the Pi.

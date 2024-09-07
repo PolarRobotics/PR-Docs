@@ -1,7 +1,7 @@
 # Programming Style Guide
 ## Overview
 - This document contains rules that are to be followed when creating or updating the primary robot code repositories (e.g., [ESP32PRCodebase](https://github.com/PolarRobotics/ESP32PRCodebase)).
-- There are three main areas: [programming principles](./programming_style_guide#programming-principles), [naming conventions](./programming_style_guide#naming-conventions), and [formatting](./programming_style_guide#formatting). Most formatting can be done automatically using the [astyle](./programming_style_guide#astyle) formatter.
+- There are three main areas: [programming principles](./programming-style-guide.md#programming-principles), [naming conventions](./programming-style-guide.md#naming-conventions), and [formatting](./programming-style-guide.md#formatting). Most formatting can be done automatically using the [astyle](./programming-style-guide.md#astyle) formatter.
 - All code that is in the `production`, `dev/main`, or `dev/experimental` branches *must* follow this guide unless explicit approval is granted by the programming team lead.
 	- You should strive to follow this guide as you are writing code. However, this is not always feasible, so you should make sure to clean up your code before submitting a pull request to one of the three aforementioned branches.
 - This guide may seem strict, and it is, but for good reason:
@@ -101,7 +101,7 @@ class Foo {
 - Whatever you do, be consistent.
 - Don't violate one of these rules unless you have a good reason.
 	- You should also ask the programming team lead first.
-	- Most formatting can be done automatically by [astyle](./programming_style_guide#astyle) (see the section below).
+	- Most formatting can be done automatically by [astyle](./programming-style-guide.md#astyle) (see the section below).
 
 ### Things astyle *cannot* do automatically
 - Functions with a long list of parameters shall be formatted with the parameters on line(s) after the opening parenthesis `(` with a single tab indent, with the closing parenthesis `)` and opening brace `{` on the next line. For example:
@@ -131,7 +131,7 @@ class Foo : Bar, Car {
 }
 ```
 - Constructor parameters that directly initialize a class member shall be named the same as the class member, and the `this` keyword shall be used to reference the class member. See the codeblock above for an example.
-- As of 2024-08-25, `astyle` may move the `*` or `&` of pointer dereferences or address references. [This is a known issue and is being worked on.](https://sourceforge.net/p/astyle/bugs/578/) Fix appropriately or surround with `astyle` guards (see [here](./programming_style_guide#disabling-formatting-sectionally)).
+- As of 2024-08-25, `astyle` may move the `*` or `&` of pointer dereferences or address references. [This is a known issue and is being worked on.](https://sourceforge.net/p/astyle/bugs/578/) Fix appropriately or surround with `astyle` guards (see [here](./programming-style-guide.md#disabling-formatting-sectionally)).
 
 ### Things astyle can do automatically
 - `public` and `private` keywords inside `class` headers shall be indented one tab. Class members under them shall be indented two tabs.
@@ -155,7 +155,7 @@ char *str2 = "Foo Bar";
 
 - Pointer dereferences and address references shall be formatted with the `*` or `&` directly attached to the identifier name.
 	- Be careful to distinguish between these and pointer/reference declarations.
-	- As of 2024-08-25, `astyle` may move the `*` or `&` of pointer dereferences or address references. [This is a known issue and is being worked on.](https://sourceforge.net/p/astyle/bugs/578/) Fix appropriately or surround with `astyle` guards (see [here](./programming_style_guide#disabling-formatting-sectionally)).
+	- As of 2024-08-25, `astyle` may move the `*` or `&` of pointer dereferences or address references. [This is a known issue and is being worked on.](https://sourceforge.net/p/astyle/bugs/578/) Fix appropriately or surround with `astyle` guards (see [here](./programming-style-guide.md#disabling-formatting-sectionally)).
 ```cpp
 // correct
 void foo(int bar, int* ptr);

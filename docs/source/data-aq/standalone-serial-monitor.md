@@ -1,15 +1,15 @@
 # Serial Monitor Program
 ## Overview
 This guide goes over the basics of how to get the standalone data acquisition program up and running a Raspberry Pi without a web interface. Be sure to read these beforehand:
-- [Router Setup](./router_setup.md)
-- [Raspberry Pi SSH](./raspberry_pi_ssh.md)
+- [Router Setup](./router-setup.md)
+- [Raspberry Pi SSH](./raspberry-pi-ssh.md)
 - [FileZilla](./filezilla.md)
 
 ## Instructions
 1. On GitHub, you will find a repository titled `PR-Data-Aq`. Under this repository you want to download the latest release of `SerialMonitor.py` from the `standalone` branch.
 2. Using FileZilla or any other file transfer means, copy `SerialMonitor.py` from your computer into the Pi's home directory:
 
-![data_aq_list.png](../_static/images/data-aq/data_aq_list.png)
+![data-aq-list.png](../_static/images/data-aq/data-aq-list.png)
 	
 3. Run the program using the following command:
 ```bash

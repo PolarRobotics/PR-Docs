@@ -4,7 +4,7 @@
 - Linemen are the most basic in terms of functionality. 
 - Their primary purpose is to initiate physical contact with opposing bots. 
 - They have no unique features and their only controllable aspect is basic movement.
-	- All other robots with the exception of the [Quarterback V3](bot_types.md#quarterback-v3) Turret have a superset of the controls listed below.
+	- All other robots with the exception of the [Quarterback V3](./bot-types.md#quarterback-v3) Turret have a superset of the controls listed below.
 
 ### Current Linemen
 - `i++`
@@ -138,19 +138,19 @@
 | Left Y-Axis  | Absolute Analog Flywheel Speed Control | `setFlywheelSpeed` |
 | Right X-Axis | Aim Turret (Left = CCW, Right = CW)    | `moveTurret`       |
 
-| Button             | Action                                                         | Function                     |
-| ------------------ | -------------------------------------------------------------- | ---------------------------- |
-| D-Pad Up           | Increase Flywheel Speed                                        | `adjustFlywheelSpeedStage`   |
-| D-Pad Down         | Decrease Flywheel Speed                                        | `adjustFlywheelSpeedStage`   |
-| Triangle           | Intake Ball from [Mecanum Center](bot_types.md#mecanum-center) | `loadFromCenter`             |
-| Cross              | Handoff to [Running Back](./bot_types.md#running-back)         | `handoff`                    |
-| Square             | Toggle Power to Flywheels/Turret                               | `setEnabled`                 |
-| Circle             | Startup and Zero Turret                                        | `reset`, `zeroTurret`        |
-| Touchpad           | Emergency Stop Turret                                          | `emergencyStop`              |
-| Options            | Toggle Auto/Manual Targeting                                   | `switchMode`                 |
-| Right Button (R1)  | Target Receiver 2                                              | `switchTarget`, `switchMode` |
-| Right Trigger (R2) | Launch (cradle forward)                                        | `moveCradle`                 |
-| Left Button (L1)   | Target Receiver 1                                              | `switchTarget`, `switchMode` |
+| Button             | Action                                                           | Function                     |
+| ------------------ | ---------------------------------------------------------------- | ---------------------------- |
+| D-Pad Up           | Increase Flywheel Speed                                          | `adjustFlywheelSpeedStage`   |
+| D-Pad Down         | Decrease Flywheel Speed                                          | `adjustFlywheelSpeedStage`   |
+| Triangle           | Intake Ball from [Mecanum Center](./bot-types.md#mecanum-center) | `loadFromCenter`             |
+| Cross              | Handoff to [Running Back](./bot-types.md#running-back)           | `handoff`                    |
+| Square             | Toggle Power to Flywheels/Turret                                 | `setEnabled`                 |
+| Circle             | Startup and Zero Turret                                          | `reset`, `zeroTurret`        |
+| Touchpad           | Emergency Stop Turret                                            | `emergencyStop`              |
+| Options            | Toggle Auto/Manual Targeting                                     | `switchMode`                 |
+| Right Button (R1)  | Target Receiver 2                                                | `switchTarget`, `switchMode` |
+| Right Trigger (R2) | Launch (cradle forward)                                          | `moveCradle`                 |
+| Left Button (L1)   | Target Receiver 1                                                | `switchTarget`, `switchMode` |
 
 ## Kicker
 ### Description

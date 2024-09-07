@@ -18,8 +18,7 @@
 - Do not use capital lettering for any folder or file name without explicit approval from the project manager.
 	- The reason for this is that links in the final product (on ReadTheDocs.io) are case-sensitive. Maintaining a consistent format helps reduce errors.
 - Documentation category folder names (i.e., folders under `/docs/source/`) shall use lower kebab case (ex. `data-aq`).
-- File names for both Markdown files and assets (i.e., images) shall use lower snake case (ex. `documentation_style_guide.md`).
-	- The only exception to this is where parts of the filename may already contain dashes in a larger identifier (ex. `esp32-solo-1`).
+- File names for Markdown files and assets (i.e., images) shall use lower kebab case (ex. `documentation-style-guide.md`).
 
 ## Writing Conventions
 - Each Markdown file shall have only one H1 tag (`#`).
@@ -38,21 +37,22 @@
 ## Linking and Embedding
 - In order to link from one Markdown file to another, use the format below. 
 	- For instance, linking to the [Sphinx](./sphinx) page in this directory would take the form `[Sphinx](./sphinx)`, where the `.` denotes the current directory.
-	- However, linking to a file in another directory, such as [Bot Types](../high-level/bot_types), would look like this: `[Bot Types](../high-level/bot_types)`, where `..` denotes the parent of the current directory.
+	- However, linking to a file in another directory, such as [Bot Types](../high-level/bot-types.md), would look like this: `[Bot Types](../high-level/bot-types)`, where `..` denotes the parent of the current directory.
 ```
 [Link Display Name](relative path with space escapes)
 ```
 - In order to link to a heading in the same file, use the format below.
 	- Linking to the heading in another file essentially follows the same rules as above. 
-	- ReadTheDocs provides heading links for each note with forced lowercase and spaces formatted as dashes. For instance, linking to [this header](./documentation_style_guide#linking-and-embedding) would look like this: `[this header](#linking-and-embedding)`
+	- ReadTheDocs provides heading links for each note with forced lowercase and spaces formatted as dashes. For instance, linking to [this header](./documentation-style-guide.md#linking-and-embedding) would look like this: `[this header](./documentation-style-guide.md#linking-and-embedding)`
+		- You can omit the `./current-file-name`, but Sphinx will throw a `myst.xref_missing` warning if you do this. This does not actually affect functionality.
 ```
-[Link Display Name](#lower-kebab-case-heading-name)
+[Link Display Name](./current-file-name#lower-kebab-case-heading-name)
 ```
 - To embed an image, prefix a link to the image with an exclamation point (`!`).
 	- Some other URLs or assets can also be embedded this way, if Sphinx/ReadTheDocs supports them.
-	- For example, including `/docs/source/_static/images/klondike_facepalm.png` from *this file* would look like this: `![Image Alt Text](../_static/images/klondike_facepalm.png)`
+	- For example, including `/docs/source/_static/images/klondike-facepalm.png` from *this file* would look like this: `![Image Alt Text](../_static/images/klondike-facepalm.png)`
 	- To change the size or alignment of an image, use `attrs_inline` syntax.
-		- For example, to center align an image and set the width to 100 pixels: `![Image Alt Text](../_static/images/klondike_facepalm.png){w=100px align=center}`
+		- For example, to center align an image and set the width to 100 pixels: `![Image Alt Text](../_static/images/klondike-facepalm.png){w=100px align=center}`
 		- See also: https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html
 - Although it may be easiest to edit the documentation repository in Obsidian, regular Obsidian double-bracket links do **not** work.
 	- However, this type of HTML *file* link does work in Obsidian. 

@@ -1,9 +1,9 @@
 # Old Tackle Sensors (Rev3)
 ## Diagrams
-![ND tackle sensor](../_static/images/hardware/ts_rev3/ts_rev3.png)
-![TS Sheet1](../_static/images/hardware/ts_rev3/ts_rev3_sheet1.png)
-![TS Sheet2](../_static/images/hardware/ts_rev3/ts_rev3_sheet2.png)
-![TS Rev3 Schematic](../_static/images/hardware/ts_rev3/ts_rev3_schematic.png)
+![ND tackle sensor](../_static/images/hardware/ts-rev3/ts-rev3.png)
+![TS Sheet1](../_static/images/hardware/ts-rev3/ts-rev3-sheet1.png)
+![TS Sheet2](../_static/images/hardware/ts-rev3/ts-rev3-sheet2.png)
+![TS Rev3 Schematic](../_static/images/hardware/ts-rev3/ts-rev3-schematic.png)
 
 ## Rules related to tackle sensor and LEDs:
 1. A specified digital accelerometer (tackle sensor) is required to sense if an upsetting event (knockdown, fall down, or tackle) has occurred. The code determining if an upsetting event has occurred, based on the accelerometer's output, will be provided. The tackle sensor must be rigidly mounted in a horizontal orientation to a horizontal interior surface of each Player's base plate in a manner that enables a trainer to manually activate the reset button on the tackle sensor within 10 seconds and a cable to be attached to reload the tackle sensor software within 1 minute. The tackle sensor must also be mounted so that when the unit faces directly downfield, the tackle sensor is square to the end zone.

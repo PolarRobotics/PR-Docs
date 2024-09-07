@@ -23,23 +23,23 @@
 
 - If the port isn't found, you must run `sudo raspi-config` to enter the Raspbian configuration screen and enable the firmware. This brings you to following screen:
 
-![Step 1](../_static/images/hardware/uart/uart_config_1.png)
+![Step 1](../_static/images/hardware/uart/uart-config-1.png)
 
 - From there, you must navigate to `Interface Options` and then `Serial Port`, using the arrow keys for navigation and the `ENTER` key for selection.
 
-![Step 2](../_static/images/hardware/uart/uart_config_2.png)
+![Step 2](../_static/images/hardware/uart/uart-config-2.png)
 
 - Select `<No>` for the first option.
 
-![Step 3](../_static/images/hardware/uart/uart_config_3.png)
+![Step 3](../_static/images/hardware/uart/uart-config-3.png)
 
 - Then select `<Yes>` for the second.
 
-![Step 4](../_static/images/hardware/uart/uart_config_4.png)
+![Step 4](../_static/images/hardware/uart/uart-config-4.png)
 
 - You should then see the following screen:
 
-![Step 5](../_static/images/hardware/uart/uart_config_5.png)
+![Step 5](../_static/images/hardware/uart/uart-config-5.png)
 
 - When prompted to reboot, select `yes`. If you're not prompted to reboot, hit the `TAB` key twice and press `ENTER` to select `Finish`. 
 - Once the device reboots, you should now be able to find the aforementioned `S0` port.
@@ -51,7 +51,8 @@ Uart communication on [Raspbian](https://www.raspbian.org)-based Pi systems can 
 To run pigpio-based programs with Python in Raspbian, you must first launch the pigpio daemon with the commannd `sudo pigpiod`
 
 To use pigpio in your Python program, simply import the module and initalize an object of the pigpio class.
-[pigpio instantiation](../_static/images/hardware/uart/uart_init_pigpio.png)
+
+![pigpio instantiation](../_static/images/hardware/uart/uart-init-pigpio.png)
 
 Documentation for pigpio can be found at the site hyperlinked above.
 
@@ -68,7 +69,7 @@ It then sends the message itself, and waits for a message to be sent by the pi, 
 
 On the Pi side, a "serial handle" is created by specifying the UART port, baudrate, and an optional 'serial flag' parameter. This handle is passed as a parameter to all subsequent UART reading/writing function calls.
 
-![](../_static/images/hardware/uart/uart_serial_handle.png)
+![UART Serial Handle](../_static/images/hardware/uart/uart-serial-handle.png)
 
 More information can be found [here](http://abyz.me.uk/rpi/pigpio/python.html#serial_open). 
 
