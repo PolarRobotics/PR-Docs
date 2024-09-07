@@ -32,6 +32,7 @@ pip install sphinx-book-theme
 pip install myst-parser
 pip install "rst-to-myst[sphinx]"
 pip install sphinx-notfound-page
+pip install sphinx-copybutton
 ```
 - The following steps should be done inside WSL (or in your terminal, if on Linux or MacOS).
 - Update your packages via your package manager.
@@ -48,6 +49,7 @@ pip install sphinx-notfound-page
 - It is recommended to install the [MyST extension](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight) as this is the flavor of Markdown being used for our documentation.
 	- After installation, when editing a Markdown file in VS Code, you can press `Ctrl+K`, then `V` to open a pane to render the Markdown source file, providing you a preview of the file you are working on.
 - Install the notfound-page extension with `pip install sphinx-notfound-page`.
+- Install the codeblock copy button extension with `pip install sphinx-copybutton`.
 
 #### Contributing
 - First, clone this repo (`PR-Docs`) to a suitable location on your computer. 

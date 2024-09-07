@@ -10,7 +10,25 @@
 	- A GitHub account
 
 ## Cloning the Polar Robotics repository
+### Command-Line
+- If you are comfortable with the Git command-line interface, you can simply run the command below from your desired parent directory.
+```sh
+git clone https://github.com/PolarRobotics/ESP32PRCodebase
+```
 
+### Graphical
+1. Copy the link below. Tip: hovering over the top right of the codeblock will reveal a button you can click to copy the contents of the codeblock to your clipboard.
+```
+https://github.com/PolarRobotics/ESP32PRCodebase
+```
+2. Open GitHub Desktop. 
+3. Click `File -> Clone repository...` <br> ![Step 2](../_static/images/training/devenv/devenv_clone_1.png){w=250px}
+4. Switch to the `URL` tab on the right. <br>![Step 3|350](../_static/images/training/devenv/devenv_clone_2.png){w=300px}
+5. In the first box (hint text `URL or username/repository`), paste the URL you copied earlier. <br> ![[devenv_clone_3.png|400]]{w=400px}
+	- Alternatively, you can simply type `PolarRobotics/ESP32PRCodebase`.
+6. Change the directory (`Local path`) to something other than `C:\Users\YourName\Documents\GitHub`. 
+	- It is recommended to create a folder on your desktop or somewhere else memorable to house all your code projects. Better yet, create a subfolder there specifically for Polar Robotics, as you will eventually use more than one repo.
+7. Click `Clone`, and wait for Git to clone the repository from GitHub.
 
 ## Installing Visual Studio Code
 

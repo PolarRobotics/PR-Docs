@@ -22,6 +22,7 @@ maxdepth: 1
 ---
 training/upbase
 training/git
+training/devenv
 ```
 
 ```{toctree}
