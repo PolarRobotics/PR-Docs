@@ -30,7 +30,7 @@ For reference, here is the diagram of the taskbar again: ![Step 1|550](../_stati
 		- If you are asked by someone outside the programming team to "upload code" to a robot, you should upload `production` code.
 3. Select the `env:robot` environment.
 4. Click the build-upload button (right arrow) in the PlatformIO taskbar.
-5. If the build process completes successfully, you will soon see something like this: <br> ![Uploading](../_static/images/training/upload-1.png)
+5. If the build process completes successfully, you will soon see something like this: <br> ![Uploading](../_static/images/training/upload-1.png){w=200px}
  6. Depending on your computer, once these dots begin to appear, you may have to hold down the `BOOT` button on the ESP until they stop appearing, at which point you can release the button.
 	 - This is required because the ESP must be in a specific boot mode in order to be *flashed* (have its code replaced in flash memory).
 	 - Whether this is necessary or not differs between computer, with no reliable way of predicting which computers require it and which do not. It is, in almost all cases, always the same every time you upload with the same computer.
