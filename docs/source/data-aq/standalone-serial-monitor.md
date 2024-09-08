@@ -17,7 +17,7 @@ python ./SerialMonitor.py
 ```
 
 4. The program will begin running and will ask you for the name of the file you want to output to.
-	- ==Do not include an extension, `.csv` will be added for you.==
+	- **Do not include an extension, `.csv` will be added for you.**
 
 6. The data acquisition will commence. Once you are finished with your tests, hit `ENTER` on your keyboard to immediately terminate the program.
 

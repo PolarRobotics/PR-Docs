@@ -43,3 +43,4 @@ html_theme_options = {
 
 # -- MyST-Parser Specific Options
 myst_enable_extensions = ["colon_fence", "attrs_inline"]
+myst_heading_anchors = 6 # prevents MyST from throwing myst.xref_missing warnings during build

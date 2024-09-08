@@ -30,15 +30,35 @@ websites
 ````
 
 ### Generating TOCs
-- It is easier to generate TOCs using `tree`.
+- It is easier to generate TOCs using the `tree` command (available in most Linux distributions, or via WSL or MSYS2).
   - For instance, to list all the files in `docs/source/hardware` in the format needed to place in the TOC in `index.md`, use the command below.
     - The `sed` command uses regex to remove the extensions from any files.
-	    - Including `.md` or other file extensions in the filenames within the `toctree` will prevent them from linking properly.
-
+	    - ~~Including `.md` or other file extensions in the filenames within the `toctree` will prevent them from linking properly.~~ This seems to have been true at one time but does not currently seem to be the case.
 
 ```sh
 # from /docs/source
 tree -if --noreport hardware | sed 's/\.[^.]*$//'
+```
+
+### Admonitions/Callouts
+- Admonitions or callouts can be created using the syntax below.
+	- The `:class:` has several possible options. The most common are `note`, `tip`, and `seealso`. 
+		- See the [MyST documentation](https://mystmd.org/guide/admonitions) for more details on this.
+
+````
+```{admonition} Title
+:class: note
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+```
+````
+
+- The above syntax renders as:
+
+```{admonition} Title
+:class: note
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 ```
 
 ## Hosting on ReadTheDocs

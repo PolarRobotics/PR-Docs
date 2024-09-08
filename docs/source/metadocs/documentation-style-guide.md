@@ -43,10 +43,9 @@
 ```
 - In order to link to a heading in the same file, use the format below.
 	- Linking to the heading in another file essentially follows the same rules as above. 
-	- ReadTheDocs provides heading links for each note with forced lowercase and spaces formatted as dashes. For instance, linking to [this header](./documentation-style-guide.md#linking-and-embedding) would look like this: `[this header](./documentation-style-guide.md#linking-and-embedding)`
-		- You can omit the `./current-file-name`, but Sphinx will throw a `myst.xref_missing` warning if you do this. This does not actually affect functionality.
+	- ReadTheDocs provides heading links for each note with forced lowercase and spaces formatted as dashes. For instance, linking to [this header](#linking-and-embedding) would look like this: `[this header](#linking-and-embedding)`
 ```
-[Link Display Name](./current-file-name#lower-kebab-case-heading-name)
+[Link Display Name](#lower-kebab-case-heading-name)
 ```
 - To embed an image, prefix a link to the image with an exclamation point (`!`).
 	- Some other URLs or assets can also be embedded this way, if Sphinx/ReadTheDocs supports them.

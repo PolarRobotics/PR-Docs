@@ -8,7 +8,7 @@
 ```{toctree}
 ---
 caption: Meta-Documentation
-maxdepth: 2
+maxdepth: 1
 ---
 metadocs/programming-style-guide
 metadocs/documentation-style-guide
@@ -23,6 +23,7 @@ maxdepth: 1
 training/upbase
 training/git
 training/devenv
+training/uploading-code
 ```
 
 ```{toctree}

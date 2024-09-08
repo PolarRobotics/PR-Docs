@@ -131,7 +131,7 @@ class Foo : Bar, Car {
 }
 ```
 - Constructor parameters that directly initialize a class member shall be named the same as the class member, and the `this` keyword shall be used to reference the class member. See the codeblock above for an example.
-- As of 2024-08-25, `astyle` may move the `*` or `&` of pointer dereferences or address references. [This is a known issue and is being worked on.](https://sourceforge.net/p/astyle/bugs/578/) Fix appropriately or surround with `astyle` guards (see [here](./programming-style-guide.md#disabling-formatting-sectionally)).
+- As of 2024-08-25, `astyle` may move the `*` or `&` of pointer dereferences or address references. [This is a known issue and is being worked on.](https://sourceforge.net/p/astyle/bugs/578/) Fix appropriately or surround with `astyle` guards (see [here](#disabling-formatting-sectionally)).
 
 ### Things astyle can do automatically
 - `public` and `private` keywords inside `class` headers shall be indented one tab. Class members under them shall be indented two tabs.
@@ -155,7 +155,7 @@ char *str2 = "Foo Bar";
 
 - Pointer dereferences and address references shall be formatted with the `*` or `&` directly attached to the identifier name.
 	- Be careful to distinguish between these and pointer/reference declarations.
-	- As of 2024-08-25, `astyle` may move the `*` or `&` of pointer dereferences or address references. [This is a known issue and is being worked on.](https://sourceforge.net/p/astyle/bugs/578/) Fix appropriately or surround with `astyle` guards (see [here](./programming-style-guide.md#disabling-formatting-sectionally)).
+	- As of 2024-08-25, `astyle` may move the `*` or `&` of pointer dereferences or address references. [This is a known issue and is being worked on.](https://sourceforge.net/p/astyle/bugs/578/) Fix appropriately or surround with `astyle` guards (see [here](#disabling-formatting-sectionally)).
 ```cpp
 // correct
 void foo(int bar, int* ptr);
