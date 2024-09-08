@@ -1,4 +1,4 @@
-# Setting up your Development Environment
+# Development Environment Setup
 ## Overview
 - In this tutorial, you will install Visual Studio Code with the PlatformIO extension and other extensions necessary to work with the Polar Robotics codebase. Finally, you will compile and build the project to prepare for the next step – [uploading code to a robot](./uploading-code).
 

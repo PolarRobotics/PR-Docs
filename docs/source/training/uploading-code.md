@@ -38,7 +38,7 @@ For reference, here is the diagram of the taskbar again: ![Step 1|550](../_stati
 	 - If the loading bar reaches ~40 dots, the upload process will exit with the following error: <br> ![Error|600](../_static/images/training/upload-wrong-boot-mode.png)
 	 - The `BOOT` button is one of the two buttons directly adjacent to the USB-C or USB Micro-B port on the ESP32, the other being the `EN` button.
 		 - The `EN` button, short for *enable*, is functionally a "reset" or "restart" button.
-		 - This pinout diagram also shows the buttons, their positions, and their labels: <br> ![ESP-pinout|500](../_static/images/hardware/esp/esp32-pinout.png)
+		 - This pinout diagram also shows the buttons, their positions, and their labels: <br> ![ESP-pinout|500](../_static/images/hardware/esp/esp32-pinout.png){w=500px}
 
 ## Configuring the Robot Parameters
 1. Follow Steps 1 and 2 of [Uploading Production Robot Code](#uploading-production-robot-code).
