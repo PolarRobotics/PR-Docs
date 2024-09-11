@@ -9,6 +9,7 @@
 		- These pins connect to various features that are exclusive to special bots, such as conveyor belts and flywheels. 
 	- The ninth pin declared connects to the LED lights on the outside of a robot. 
 	- Lastly, the tenth pin declared appears to connect to a robot's tackle sensor, which detects when a robot has been hit.
+	- The full pin spreadsheet can be found [here](https://docs.google.com/spreadsheets/d/17pdff4T_3GTAkoctwm2IMg07Znoo-iJkyDGN5CqXq3w/edit?gid=0#gid=0).
 - This file also contains a global `enum` variable named `BOT_STATE`. 
 	- This variable contains six different enumerations reflecting different states of a robot, which is used to determine the color of the robot's LED lighting. 
 		- The first state, `PAIRING`, indicates that the robot is currently attempting to pair with a controller. 
