@@ -58,8 +58,8 @@ Walk before you run. Build up to achieving the objectives outlined below. Try to
 - **O3** – Send the output of one joystick of the PS5 controller to the serial monitor.
 - Make a button press of the PS5 controller trigger your "drive forward" code from before.
 - Send the output of one joystick from the PS5 controller to a motor.
-- Implement a control scheme.v
-- **O4** – Drive a lineman from a controller.
+- Implement a control scheme.
+- **O4** – Drive a robot from a controller.
 - **C3** – Implement an acceleration curve to your drive controls.
 
 ## Creating a PlatformIO Project
@@ -152,7 +152,8 @@ void loop()
   - This means that the digital signal switches between `1` and `0` at varying time intervals, in our case from 1000 to 2000 ns. 
     - Power is most negative at a pulse width of 1000 ns, zero at 1500 ns, and most positive at 2000 ns.
       - Note that this means that "0% power" is NOT a value (digital value or pulse width) of zero!
-- The image below provides a visual reference. The blue bars represent the pulses of varying width, while the black bar can be viewed as the motor power as a decimal value from -1 to 1.
+- The image below provides a visual reference. The blue bars represent the pulses of varying width, while the black bar can be viewed as the motor power as a decimal value from -1 to 1 (-100% power to 100% power).
+	- It is strongly recommended to utilize this range.
       
 ![PWM](../_static/images/training/programming-cyoa/pwm.png)
 ```
@@ -162,6 +163,7 @@ void loop()
 
 - The Arduino framework component LEDC (short for LED Control) can be used to deliver PWM signals using the functions `ledcSetup`, `ledcAttachPin`, and `ledcWrite`. However, this is not the only way to achieve PWM control.
 ```
+
 :::{admonition} Solution
 :class: hint dropdown
 
@@ -229,3 +231,72 @@ void loop()
 }
 ```
 :::
+
+## Serial Monitor and Bluetooth Pairing
+- Your third objective is to achieve a live view of the PS5 controller output on the serial monitor.
+	- To do this, you must be able to: 1. send messages over the serial connection, and 2. connect to a PS5 controller.
+- In order to achieve this objective, you will at minimum require the following information:
+	- The MAC addresses of our PS5 controllers begin with either `bc:c7:46:03` or `bc:c7:46:04`.
+- Again, walk before you run. Start with sending a simple string message over the serial connection.
+- **Challenge 2** is to implement Bluetooth pairing from scratch. 
+
+```{admonition} Hint: Function to send message over serial connection
+:class: hint dropdown
+
+- You can use `Serial.print("Your String Here");` to print a string to the serial monitor.
+	- Similarly, you can use `Serial.print(yourVariableName);` to print the contents of a variable.
+- In our production code, for constant strings, we use the flash helper define `F()` like so: `Serial.print(F("Your constant string here"));`. 
+	- Note that this will *not* work for printing variables or anything that is not known at compile time.
+```
+
+```{admonition} Hint: Link to resource for Bluetooth pairing
+:class: hint dropdown
+
+- You may find the following resource useful: [https://github.com/espressif/arduino-esp32/blob/master/libraries/BluetoothSerial/examples/DiscoverConnect/DiscoverConnect.ino](https://github.com/espressif/arduino-esp32/blob/master/libraries/BluetoothSerial/examples/DiscoverConnect/DiscoverConnect.ino)
+```
+
+```{admonition} Partial Solution: Pairing Code
+:class: hint dropdown
+
+- Download the following two files from our codebase and place them in a folder named `Pairing`, under the folder containing your `main.cpp`:
+	- [src/Pairing/Pairing.h](https://github.com/PolarRobotics/ESP32PRCodebase/blob/production/src/Pairing/pairing.h)
+		- Make sure to `#include <Pairing/pairing.h>` in your `main.cpp`.
+		- You will also need to comment out `#include "PolarRobotics.h"` from `pairing.h`, since you won't have that file (and shouldn't need it for this tutorial).
+	- [src/Pairing/Pairing.cpp](https://github.com/PolarRobotics/ESP32PRCodebase/blob/production/src/Pairing/pairing.cpp)
+- In your `setup()` function, you will need to call `activatePairing()` (it requires no arguments).
+- Then, once the ESP starts, it will begin flashing the blue LED slowly once per second for 15 seconds. During this time, it will be searching for the last controller it paired to. If you don't have this controller, you will need to wait 15 seconds until it begins to double-blink.
+	- If you were provided a full robot and controller, most likely they will already be paired.
+- Then, hold down the PS5 controller button for a few seconds to place it into pairing mode. It will also begin to double-blink.
+- When the ESP has selected a device to pair to, it will begin to blink rapidly.
+- You can find more information about the pairing process [here](https://docs.google.com/document/d/1KQmbl237u91X4LAVBJk75vgn8pVSgI4H8PODS9TXTxI/edit?usp=sharing).
+```
+
+## Controlling the Robot
+- Your final objective is to implement a control scheme to drive the robot.
+- In order to control the PS5 controller, you will need to use the [ps5-esp32](https://github.com/rodneybakiskan/ps5-esp32) library.
+	- The easiest way to use this is to copy the `ps5-esp32-main` folder from our codebase's `lib` folder to your project's `lib` folder: <br> ![PS5 Library|250](../_static/images/training/programming-cyoa/ps5-esp32-lib.png){w=225px}
+- While the other challenges are feasible for this training, attempting to build a communication interface for the PS5 controller from scratch is far outside the scope of a beginner project, and frankly is something that we realistically wouldn't do either (hence why we used this library). So don't try to do it.
+	- However, you should be able to analyze the library's source code and determine which functions to use. If you aren't able to, there are some hints below.
+- You are encouraged to be creative with your control scheme, although controlling the robot will be easiest if you use the joysticks in an intuitive manner.
+- **Challenge 3** can be done after you have a basic drive control code working. Adding some non-linearity to the power of the motors will help prevent loss of traction.
+
+```{admonition} Hint: What header to include for the PS5 library
+:class: hint dropdown
+
+`#include <ps5Controller.h>`
+```
+
+```{admonition} Hint: How to call the library functions
+:class: hint dropdown
+
+- The PS5 library defines a global ps5 controller instance `ps5`. You can use this to call any of the functions defined in `ps5Controller.h`. For instance, `ps5.isConnected()` will return true if the controller is connected.
+```
+
+```{admonition} Hint: Concepts for control schemes
+:class: hint dropdown
+
+- The two most common control schemes are:
+	1. "Tank" drive, where the left joystick's Y (forward-backward) axis controls the left motor's power, and vice versa for the right joystick and motor.
+	2. "Arcade" drive, where the left joystick's Y axis controls the forward-backward motion of *both* motors, and the right joystick's X axis controls the Z axis rotation/turning of the robot.
+- You can find more information and tutorials on implementing these control schemes by using these keywords.
+```
