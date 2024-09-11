@@ -24,6 +24,7 @@ training/upbase
 training/git
 training/devenv
 training/uploading-code
+training/programming-cyoa
 ```
 
 ```{toctree}

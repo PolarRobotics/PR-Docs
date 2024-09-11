@@ -33,7 +33,9 @@ pip install myst-parser
 pip install "rst-to-myst[sphinx]"
 pip install sphinx-notfound-page
 pip install sphinx-copybutton
+pip install sphinx-togglebutton
 ```
+
 - The following steps should be done inside WSL (or in your terminal, if on Linux or MacOS).
 - Update your packages via your package manager.
 	- For Ubuntu, run `sudo apt-get update` and then `sudo apt-get upgrade`.
@@ -50,6 +52,7 @@ pip install sphinx-copybutton
 	- After installation, when editing a Markdown file in VS Code, you can press `Ctrl+K`, then `V` to open a pane to render the Markdown source file, providing you a preview of the file you are working on.
 - Install the notfound-page extension with `pip install sphinx-notfound-page`.
 - Install the codeblock copy button extension with `pip install sphinx-copybutton`.
+- Install the toggle button extension with `pip install sphinx-togglebutton`.
 
 #### Contributing
 - First, clone this repo (`PR-Docs`) to a suitable location on your computer. 
