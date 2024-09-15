@@ -26,6 +26,8 @@ training/git
 training/devenv
 training/uploading-code
 training/programming-cyoa
+training/docs-setup
+training/wsl
 ```
 
 ```{toctree}
