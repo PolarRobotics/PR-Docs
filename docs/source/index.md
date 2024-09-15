@@ -12,6 +12,7 @@ maxdepth: 1
 ---
 metadocs/programming-style-guide
 metadocs/documentation-style-guide
+metadocs/git-guidelines
 metadocs/sphinx
 ```
 
