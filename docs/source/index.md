@@ -38,6 +38,14 @@ high-level/bot-types
 
 ```{toctree}
 ---
+caption: Codebase
+maxdepth: 1
+---
+codebase/index
+```
+
+```{toctree}
+---
 caption: Hardware Documentation
 maxdepth: 1
 ---
