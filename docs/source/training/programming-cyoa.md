@@ -238,13 +238,18 @@ void loop()
 - In order to achieve this objective, you will at minimum require the following information:
 	- The MAC addresses of our PS5 controllers begin with either `bc:c7:46:03` or `bc:c7:46:04`.
 - Again, walk before you run. Start with sending a simple string message over the serial connection.
-- **Challenge 2** is to implement Bluetooth pairing from scratch. 
+- **Challenge 2** is to implement Bluetooth pairing from scratch (this is very difficult). 
+- If you choose not to pursue Challenge 2, in order to control the PS5 controller, you will need to use the [ps5-esp32](https://github.com/rodneybakiskan/ps5-esp32) library.
+	- The easiest way to use this is to copy the `ps5-esp32-main` folder from our codebase's `lib` folder to your project's `lib` folder: <br> ![PS5 Library|250](../_static/images/training/programming-cyoa/ps5-esp32-lib.png){w=225px}
+- While the other challenges are feasible for this training, attempting to build a communication interface for the PS5 controller from scratch is far outside the scope of a beginner project, and frankly is something that we realistically wouldn't do either (hence why we used this library). So don't try to do it.
+	- However, you should be able to analyze the library's source code and determine which functions to use. If you aren't able to, there are some hints below.
 
 ```{admonition} Hint: Function to send message over serial connection
 :class: hint dropdown
 
 - You can use `Serial.print("Your String Here");` to print a string to the serial monitor.
 	- Similarly, you can use `Serial.print(yourVariableName);` to print the contents of a variable.
+- You will also need to add `Serial.begin(115200);` to the beginning of your `setup()` function before `Serial.print()` will work.
 - In our production code, for constant strings, we use the flash helper define `F()` like so: `Serial.print(F("Your constant string here"));`. 
 	- Note that this will *not* work for printing variables or anything that is not known at compile time.
 ```
@@ -273,10 +278,6 @@ void loop()
 
 ## Controlling the Robot
 - Your final objective is to implement a control scheme to drive the robot.
-- In order to control the PS5 controller, you will need to use the [ps5-esp32](https://github.com/rodneybakiskan/ps5-esp32) library.
-	- The easiest way to use this is to copy the `ps5-esp32-main` folder from our codebase's `lib` folder to your project's `lib` folder: <br> ![PS5 Library|250](../_static/images/training/programming-cyoa/ps5-esp32-lib.png){w=225px}
-- While the other challenges are feasible for this training, attempting to build a communication interface for the PS5 controller from scratch is far outside the scope of a beginner project, and frankly is something that we realistically wouldn't do either (hence why we used this library). So don't try to do it.
-	- However, you should be able to analyze the library's source code and determine which functions to use. If you aren't able to, there are some hints below.
 - You are encouraged to be creative with your control scheme, although controlling the robot will be easiest if you use the joysticks in an intuitive manner.
 - **Challenge 3** can be done after you have a basic drive control code working. Adding some non-linearity to the power of the motors will help prevent loss of traction.
 
