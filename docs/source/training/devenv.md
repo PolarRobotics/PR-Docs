@@ -64,6 +64,13 @@ https://github.com/PolarRobotics/ESP32PRCodebase
 	- You may be asked to sign into GitHub during this process. If so, a dialog will pop up. Follow the steps to sign in and then you should be able to return to VSCode.
 15. The toast message should disappear once the project is configured. You may see some console output ending with `Project has been successfully updated!` – if you reach this point, you've successfully installed PlatformIO and configured the project! Now all that's left is to do a test build, then you can upload code to a robot.
 
+## Installing ESP32 USB Drivers
+1. Navigate to this site: [https://www.pololu.com/docs/0J7/all](https://www.pololu.com/docs/0J7/all).
+  - Basically you will need to follow the instructions on this site.
+  - For Windows, the link on the site will download the drivers for you directly.
+    - Alternatively, you can visit the download page here: [https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
+  - For Mac, the link on this site is out of date and will direct you to the main homepage of Silicon Labs. You can search for the drivers from here, or just use the link above.
+
 ## Building the Project
 1. At the bottom of the VSCode window, you will notice a status bar containing several things: <br> ![Step 1|550](../_static/images/training/devenv/devenv-build-1.png)
 	- Of these, the most important are:
