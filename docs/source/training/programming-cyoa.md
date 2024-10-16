@@ -148,7 +148,7 @@ void loop()
   1. The pins used for the lineman motors are 32 for the left motor and 33 for the right motor. They are already wired up correctly, so you only need to write your code to fit this.
   2. Controlling the motors is not as simple as the LED, nor can you simply write "0.5" to the pin to drive the motor at half power. 
      - The technology that allows us to control the motors at variable speeds is detailed in the first hint below.
-     - For **Challenge 1**, you can attempt to figure out the control method by yourself. For your reference, the motors are [AmpFlow](https://www.ampflow.com/motors/highPerformance/threeInch/) `E30-150-24` (short) or `E30-400-24` (long) 3" high-performance economy motors.
+     - For **Challenge 1**, you can attempt to figure out the control method by yourself. For your reference, the motors are [AmpFlow](https://www.ampflow.com/motors/highPerformance/threeInch/) `E30-150-24` (short) or `E30-400-24` (long) 3" high-performance economy motors. Our motor controllers are the [Sabertooth 2x25](https://polarrobotics.readthedocs.io/en/latest/hardware/sabertooth-2x25.html)s.
 
 ```{admonition} Hint: The motor control method
 :class: hint dropdown
