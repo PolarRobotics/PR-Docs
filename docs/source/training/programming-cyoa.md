@@ -69,6 +69,11 @@ Walk before you run. Build up to achieving the objectives outlined below. Try to
 PlatformIO has several example projects available from the `Project Examples` button in the Quick Access menu on the PlatformIO homepage. You may find these helpful.
 ```
 
+```{note}
+
+If you already have the ESP32PRCodebase repository open in VSCode, you will want to close it before creating a new PlatformIO project.
+```
+
 1. Navigate to the PlatformIO homepage (alien sidebar icon, `Quick Access` pane on the left, `PIO Home` dropdown, `Open`).
 2. On the right of the PlatformIO homepage, under the **Quick Access** button menu, click `New Project`. <br> ![Creating a new PIO project|600](../_static/images/training/programming-cyoa/create-pio-proj-1.png)
 3. Give the project an appropriate name. Then select the `NodeMCU-32S` board and the `Arduino` framework. You may optionally change the location. <br> ![Creating a new PIO project 2|400](../_static/images/training/programming-cyoa/create-pio-proj-2.png){w=350px}
@@ -241,6 +246,7 @@ void loop()
 - **Challenge 2** is to implement Bluetooth pairing from scratch (this is very difficult). 
 - If you choose not to pursue Challenge 2, in order to control the PS5 controller, you will need to use the [ps5-esp32](https://github.com/rodneybakiskan/ps5-esp32) library.
 	- The easiest way to use this is to copy the `ps5-esp32-main` folder from our codebase's `lib` folder to your project's `lib` folder: <br> ![PS5 Library|250](../_static/images/training/programming-cyoa/ps5-esp32-lib.png){w=225px}
+  	- Note that the image above is for illustration purposes, as this is possible only if you have ESP32PRCodebase and your new project in the same VSCode Workspace (not recommended). You will need to do this in your OS's file manager.
 - While the other challenges are feasible for this training, attempting to build a communication interface for the PS5 controller from scratch is far outside the scope of a beginner project, and frankly is something that we realistically wouldn't do either (hence why we used this library). So don't try to do it.
 	- However, you should be able to analyze the library's source code and determine which functions to use. If you aren't able to, there are some hints below.
 
