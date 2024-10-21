@@ -32,8 +32,7 @@ websites
 ### Generating TOCs
 - It is easier to generate TOCs using the `tree` command (available in most Linux distributions, or via WSL or MSYS2).
   - For instance, to list all the files in `docs/source/hardware` in the format needed to place in the TOC in `index.md`, use the command below.
-    - The `sed` command uses regex to remove the extensions from any files.
-	    - ~~Including `.md` or other file extensions in the filenames within the `toctree` will prevent them from linking properly.~~ This seems to have been true at one time but does not currently seem to be the case.
+    - The `sed` command uses regex to remove the extensions from any files. This may not be necessary (although it was at one time).
 
 ```sh
 # from /docs/source
