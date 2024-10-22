@@ -63,6 +63,10 @@ python3 -m venv ./.venv
 ```sh
 source ./.venv/bin/activate
 ```
+- If you have successfully activated hte virtual environment, your prompt should have the `(.venv)` prefix, like this:
+```
+(.venv) user@machine: /mnt/c/.../PR-Docs/docs$ 
+```
 - The rest of this tutorial assumes that you created and activated a virtual environment named `.venv`.
 
 ### Installing Packages
