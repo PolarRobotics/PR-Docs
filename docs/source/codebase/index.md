@@ -53,6 +53,7 @@ robot/motor-control-cpp
 robot/motor-control-h
 robot/quarterback-cpp
 robot/quarterback-h
+robot/quarterback-turret-cpp
 robot/robot-h
 ```
 
