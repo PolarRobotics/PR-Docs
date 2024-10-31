@@ -272,7 +272,7 @@ void loop()
 - Download the following two files from our codebase and place them in a folder named `Pairing`, under the folder containing your `main.cpp`:
 	- [src/Pairing/Pairing.h](https://github.com/PolarRobotics/ESP32PRCodebase/blob/production/src/Pairing/pairing.h)
 		- Make sure to `#include <Pairing/pairing.h>` in your `main.cpp`.
-		- You will also need to comment out `#include "PolarRobotics.h"` from `pairing.h`, since you won't have that file (and shouldn't need it for this tutorial).
+		- You will also need to comment out `#include "PolarRobotics.h"` from `pairing.h` (and anything else that generates errors), since you won't have that file (and shouldn't need it for this tutorial).
 	- [src/Pairing/Pairing.cpp](https://github.com/PolarRobotics/ESP32PRCodebase/blob/production/src/Pairing/pairing.cpp)
 - In your `setup()` function, you will need to call `activatePairing()` (it requires no arguments).
 - Then, once the ESP starts, it will begin flashing the blue LED slowly once per second for 15 seconds. During this time, it will be searching for the last controller it paired to. If you don't have this controller, you will need to wait 15 seconds until it begins to double-blink.
