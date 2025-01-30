@@ -18,6 +18,7 @@
 - `Robot/MecanumCenter.h`
 - `Robot/Kicker.h`
 - `Robot/Quarterback.h`
+- `Robot/QuarterbackBase.h`
+- `Robot/QuarterbackTurret.h`
 - `Drive/Drive.h`
 - `Drive/DriveMecanum.h`
-- `Drive/DriveQuick.h`

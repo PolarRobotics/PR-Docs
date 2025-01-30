@@ -18,8 +18,6 @@ drive/drive-cpp
 drive/drive-h
 drive/drive-mecanum-cpp
 drive/drive-mecanum-h
-drive/drive-quick-cpp
-drive/drive-quick-h
 ```
 
 ```{toctree}
@@ -51,8 +49,12 @@ robot/mecanum-center-cpp
 robot/mecanum-center-h
 robot/motor-control-cpp
 robot/motor-control-h
+robot/quarterback-base-cpp
+robot/quarterback-base-h
 robot/quarterback-cpp
 robot/quarterback-h
+robot/quarterback-turret-cpp
+robot/quarterback-turret-h
 robot/robot-h
 ```
 
@@ -65,6 +67,8 @@ utils/bot-types-cpp
 utils/bot-types-h
 utils/config-manager-cpp
 utils/config-manager-h
+utils/debouncer-cpp
+utils/debouncer-h
 utils/drive-parameters-h
 utils/motor-types-cpp
 utils/motor-types-h
