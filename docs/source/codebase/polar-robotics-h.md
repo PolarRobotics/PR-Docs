@@ -18,7 +18,6 @@
 		- The fourth state, `OFFENSE`, indicates that the robot is in an offensive position. 
 		- The fifth state, `DEFENSE`, indicates that the robot is in a defensive position. 
 		- The last state, `TACKLED`, indicates that the robot has been hit by another robot, triggering the CRFC [tackle sensor](../hardware/tackle-sensor-rev4.md).
-
 ## Included Headers
 - `Arduino.h`
 - `Utilities/BotTypes.h`

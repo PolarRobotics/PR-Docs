@@ -1,6 +1,6 @@
 # `depairingStation.cpp`
 ## Description
-- This file is meant to be used in "depairing" controllers fro0m ESPs if necessary. It should be downloaded onto a spare ESP that a controller could be paired to using this code. The main goal behind this is to ensure that there aren't two controller simultaneously paired to one active robot.
+- This file is meant to be used in "depairing" controllers from ESPs if necessary. It should be downloaded onto a spare ESP that a controller could be paired to using this code. The main goal behind this is to ensure that there aren't two controllers simultaneously paired to one active robot.
 - The function "onConnection" prints a message when the robot and a controller connect.
 - The function "onDisconnect" prints a message when the robot and a controller disconnect.
 - The setup function initializes the ESP's LEDs and starts the pairing process.
