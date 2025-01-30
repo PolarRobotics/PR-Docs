@@ -3,12 +3,12 @@
 ## Quarterback Turret
 ### Firing Controls
 ```{warning}
-Do not fire unless moving forward (do not fire when intaking or stopped)
+Do not fire unless moving forward (do _not_ fire when intaking or stopped)
 ```
 #### Automatic Controls
 | Control | Description |
 | :-----: | :---------: |
-| Options | Switch between manual and automatic control |
+| Options | Switch between manual and automatic targeting |
 | L1 | Switch Target to Reciever 1 |
 | R1 | Switch Target to Reciver 2 |
 
@@ -25,17 +25,11 @@ Do not fire unless moving forward (do not fire when intaking or stopped)
 
 | Control | Description |
 | :-----: | :---------: |
-| Touchpad | Emergency Stop |
-| Square | Toggle Flywheels & the Turret on and off |
+| Touchpad | Emergency Stop the Turret |
+| Square | Toggle Flywheels & the Turret ON and OFF |
 | Circle | Startup and Home (Reset or Zero Turret) | 
-
-_Don't ask what the Circle button does, ask Max he wrote it I think_
-
-#### Macro Controls
-| Control | Description |
-| :-----: | :---------: |
-| Triangle | Load from Center |
-| Cross | Hand off to the runnning back |
+| Triangle | Load ball from Center |
+| Cross | Handoff ball to the runnning back |
 
 aaa
 
