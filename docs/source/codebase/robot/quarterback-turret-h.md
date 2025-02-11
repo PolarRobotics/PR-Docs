@@ -235,7 +235,34 @@ As is the case for most of these variables, they are *initiated* in a `.h` file,
   - Value: True or False
   - Modifyable: YES
 - `cradleStartTime`
-  - Type: unsigned 8-bit integer
+  - Type: unsigned 32-bit integer
   - Value: defined in QuarterbackTurret.cpp
   - Modifyable: YES
+
+**Flywheel State Variables**
+- `currentFlywheelStage`
+  - Enum: `FlywheelSpeed`
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `targetFlywheelStage`
+  - Enum: `FlywheelSpeed`
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `currentFlywheelSpeed`
+  - Type: `float`
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyble: YES
+- `flywheelManualOverride`
+  - Type: boolean
+  - Value: True or False
+  - Modifyable: YES
+
+**Turret State Variables**
+- `currentTurretSpeed`
+  - Type: float
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `targetTurretSpeed`
+  - Type: float
+  - 
 
