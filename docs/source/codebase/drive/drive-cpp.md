@@ -11,12 +11,12 @@
 - The function "setSpeedScalar" sets the internal speed variable based on the bns input passed into the function. The bns represents the drive mode of the robot, which can be either Boost, Normal, or Slow. The scalar my also be set to 0 if the requested power is greater than 1 as a safety measure.
 - The function "setSpeedValue" constrains the speed percentage to a value between -1 and 1.
 - The function "getSpeedScalar" returns the value of this->speedScalar.
-- The function "generateMotionValues"
-- The function "calcTurning"
-- The function "emergencyStop"
-- The function "printSetup"
-- The function "update"
-- The function "getMotorWifiValue"
+- The function "generateMotionValues" changes the power of the motors based on the status of the forward power and turning control sticks.
+- The function "calcTurning" helps to calculate the motor power needed to achieve turning.
+- The function "emergencyStop" directly sets the power of both motors to zero, stopping the robot's movement.
+- The function "printSetup" print information about the robot to the console, which includes the motor type, gear ration, minimum R and RPM, maximum R and RPM, turn sensitivity mode, and whether or not the robot has encoders.
+- The function "update" updates the motors following the setting of motor values in other functions. In addition, this function also where ramping is implemented for the motors. 
+- The function "getMotorWifiValue" returns a value based on the motor requested in the function.
 ## Included Headers
 - `Arduino.h`
 - `Drive/Drive.h`
