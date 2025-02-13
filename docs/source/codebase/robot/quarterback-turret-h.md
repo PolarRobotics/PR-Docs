@@ -125,7 +125,7 @@
 ## Classes
 ### QuarterbackTurret
 
-**Private**
+### Private
 
 As is the case for most of these variables, they are *initiated* in a `.h` file, and *instanciated* in the corresponding `.cpp` file.
 
@@ -264,5 +264,139 @@ As is the case for most of these variables, they are *initiated* in a `.h` file,
   - Modifyable: YES
 - `targetTurretSpeed`
   - Type: float
-  - 
+- `utmsCtr`
+  - Type: Signed 8-bit Integer
+  - Value: 0
+  - Modifyable: YES
+- `UTMS_CTR_MAX`
+  - Type: `define`
+  - Value: 15
+  - Modifyable: NO
 
+**Private Encoder State Variables**
+- `targetTurretEncorderCount`
+  - Type: Signed 8-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `errorEncoderCount`
+  - Type: Signed 8-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `slopError`
+  - Type: Signed 8-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `stopError`
+  - Type: Signed 8-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `manualHeadingIncrementCount`
+  - Type: Unsighed 8-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `turretMoving`
+  - Type: `true` or `false`
+  - Value: Boolean
+  - Modifyable: YES
+
+**Robot Relative Headings**
+- `curretRelativeHeading`
+  - Type: Signed 16-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `targetRelativeHeading`
+  - Type: Signed 16-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `curretnRelativeTurretCount`
+  - Type: Signed 32-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+
+**Absolute (World Relative) Headings**
+- `currentAbsoluteHeading`
+  - Type: Signed 16-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `targetAbsoluteHeading`
+  - Type: Signed 16-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+- `turretLaserState`
+  - Type: Unsigned 8-bit Integer
+  - Value: Defined in QuarterbackTurret.cpp
+  - Modifyable: YES
+
+**Control Input Debouncers**
+- *Note: All of these are instances of the `Debouncer` class*
+- `dbShare`
+- `dbOptions`
+- `dbSquare`
+- `dbDpadUp`
+- `dbDpadDown`
+- `dbDpadUp`
+- `dbDpadDown`
+- `dbDpadLeft`
+- `dbDpadRight`
+
+**Macro Button Debouncer**
+- `dbCircle`
+- `dbTriangle`
+- `dbCross`
+- `dbTurretInterpolator`
+
+### Magnometer
+**Setting up the Magnometer**
+- `lis3mdl`
+  - Description: This is the instanciation of the magnometer referenced in the code. It allows for one to access information from the `Adafruit_LIS3MDL.h` class.
+  - Parent Class: `Adafruit_LIS4MDL.h`
+
+- `useMagnetometer`
+  - Description: A variable that allows for one to enable/disable the magnetometer at will. 
+  - Type: `boolean`
+
+- `holdTurretStillEnabled`
+  - Description: A variable that allows one to use the magnetomer for **only** the handoff and *not* the holding code
+  - Type: `boolean`
+
+**Calibrating the Magnetometer**
+
+- `mag_yVal`, `mag_xVal`
+  - Description: The current x and y values read by the magnetometer (after correcting for errors)
+  - Type: `int`
+  - Default Value: 0
+
+- `mag_xMax`, `mag_xMin`
+  - Description: The maximum and minimum values for `x` recorded when calibrating the magnometer & stores in their respective variables
+  - Type:`int`
+  - Default Value: -1000000 & 1000000
+
+- `mag_yMax`, `mag_yMin`
+  - Description: The maximum and minimum values for `y` are recorded when calibrating the magnometer & stores in their respective variables
+  - Type: `int`
+  - Default Value: -1000000 & 1000000
+
+- `mag_xHalf`, `mag_yHalf`
+  - Description: Half of the the *total* range of expected the respective `x` and `y` values. Used to shift the their respective values back to the origin (0,0)
+  - Type: `int`
+  - Default Value: 0
+
+  - `mag_xSign`, `mag_ySign`
+    - Description: Used to determine whether to add the respective `half` value or subtract it when shifting the values back to the origin. If the value is `true`, the it subtracts, if not, it adds them.
+    - Type: `boolean`
+    - Default Value: `false`
+
+- `northHeadingDegrees`
+  - Description: An offset variable. Its purpose is to re-align the magnetometer due to errors in calculating the proper direction (caused by interference from the motors & other mechanical devices nearby). Right now it is only partially working
+  - Type: `integer`
+  - Default Value: 0
+
+- `headingRad`
+  - Description: The current calculated heading in radians using the `x` and `y` values *after* calibration
+  - Type: Float
+  - Default Value: N/A
+
+- `headingDeg`
+  - Description: The current calculated heading in degrees. Converts from `headingRad`
+  - Type: Float
+  - Default Value: N/A
