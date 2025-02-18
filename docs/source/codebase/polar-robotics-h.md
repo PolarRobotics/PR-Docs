@@ -20,6 +20,6 @@
 		- The last state, `TACKLED`, indicates that the robot has been hit by another robot, triggering the CRFC [tackle sensor](../hardware/tackle-sensor-rev4.md).
 ## Included Headers
 - `Arduino.h`
-- `Utilities/BotTypes.h`
-- `Utilities/MotorTypes.h`
-- `Utilities/DriveParameters.h`
+- [`Utilities/BotTypes.h`](./utils/bot-types-h.md)
+- [`Utilities/MotorTypes.h`](./utils/motor-types-h.md)
+- [`Utilities/DriveParameters.h`](./utils/drive-parameters-h.md)
