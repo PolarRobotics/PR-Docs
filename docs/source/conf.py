@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'PR-Docs'
-copyright = '2024, Polar Robotics Documentation Team'
+copyright = '2025, Polar Robotics Documentation Team'
 author = 'Polar Robotics Documentation Team'
 release = '0.2'
 
