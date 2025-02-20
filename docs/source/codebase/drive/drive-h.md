@@ -1,6 +1,6 @@
 # `Drive.h`
 ## Description
-- This file begins with defines for the following constants:
+- This file defines the following constants:
     | Constant                  | Value    |
     |---------------------------|----------|
     | NUM_MOTORS                | 2        |
@@ -21,7 +21,7 @@
     | SMALL_12V_SLOW_PCT        | 0.05f    |
     | BRAKE_BUTTON_PCT          | 0        |
 - Next, an array containing the BNS values for each motor type is created.
-- Finally, the Drive class is created, featuring relevant variable declarations and function prototypes. More information about these functions can be found in the documentation for Drive.cpp.
+- Finally, this file creates the Drive class, featuring relevant variable declarations and function prototypes. More information about these functions can be found in the documentation for Drive.cpp.
 ## Included Headers
 - `Arduino.h`
 - `Robot/MotorControl.h`
