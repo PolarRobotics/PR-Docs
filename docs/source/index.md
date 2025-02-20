@@ -25,6 +25,7 @@ training/upbase
 training/git
 training/devenv
 training/uploading-code
+training/pairing
 training/programming-cyoa
 training/docs-setup
 training/wsl
@@ -36,6 +37,7 @@ caption: High-Level Robot Documentation
 maxdepth: 2
 ---
 high-level/bot-types
+high-level/robot-components
 ```
 
 ```{toctree}

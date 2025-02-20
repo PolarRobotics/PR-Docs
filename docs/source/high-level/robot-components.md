@@ -1,0 +1,1 @@
+describe the different components and subsystems of the robot here (from a practical perspective), including the two types of batteries and the ESP LEDs.
