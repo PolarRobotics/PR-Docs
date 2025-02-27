@@ -1,17 +1,14 @@
-# `Kicker.cpp`
+# `KickerOld.cpp`
 ## Description
 ## Functions
 | Name | Description
 |------|-------------
-| `Kicker` |
-| `kickerEncoderISR` |
+| `KickerOld` |
 | `action` |
 | `enable` |
+| `test` |
 | `turnForward` |
 | `turnReverse` |
 | `stop` |
-| `homeKickingArm` |
-| `adjustAngle` |
-| `getCurrentAngle` |
 ## Included Header
-- `Kicker.h`
+- `KickerOld.h`

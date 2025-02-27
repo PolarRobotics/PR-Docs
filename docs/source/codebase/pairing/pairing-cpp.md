@@ -1,6 +1,15 @@
 # `pairing.cpp`
 ## Description
-
+## Functions
+| Name | Description
+|------|-------------
+| `addressIsController` |
+| `startDiscovery` |
+| `storeAddress` |
+| `getAddress` |
+| `pairToLastController` |
+| `searchForNewController` |
+| `activatePairing` |
 ## Included Headers
 - `map`
 - `BluetoothSerial.h`
