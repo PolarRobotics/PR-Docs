@@ -400,3 +400,54 @@ As is the case for most of these variables, they are *initiated* in a `.h` file,
   - Description: The current calculated heading in degrees. Converts from `headingRad`
   - Type: Float
   - Default Value: N/A
+
+
+**PID Variables**
+- Used to correct offsets calculated by the code that need to account for reality
+
+- `PID_ERROR_AVG_ARRAY_LENGTH`
+  - Type: DEFINE
+  - Description: The length of the array used for averaging the error
+  - Value: 5
+
+- `prevErrorVals`
+  - Type: Integer Array
+  - Description: An array of previously measured error values; used to average the collected error values and offset the random spikes in the magnetometer
+  - Length: `PID_ERROR_AVG_ARRAY_LENGTH`
+  - Value: {0, 0, 0, 0, 0}
+
+- `prevErrorIndex`
+  - Type: Integer
+  - Description: Used to update the index accessed from the `prevErrorVals`, allows each index to be accessed over time
+
+- `previousTime`
+  - Type: Long
+  - Description: Used to calculate errors and deltaT (in respect to the PID function)
+  
+- `ePrevious`
+  - Type: Float
+  - Description: The percent error from the magnetometer builds over time - this is used to record the previous and current error values
+  - Default Value: 0
+
+- `eIntegral`
+  - Type: Float
+  - Description: The current error integral calculated and added to `ePrevious` in the PID loop
+  - Default Value: 0
+- `kp`
+  - Type: Float
+  - Description: The proportional gain used in PID calculations
+  - Default Value: 0.005
+- `ki`
+  - Type: Float
+  - Description: The integral gain used in PID calculations
+  - Default Value: 0.0012
+- `kd`
+  - Type: Float
+  - Description: The derivative gain used in PID calculations
+  - Default Value: 0.0
+- `turretPIDSpeed`
+  - Type: Float
+  - Description: The calculated PWM used in the PID loop
+  - Default Value: 0
+- ``
+
