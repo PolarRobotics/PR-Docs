@@ -38,34 +38,27 @@
   
 ### Debounce & Miscellaneous Delay Constants
 
-- `QB_BASE_DEBOUNCE_DELAY`
-  - `50 (LONG)`
-- `QB_CRADLE_TRAVEL_DELAY`
-  - `750 (LONG)`
-- `QB_CIRCLE_HOLD_DELAY`
-  - `750 (LONG)`
-- `QB_CROSS_HOLD_DELAY`
-  - `200 (LONG)`
-- `QB_CROSS_HOLD_DELAY`
-  - `200 (LONG)`
-- `QB_TURRET_INTERPOLATION_DELAY`
-  - `5L (LONG)`
-- `QB_TURRET_THRESHOLD`
-  - `35`
-- `QB_TURRET_STICK_SCALE_FACTOR`
-  - `0.25`
+| Name | Value | isLong? |
+|:----:|:-----:|:-------:|
+| `QB_BASE_DEBOUNCE_DELAY` | 50 | ✓ | 
+|`QB_CRADLE_TRAVEL_DELAY` | 750 | ✓ |
+| `QB_CIRCLE_HOLD_DELAY` | 750 | ✓ | 
+| `QB_CROSS_HOLD_DELAY` | 200 | ✓ | 
+| `QB_TRIANGLE_HOLD_DELAY` | 200 | ✓ | 
+| `QB_TURRET_INTERPOLATION_DELAY` | 5 | ✓ |
+| `QB_TURRET_THRESHOLD` | 35 | X |
+| `QB_TURRET_STICK_SCALE_FACTOR` | 0.25 | X |
 
 ### Speed Constants
-- `QB_MIN_PWM_VALUE`
-  - `0.08`
-- `QB_HOME_PCT`
-  - `0.125`
-- `QB_HANDOFF`
-  - `0.3`
-- `QB_HOME_MAG `
-  -`0.1`
+| Name | Value |
+|:----:|:-----:|
+| `QB_MIN_PWM_VALUE` | 0.08 |
+| `QB_HOME_PCT` | 0.125 | 
+| `QB_HANDOFF` | 0.3 | 
+| `QB_HOME_MAG ` | 0.1 | 
 
 ### Turret Angle Calculation Constants
+
 - `QB_COUNTS_PER_ENCODER_REV`
   - _Number of ticks per encoder revolution_
   - 1000
@@ -137,68 +130,63 @@ As is the case for most of these variables, they are *initiated* in a `.h` file,
 - `flywheelLeftMotor`
 - `flywheelRightMotor`
 
-**Pin declartion**
-- `turretEncoderPinA`
-  - Type: unsigned 8-bit integer
-  - Value: defined in `QuarterbackTurret.cpp`
-  - Modifyable: NO
+**Pin Declartion**
+| Name | Type | Value | Modifyable? |
+| :--: | :--: | :--: | :--: | 
+| `turretEncoderPinA` | Unsigned 8-bit int | defined in `QuarterbackTurret.cpp` | X |
+| `turretEncoderPinB` | Unsigned 8-bit integer |  defined in `QuarterbackTurret.cpp` | X |
+| `turretLaserPin` | Unsigned 8-bit integer | defined in `QuarterbackTurret.cpp` | ✓ | 
 
-- `turretEncoderPinB`
-  - Type: unsigned 8-bit integer
-  - Value: defined in `QuarterbackTurret.cpp`
-  - Modifyable: NO
-
-- `turretLaserPin`
-  - Type: unsigned 8-bit integer
-  - Value: defined in `QuarterbackTurret.cpp`
-  - Modifyable: YES
 
 **Joystick Inputs**
-- `stickTurret`
-  - Type: float
-  - Value: defined in `QuarterbackTurret.cpp`
-  - Modifyable: YES
-  - *Write purpose found in .h when documenting .cpp*
-- `stickFlywheel`
-  - Type: float
-  - Value: defined in `QuarterbackTurret.cpp`
-  - Modifyable: YES
-  - *same as above*
+| Name | Type | Value | Modifyable? |
+| :--: | :--: | :--: | :--: | 
+| `stickTurret` | float | defined in `QuarterbackTurret.cpp` | ✓ |
+| `stickFlywheel` | float | defined in `QuarterbackTurret.cpp` | ✓ | 
+
+```{note}
+Note: Write the purpose found in `.h` when doccumenting `.cpp` for both of the above* 
+```
+
 
 **Autonomous Targeting**
-* *From the enums earlier in this doc*
-- `mode`
-  - Enum: `TurretMode`
-  - Value: `Manual`, `Automatic`
-  - Modifyable: YES
-- `target`
-  - Enum: ``TargetReciever`
-  - Value: `Reciever_1`, `Reciever_2`
-  - Modifyable: YES
-- `combinePosition`
-  - Enum: `CombinePosition`
-  - Value: `CombineLeft`, `CombineStraight`, `CombineRight`
-  - Modifyable: YES
-  - 
+
+| Name | Enum | Value | Modifyable? |
+| :--: | :--: | :--: | :--: | 
+| `mode` | `Manual`, `Automatic` | ✓ |
+| `target` | `TargetReciever` | `Reciever_1`, `Reciever_2`| ✓ |
+| `combinePosition` |  `CombineLeft`, `CombineStraight`, `CombineRight` | ✓ | 
+
+```{note}
+Note: These derive from the enums earlier in this doc*
+```
 
 **Setup & Status variables**
-* *The definitions for these items will be included in the .cpp file for convenience sake*
-- `enabled`
-  - Type: boolean
-  - Value: True or False
-  - Modifyable: YES
-- `initialized`
-  - Type: boolean
-  - Value: True or False
-  - Modifyable: YES
-- `runningMacro`
-  - Type: boolean
-  - Value: True or False
-  - Modifyable: YES
+
+| Name | Type | Value | Modifyable? |
+| :--: | :--: | :--: | :--: | 
+| `enabled` | bool | True or False | ✓ |
+| `initialized` | bool | True or False | ✓ |
+| `runningMacro` | bool | True or False | ✓ |
+
+```{note}
+ Note: The definitions for these items will be included in the `.cpp` file for convenience sake*
+ ``` 
 
 **Assembly Movement**
 * *The definitions for these items will be included in the .cpp file for convenience*
 * *Again, these are enums, not variables*
+
+```{note}
+Continue to create a table for next time here. 
+
+~ PW
+``` 
+
+| Name | Enum | Value | Modifyable? |
+| :--: | :--: | :--: | :--: | 
+| `currentAssemblyAngle` | `AssemblyAngle` | 
+
 - `currentAssemblyAngle`
   - Enum: `AssemblyAngle`
   - Value: `Straight`,`Angle`
@@ -449,5 +437,7 @@ As is the case for most of these variables, they are *initiated* in a `.h` file,
   - Type: Float
   - Description: The calculated PWM used in the PID loop
   - Default Value: 0
-- ``
+- `minMagSpeed`
+- Type: Float
+- 
 
