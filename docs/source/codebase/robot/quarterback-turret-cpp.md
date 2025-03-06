@@ -46,29 +46,3 @@ Do not fire unless moving forward (do _not_ fire when intaking or stopped)
 
 The laser section is very well documented
 
-
-## testing
-
-### more testing
-
-
-* bullet points?
-* I think so
-
-1. Numbered lists>
-2. I think so too
-
-A protoype for the documentation for the Quarterback V3
-
-```{note} 
-The body of the note goes here.
-```
-
-| this is a test of a table | this table is cool |
-| ------------------------- | ------------------ |
-| let's hope this works     | data structuring   |
-| a | c |
-
-```
-This is a codeblock!
-```
