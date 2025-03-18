@@ -402,11 +402,12 @@ Continue to create a table for next time here.
   - Type: Integer Array
   - Description: An array of previously measured error values; used to average the collected error values and offset the random spikes in the magnetometer
   - Length: `PID_ERROR_AVG_ARRAY_LENGTH`
-  - Value: {0, 0, 0, 0, 0}
+  - Values: {0, 0, 0, 0, 0}
 
 - `prevErrorIndex`
   - Type: Integer
   - Description: Used to update the index accessed from the `prevErrorVals`, allows each index to be accessed over time
+  - Default Value: 0
 
 - `previousTime`
   - Type: Long
@@ -438,6 +439,24 @@ Continue to create a table for next time here.
   - Description: The calculated PWM used in the PID loop
   - Default Value: 0
 - `minMagSpeed`
-- Type: Float
-- 
+  - Type: Float
+  - Description: Sets a minimum bound on the PWM signal to prevent errors in the PID loop. PWM signals below this range usually fail to make the motor turn and throw off the PID calculations. 
+  - Defualt Value: 0.075
 
+## Magnetometer Functions
+
+**magnetometerSetup()**
+- As defined in `QuarterbackTurret.cpp`:
+  - First checks to see if the **LIS3MDL** has been identified or not.
+    - If not, it sets the sensitivity, operation mode, rate of data transmission, and the error range of the magnetic field detection to a series of pre-defined values. Finally, it enables certain features of the **LIS3MDL**. Runs once on startup.
+- Type: `void`
+
+- **calibMagnetometer()**
+  - As defined in `QuarterbackTurret.cpp`:
+    - First rotates the turret 360 degrees and calibrates how to calculate movement given input from the **LIS3MDL**. Used to make sure that the data is processed properly and that the outputs are to the correct angles.
+- Type: `void`
+
+- **calculateHeadingMag()**
+  - As defined in `QuarterbackTurret.cpp`
+    - Run inside of the **`calibMagnetometer()`** function. Uses the values calculated in the beginning of **`calibMangetometer()`** to determine the current angle of the turret, corrects and verifies that the ranges of `x` and `y` are legal. It then calculates the offset and integrates it into the measurement from the magnetometer.
+- Type: `void`
