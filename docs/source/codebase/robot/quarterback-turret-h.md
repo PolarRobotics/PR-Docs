@@ -64,8 +64,6 @@
         |----------|-------|-----------------|
         | RX2      | 16    | Reciever Pin    |
         | TX2      | 17    | Transmitter Pin |
-        
-        
 - In addition, this file creates the QuarterbackTurret class, featuring relevant variable declarations and function prototypes. More information about these functions can be found in the documentation for QuarterbackTurret.cpp.
 ## Included Headers
 - `Robot/Robot.h`
