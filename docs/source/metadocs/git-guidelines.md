@@ -27,7 +27,7 @@
 	- At minimum, expected behavior of functions and intent of variables must be briefly described.
 
 ### Development
-- Branches prefixed with `/dev` represent projects or features in active development.
+- Branches prefixed with `dev/` represent projects or features in active development.
 - The two primary development branches are `dev/main` and `dev/experimental`.
 	- `dev/main` is expected to be reasonably stable and to have been tested reasonably well.
 	- `dev/experimental` is expected to build with no errors, but may have untested code.

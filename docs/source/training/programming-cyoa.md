@@ -243,7 +243,8 @@ void loop()
 - In order to achieve this objective, you will at minimum require the following information:
 	- The MAC addresses of our PS5 controllers begin with either `bc:c7:46:03` or `bc:c7:46:04`.
 - Again, walk before you run. Start with sending a simple string message over the serial connection.
-- **Challenge 2** is to implement Bluetooth pairing from scratch (this is very difficult). 
+- **Challenge 2** is to implement Bluetooth pairing from scratch. 
+  - Warning: This is essentially impossible at the level of experience the average participant in this tutorial is expected to have. The challenge is designed to get you to think about what you would have to do in order to get this to work, and to give you experience working through a complex issue. You are not expected to be able to solve this challenge, but you are welcome to attempt it before moving on.
 - If you choose not to pursue Challenge 2, in order to control the PS5 controller, you will need to use the [ps5-esp32](https://github.com/rodneybakiskan/ps5-esp32) library.
 	- The easiest way to use this is to copy the `ps5-esp32-main` folder from our codebase's `lib` folder to your project's `lib` folder: <br> ![PS5 Library|250](../_static/images/training/programming-cyoa/ps5-esp32-lib.png){w=225px}
   	- Note that the image above is for illustration purposes, as this is possible only if you have ESP32PRCodebase and your new project in the same VSCode Workspace (not recommended). You will need to do this in your OS's file manager.

@@ -53,7 +53,7 @@
 	- To change the size or alignment of an image, use `attrs_inline` syntax.
 		- For example, to center align an image and set the width to 100 pixels: `![Image Alt Text](../_static/images/klondike-facepalm.png){w=100px align=center}`
 		- See also: https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html
-- Although it may be easiest to edit the documentation repository in Obsidian, regular Obsidian double-bracket links do **not** work.
+- Although it may be convenient to edit the documentation repository in Obsidian, regular Obsidian double-bracket links do **not** work.
 	- However, this type of HTML *file* link does work in Obsidian. 
 		- Header links with spaces do not work since RTD formats spaces as dashes.
 			- Since Obsidian links are case-insensitive, that part of the formatting is irrelevant.
