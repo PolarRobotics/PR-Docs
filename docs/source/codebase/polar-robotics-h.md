@@ -1,23 +1,62 @@
 # `PolarRobotics.h`
 ## Description
-% this description needs to be revised into a table that states what exactly the pin numbers are, or better yet, link to the google sheet
-- This file primarily contains various global pin declarations. 
-	- The first four pins declared are for connecting to the motors. 
-		- In a four wheel configuration, each pin connects to one of a robot's four wheels. 
-		- In a two wheel configuration, one pin connects the the left drive, one pin connects to the right drive, and the other two pins are unused. 
-	- The next four pins declared are reserved for special bots. 
-		- These pins connect to various features that are exclusive to special bots, such as conveyor belts and flywheels. 
-	- The ninth pin declared connects to the LED lights on the outside of a robot. 
-	- Lastly, the tenth pin declared appears to connect to a robot's tackle sensor, which detects when a robot has been hit.
-	- The full pin spreadsheet can be found [here](https://docs.google.com/spreadsheets/d/17pdff4T_3GTAkoctwm2IMg07Znoo-iJkyDGN5CqXq3w/edit?gid=0#gid=0).
-- This file also contains a global `enum` variable named `BOT_STATE`. 
-	- This variable contains six different enumerations reflecting different states of a robot, which is used to determine the color of the robot's LED lighting. 
-		- The first state, `PAIRING`, indicates that the robot is currently attempting to pair with a controller. 
-		- The second state, `CONNECTED`, indicates that the robot has successfully connected to a controller. 
-		- The third state, `DISCONNECTED`, indicates that the robot has become disconnected from a controller that it was previously connected to. 
-		- The fourth state, `OFFENSE`, indicates that the robot is in an offensive position. 
-		- The fifth state, `DEFENSE`, indicates that the robot is in a defensive position. 
-		- The last state, `TACKLED`, indicates that the robot has been hit by another robot, triggering the CRFC [tackle sensor](../hardware/tackle-sensor-rev4.md).
+- `PolarRobotics.h` is the corresponding header file to `main.cpp`, and is also included in most other files.
+  - It contains global declarations useful for many parts of the codebase, namely motor pin definitions.
+
+### Defined Pins
+```{seealso}
+
+Our [ESP32 pin reference sheet](https://docs.google.com/spreadsheets/d/17pdff4T_3GTAkoctwm2IMg07Znoo-iJkyDGN5CqXq3w/edit?gid=0#gid=0) provides more detailed (and probably more up-to-date) information.
+```
+
+#### Drive Motor Pins
+- There are four defined motor pins.
+  - For most robots, only the first two are needed, and they are the left and right motors, respectively (see "Cfg. 2W").
+  - For four-wheel-drive robots, namely the mecanum center, all four pins are needed (see "Cfg. 4W").
+
+| Motor # | Pin # | `#define` name | Cfg. 2W | Cfg. 4W     |
+| ------- | ----- | -------------- | ------- | ----------- |
+| 1       | 32    | `M1_PIN`       | Left    | Left Front  |
+| 2       | 33    | `M2_PIN`       | Right   | Right Front |
+| 3       | 26    | `M3_PIN`       | N/A     | Left Rear   |
+| 4       | 27    | `M4_PIN`       | N/A     | Right Rear  |
+
+#### "Special Bot" Pins
+- These pins are reserved for robots that require additional actuators beyond the standard drive wheels.
+  - These "special bots" include positions such as the kicker, center, and quarterback.
+
+
+| Pin # | `#define` name |
+| ----- | -------------- |
+| 18    | `SPECBOT_PIN1` |
+| 19    | `SPECBOT_PIN2` |
+| 21    | `SPECBOT_PIN3` |
+| 22    | `SPECBOT_PIN4` |
+
+#### Encoder Pins
+- These pins are reserved for motor encoders. Most of these are input only.
+  - Some of these have alternate names as they appear on the PCB of the ESP32.
+  - Four pins is enough to support two encoders (1, 2) each with two channels (A, B).
+
+| Pin # | Alt. Name | `#define` name |
+| ----- | --------- | -------------- |
+| 35    |           | `ENC1_CHA`     |
+| 34    |           | `ENC1_CHB`     |
+| 36    | VP        | `ENC2_CHA`     |
+| 39    | VN        | `ENC2_CHB`     |
+
+#### Other Pins
+- A variety of other pins are defined for various usages.
+  - Note that the UART pins are currently only used for the Quarterback V3.
+
+| Pin # | `#define` name | Description                                   |
+| ----- | -------------- | --------------------------------------------- |
+| 4     | `LED_PIN`      | LED Lights                                    |
+| 13    | `TACKLE_PIN`   | Tackle Sensor                                 |
+| 23    | `PAIRING_PIN`  | Pairing (if pin-pairing is enabled)           |
+| 16    | `UART_RX2`     | Receiver pin for serial comm. w/ other ESP    |
+| 17    | `UART_TX2`     | Transmitter pin for serial comm. w/ other ESP |
+
 ## Included Headers
 - `Arduino.h`
 - [`Utilities/BotTypes.h`](./utilities/bot-types-h.md)
