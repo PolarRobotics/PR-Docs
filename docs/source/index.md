@@ -56,6 +56,8 @@ maxdepth: 1
 hardware/encoders
 hardware/esp32
 hardware/falcons
+hardware/neos
+hardware/pwm
 hardware/sabertooth-2x25
 hardware/sabertooth-2x32
 hardware/tackle-sensor-rev3
