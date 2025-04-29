@@ -2,6 +2,7 @@
 ## Description
 - This file provides a framework for pairing an ESP32 to a PS5 controller. The intended method for using the file's functionality is through calling the "activatePairing" function in main, and none of the functions called in activatePairing are intended to be called in any other context.
 - This file's code is "blocking", meaning that it takes a discrete amount of time to run and it doesn't run asynchronously.
+
 ## Functions
 | Name | Description
 |------|-------------
@@ -12,11 +13,12 @@
 | `pairToLastController` | This function allows the ESP32 to pair to the controller whose MAC address is stored in the ESP32's persistent memory.
 | `searchForNewController` | This function allows the ESP32 to search for new controllers to pair with. This effectively serves as the beginning of establishing a new ESP32-controller pairing.
 | `activatePairing` | This function effectively centralizes the pairing functionalities, as it is meant to be called directly from main. In all, the function searches for controllers to pair to and then pairs with the first eligible controller found.
+
 ## Included Headers
 - `map`
 - `BluetoothSerial.h`
 - `ps5Controller.h`
 - `Preferences.h`
 - `Pairing/pairing.h`
-- `Robot/builInLED.h`
+- `Robot/builtInLED.h`
 - `Robot/Lights.h`
