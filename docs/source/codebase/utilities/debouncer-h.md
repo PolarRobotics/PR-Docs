@@ -1,9 +1,13 @@
 # `Debouncer.h`
 ## Description
-- This file defines the following enums:
-    | Enum           | States       |
-    |----------------|--------------|
-    | DebouncerState | base, active |
-- In addition, this file creates the Debouncer class, featuring relevant variable declarations and function prototypes. More information about these functions can be found in the documentation for Debouncer.cpp.
+- The `Debouncer` class is used to perform debouncing for the electrical signals resulting from any mechanical buttons, usually on the PS5 controller.
+
+![Debouncing Example](../../_static/images/codebase/debouncing.png)
+
+- Generally, inside a loop, wrap your call to check the input needing debouncing with one of the available functions.
+- The class is also designed to work with either active high or active low circuits.
+  - Internally, this is stored in the `BASE_STATE` and `ACTIVE_STATE` private fields, assigned appropriately based on if `activeLow` is `true` or `false` (default `false`) in the constructor.
+    - This corresponds to the `enum DebouncerState` with values `base`, `active`
+
 ## Included Headers
-- `PolarRobotics.h`
+- [`PolarRobotics.h`](../polar-robotics-h.md)

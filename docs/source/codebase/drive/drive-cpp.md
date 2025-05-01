@@ -24,5 +24,5 @@
 
 ## Included Headers
 - `Arduino.h`
-- `Drive/Drive.h`
-- `Robot/MotorControl.h`
+- [`Drive/Drive.h`](./drive-h.md)
+- [`Robot/MotorControl.h`](../robot/motor-control-h.md)

@@ -1,12 +1,19 @@
 # `DriveMecanum.h`
 ## Description
-- This file defines the following constants:
-    | Constant             | Value  |
-    |----------------------|--------|
-    | MC_NUM_MOTORS        | 2      |
-    | MC_ACCELERATION_RATE | 0.0375 |
-    | MC_STICK_DEADZONE    | 0.075  |
-- In addition, this file creates the DriveMecanum class, featuring relevant variable declarations and function prototypes. More information about these functions can be found in the documentation for DriveMecanum.cpp.
+### Constants
+- This following constants are `#define`d in `DriveMecanum.h`:
+
+    | Constant               | Value  |
+    | ---------------------- | ------ |
+    | `MC_NUM_MOTORS`        | 4      |
+    | `MC_ACCELERATION_RATE` | 0.0375 |
+    | `MC_STICK_DEADZONE`    | 0.075  |
+
+### `DriveMecanum` class
+- This is a subclass of [Drive](./drive-h.md#drive-class), specialized for a four-motor mecanum drivetrain.
+  - There are not a substantial amount of high-level differences from the base class.
+- Functions defined in [DriveMecanum.cpp](./drive-cpp.md) are prototyped.
+
 ## Include Headers
 - `Arduino.h`
-- `Drive/Drive.h`
+- [`Drive/Drive.h`](./drive-h.md)

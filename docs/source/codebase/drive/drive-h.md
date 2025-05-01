@@ -38,5 +38,5 @@
 
 ## Included Headers
 - `Arduino.h`
-- `Robot/MotorControl.h`
-- `PolarRobotics.h`
+- [`Robot/MotorControl.h`](../robot/motor-control-h.md)
+- [`PolarRobotics.h`](../polar-robotics-h.md)

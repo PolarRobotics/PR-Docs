@@ -1,5 +1,5 @@
 # `builtInLED.h`
 ## Description
-- This file creates the prototypes for the functions used in builtInLED.cpp. More information about these functions can be found in builtInLED.cpp's documentation.
-## Included Headers
-- None
+- Provides a framework for controlling the LED built into the ESP32 board.
+- Globally scoped to avoid multiple drivers of the LED.
+  - Basically functions like a mutex.
