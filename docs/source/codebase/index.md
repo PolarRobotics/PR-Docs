@@ -18,8 +18,6 @@ drive/drive-cpp
 drive/drive-h
 drive/drive-mecanum-cpp
 drive/drive-mecanum-h
-drive/drive-quick-cpp
-drive/drive-quick-h
 ```
 
 ```{toctree}
@@ -44,6 +42,8 @@ robot/center-cpp
 robot/center-h
 robot/kicker-cpp
 robot/kicker-h
+robot/kicker-old-cpp
+robot/kicker-old-h
 robot/lights-cpp
 robot/lights-h
 robot/lineman-h
@@ -51,6 +51,8 @@ robot/mecanum-center-cpp
 robot/mecanum-center-h
 robot/motor-control-cpp
 robot/motor-control-h
+robot/quarterback-base-cpp
+robot/quarterback-base-h
 robot/quarterback-cpp
 robot/quarterback-h
 robot/quarterback-turret-cpp
@@ -63,14 +65,18 @@ robot/robot-h
 caption: Utilities
 maxdepth: 1
 ---
-utils/bot-types-cpp
-utils/bot-types-h
-utils/config-manager-cpp
-utils/config-manager-h
-utils/drive-parameters-h
-utils/motor-types-cpp
-utils/motor-types-h
-utils/pair-h
-utils/read-bot-info-cpp
-utils/write-bot-info-cpp
+utilities/bot-types-cpp
+utilities/bot-types-h
+utilities/config-manager-cpp
+utilities/config-manager-h
+utilities/debouncer-cpp
+utilities/debouncer-h
+utilities/drive-parameters-h
+utilities/motor-types-cpp
+utilities/motor-types-h
+utilities/pair-h
+utilities/print-serial-cpp
+utilities/print-serial-h
+utilities/read-bot-info-cpp
+utilities/write-bot-info-cpp
 ```

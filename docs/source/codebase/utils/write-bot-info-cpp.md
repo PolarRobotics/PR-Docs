@@ -1,1 +1,0 @@
-# `WriteBotInfo.cpp`
