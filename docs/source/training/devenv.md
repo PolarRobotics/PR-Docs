@@ -11,6 +11,9 @@
 - Completion of the [Git Training](./git), and by extension:
   - A completed installation of Git
   - A GitHub account
+- **Docker installed and running**
+  - You must have Docker running to open the codebase within Dev Containers.
+  - YOU MUST USE THE DEV CONTAINER!
 
 ## Cloning the Polar Robotics repository
 
@@ -60,12 +63,12 @@ https://github.com/PolarRobotics/PR-ESPIDFCodebase
 9. Wait for VSCode to install.
 10. Click `Finish`.
 
-## Installing PlatformIO
+## Installing ESP-IDF
 
 1. If VSCode is not already open, launch it.
 2. Navigate to the extensions menu on the navigation sidebar: ![Step 2|550](../_static/images/training/devenv/devenv-pio-1.png)
-3. Search for `PlatformIO`. When you find the entry depicted below (should be at the top) click `Install`. <br> ![Step 2|250](../_static/images/training/devenv/devenv-pio-2.png){w=225px}
-4. Wait for PlatformIO to install. You will see some console output at the bottom of your screen. Wait until you see "Please restart VSCode." in the output or the toast message on the bottom left. <br> ![Step 4|550](../_static/images/training/devenv/devenv-pio-3.png)
+3. Search for `ESP-IDF`. When you find the entry depicted below (should be at the top) click `Install`. <br> ![Step 2|250](../_static/images/training/devenv/devenv-pio-2.png){w=225px}
+4. Wait for ESP-IDF to install. You will see some console output at the bottom of your screen. Wait until you see "Please restart VSCode." in the output or the toast message on the bottom left. <br> ![Step 4|550](../_static/images/training/devenv/devenv-pio-3.png)
 5. Restart VSCode as requested by the IDE (just close the window normally and relaunch).
 6. PlatformIO should now be installed. You should see the alien head icon on the left-hand navigation sidebar. Click on it to open the PlatformIO IDE menu: <br> ![Step 6|200](../_static/images/training/devenv/devenv-pio-4.png){w=225px}
 7. In the bottom half of the left pane, under `QUICK ACCESS`, under the `PIO Home` dropdown, double-click `Open`: <br> ![Step 7|200](../_static/images/training/devenv/devenv-pio-5.png){w=225px}
@@ -75,7 +78,7 @@ https://github.com/PolarRobotics/PR-ESPIDFCodebase
 11. Optional: Click the star icon in the top left to favorite this directory for later usage.
 12. Click the `Open "PR-ESPIDFCodebase"` button.
 13. A dialog like the one pictured below may appear. Optionally, check the box to trust the parent folder. Then, click `Yes, I trust the authors`. <br> ![Step 13|400](../_static/images/training/devenv/devenv-pio-9.png){w=350px}
-14. Wait for PlatformIO to configure the project. Watch the toast in the lower right corner. This may take several minutes. <br> ![Step 14|300](../_static/images/training/devenv/devenv-pio-10.png){w=300px}
+14. Wait ESP-IDF to configure the project. Watch the toast in the lower right corner. This may take several minutes. <br> ![Step 14|300](../_static/images/training/devenv/devenv-pio-10.png){w=300px}
 
 - You may be asked to sign into GitHub during this process. If so, a dialog will pop up. Follow the steps to sign in and then you should be able to return to VSCode.
 
@@ -109,4 +112,3 @@ https://github.com/PolarRobotics/PR-ESPIDFCodebase
 
 3. PlatformIO will automatically run some tasks to change the project configuration. Once you see `Project has been successfully updated!` in the console output, **click the Build button** (the checkmark in the bottom taskbar).
 4. After some time (typically 20-60 seconds depending on your computer), you should see a `[SUCCESS]` message. If your build fails the first time, please consult the team lead or another senior developer for assistance.
-
