@@ -4,7 +4,7 @@
 - Linemen are the most basic in terms of functionality. 
 - Their primary purpose is to initiate physical contact with opposing bots. 
 - They have no unique features and their only controllable aspect is basic movement.
-	- All other robots with the exception of the [Quarterback V3](./bot-types.md#quarterback-v3) Turret have a superset of the controls listed below.
+	- All other robots with the exception of the [Quarterback V3](./bot-types.md#quarterback-v3) have a superset of the controls listed below.
 
 ### Current Linemen
 - `i++`
@@ -119,9 +119,6 @@
 
 ## Quarterback V3
 ### Description
-- The "new" quarterback is functionally two robots attached to the same chassis.
-	- The "base" is functionally identical to a lineman and is controlled the same way.
-	- The "turret" features a tiltable launch assembly consisting of flywheels and a "gripper" or "cradle" to hold the ball.
 - Its primary purpose is to throw the football using the flywheels.
 - For the turret, the driver is also able to:
 	- control flywheel speed
@@ -130,24 +127,38 @@
 		- in automatic mode, switch between receivers
 	- launch the football
 	- run a variety of macros
+- The sticks are different depending on the current mode, you switch modes with Square.
 
-### Quarterback V3 Turret Controls
+### Quarterback V3 Controls
+
+#### Turret Mode
 
 | Stick        | Action                                 | Function           |
 | ------------ | -------------------------------------- | ------------------ |
 | Left Y-Axis  | Absolute Analog Flywheel Speed Control | `setFlywheelSpeed` |
 | Right X-Axis | Aim Turret (Left = CCW, Right = CW)    | `moveTurret`       |
 
+#### Driving Mode
+
+| Stick        | Action                                 | Function             |
+| ------------ | -------------------------------------- | -------------------- |
+| Left Y-Axis  | Forward/Backward Movement (X/Y Axes)   | `drive->setStickPwr` |
+| Right X-Axis | Turning/Rotational Movement (Z Axis)   | `drive->setStickPwr` |
+
+#### Buttons (work in either mode)
+
 | Button             | Action                                                           | Function                     |
 | ------------------ | ---------------------------------------------------------------- | ---------------------------- |
+| PlayStation        | Turn on Controller                                               | (built-in)                   |
+| Touchpad           | Emergency Stop                                                   | `drive->emergencyStop`       |
+| Options            | Change LEDs (Offense/Defense)                                    | `switchTackleSensor`         |
+| Share              | Toggle Auto/Manual Targeting                                     | `switchMode`                 |
 | D-Pad Up           | Increase Flywheel Speed                                          | `adjustFlywheelSpeedStage`   |
 | D-Pad Down         | Decrease Flywheel Speed                                          | `adjustFlywheelSpeedStage`   |
 | Triangle           | Intake Ball from [Mecanum Center](./bot-types.md#mecanum-center) | `loadFromCenter`             |
 | Cross              | Handoff to [Running Back](./bot-types.md#running-back)           | `handoff`                    |
-| Square             | Toggle Power to Flywheels/Turret                                 | `setEnabled`                 |
+| Square             | Toggle DRIVING / TURRET Stick Modes                              | `setEnabled`                 |
 | Circle             | Startup and Zero Turret                                          | `reset`, `zeroTurret`        |
-| Touchpad           | Emergency Stop Turret                                            | `emergencyStop`              |
-| Options            | Toggle Auto/Manual Targeting                                     | `switchMode`                 |
 | Right Button (R1)  | Target Receiver 2                                                | `switchTarget`, `switchMode` |
 | Right Trigger (R2) | Launch (cradle forward)                                          | `moveCradle`                 |
 | Left Button (L1)   | Target Receiver 1                                                | `switchTarget`, `switchMode` |
