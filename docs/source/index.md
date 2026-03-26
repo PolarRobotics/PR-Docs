@@ -3,7 +3,22 @@
 % You can adapt this file completely to your liking, but it should at least
 % contain the root `toctree` directive.
 
-# Welcome to the Polar Robotics documentation!
+# Welcome to the Polar Robotics documentation
+
+```{toctree}
+---
+caption: Training
+maxdepth: 1
+---
+training/git
+training/wsl
+training/docker
+training/devenv-windows
+training/uploading-code
+training/pairing
+training/programming-cyoa
+training/docs-setup
+```
 
 ```{toctree}
 ---
@@ -14,21 +29,6 @@ metadocs/programming-style-guide
 metadocs/documentation-style-guide
 metadocs/git-guidelines
 metadocs/sphinx
-```
-
-```{toctree}
----
-caption: Training
-maxdepth: 1
----
-training/upbase
-training/git
-training/devenv-windows
-training/uploading-code
-training/pairing
-training/programming-cyoa
-training/docs-setup
-training/wsl
 ```
 
 ```{toctree}
