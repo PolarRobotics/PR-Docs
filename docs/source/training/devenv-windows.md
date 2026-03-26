@@ -2,7 +2,7 @@
 
 ## Overview
 
-- In this tutorial, you will install Visual Studio Code with the Dev Container and other extensions necessary to work with the Polar Robotics codebase. Finally, you will compile and build the project to prepare for the next step – [uploading code to a robot](./uploading-code).
+- In this tutorial, you will install Visual Studio Code with the Dev Container and other extensions necessary to work with the Polar Robotics codebase. Finally, you will compile and build the project to prepare for the next step – [flashing code to a robot](./uploading-code).
 
 ### Prerequisites
 
@@ -61,22 +61,32 @@ https://github.com/PolarRobotics/PR-ESPIDFCodebase
 
 1. Click `Clone`, and wait for Git to clone the repository from GitHub.
 
+## Opening the Project in the Dev Container
+
+1. From GitHub Desktop, click `Repository -> Open in Visual Studio Code` <br> ![Step 1|400](../_static/images/training/devenv/devenv-devcontainer-1.png){w=400px}
+2. Click the Remote Window button on the bottom left of the VSCode window. It should have a icon with `><` on it. <br> ![Step 2|400](../_static/images/training/devenv/devenv-devcontainer-2.png){w=400px}
+3. Make sure Docker is running for this step to work: Click `Reopen in Container`. This will open the project within the Dev Container, which is a Linux environment with all the necessary tools and dependencies pre-installed. <br> ![Step 3|400](../_static/images/training/devenv/devenv-devcontainer-3.png){w=400px}
+
+- Sit back and relax while the container builds and sets up. This may take around 5-10 minutes, but it only needs to be done the first time you open the project in the Dev Container. The next time you open the project in the Dev Container, it should be much faster since the container will already be built.
+
 ## Building the Project
 
 1. At the bottom of the VSCode window, you will notice a status bar containing several things: <br> ![Step 1|550](../_static/images/training/devenv/devenv-build-1.png)
 
 - Of these, the most important are:
 - **Current Git Branch** – This is a quick switcher that allows you to swap between branches while in VSCode. There is also more Git integration that allows you to commit and push, but it is strongly recommended to use GitHub Desktop so that you can methodically commit your changes.
-- **PlatformIO Build** – This button initiates the build process, i.e., compiles the codebase.
-- **PlatformIO Build and Upload** – This button will perform the build process. If successful, PlatformIO will then attempt to upload the code via the selected serial port.
-- **Serial Monitor** – When connected to an ESP32 via a USB cable, this allows you to view debug output.
-- **PlatformIO Build Environment** – Detailed in the next step.
-- **Selected Serial Port** – When you are connected to one or more ESP32s (or similar devices) via USB cable(s), this menu will allow you to select which port to use. Typically, the `Auto` setting works, but sometimes you may have to select the port manually in order to upload to the ESP32.
+- **Select Port to Use** – When you are connected to one or more ESP32s (or similar devices) via USB cable(s), this menu will allow you to select which port to use. Typically, the `detect` setting works, but sometimes you may have to select the port manually in order to flash to the ESP32.
+- **Select Project Configuration** - This is a dropdown menu that allows you to select which environment to build. Make sure it **NEVER** says `No Configuration Selected`, it must always have a configuration selected, or you will run into build problems!
+- **Build Project** – This button initiates the build process, i.e., compiles the codebase.
+- **Flash Device** – This button will flash the compiled code to an ESP32 when you are connected to one via USB cable. This is covered in the next tutorial for [flashing code to a robot](./uploading-code).
+- **Monitor Device** – When connected to an ESP32 via a USB cable, this allows you to view debug output.
+- **Launch Debug** - When connected to an ESP32 via a USB cable, this allows you to debug code on the ESP32 with breakpoints and variable inspection.
+- **Build, Flash, and Monitor Device** – This button will build the codebase, flash it to an ESP32, and open a monitor for debug output all in one step. This is a convenient option for rapid iteration.
 
-1. Change the build environment from `Default` to `env:robot`. When clicking the `Default (PR-ESPIDFCodebase` text, a dropdown menu will appear at the top. Select `env:robot`.
+1. Change the project configuration to `robot`. When clicking the `No Configuration Selected` dropdown, select `robot`.
 
-- The `Default` step will build all environments. You generally do not want to do this.
-- This should generally be set to `env:robot` for general code compilation and uploading. Usage of `env:write_bot_info` and `env:read_bot_info` is covered in the (next) tutorial for [uploading code to a robot](./uploading-code).
+- The `No Configuration Selected` step will build an incorrectly configured project. NEVER DO THIS!!!
+- This should generally be set to `robot` for general code compilation and flashing. Usage of `write_bot_info` is covered in the (next) tutorial for [flashing code to a robot](./uploading-code).
 
-1. PlatformIO will automatically run some tasks to change the project configuration. Once you see `Project has been successfully updated!` in the console output, **click the Build button** (the checkmark in the bottom taskbar).
-2. After some time (typically 20-60 seconds depending on your computer), you should see a `[SUCCESS]` message. If your build fails the first time, please consult the team lead or another senior developer for assistance.
+1. **Click the Build Project button** (the wrench in the bottom taskbar).
+2. After some time (typically 45-75 seconds depending on your computer), you should see an ESP-IDF Size output message with the size of the image. If your build fails the first time, please consult the team lead or another senior developer for assistance.
