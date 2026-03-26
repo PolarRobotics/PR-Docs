@@ -10,9 +10,25 @@
 - Completion of the [Git Training](./git), and by extension:
   - A completed installation of Git
   - A GitHub account
-- **Docker installed and running**
-  - You must have Docker running to open the codebase within Dev Containers.
+- Completion of the [Docker Training](./docker)
+  - You must have Docker running to open the codebase within the Dev Container.
   - YOU MUST USE THE DEV CONTAINER!
+
+## Installing Visual Studio Code
+
+1. If you have administrator privileges on your computer, click this link to download the system-level VSCode installer (recommended): <https://code.visualstudio.com/sha/download?build=stable&os=win32-x64>
+
+- Otherwise, download the user-level VSCode installer from [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) <br> ![Step 1|550](../_static/images/training/devenv/devenv-vscode-1.png){w=500px}
+
+1. Run the installer.
+2. Select `I accept the agreement`, then click `Next`.
+3. If desired, change the installation directory. You may leave it at the default location. Click `Next`.
+4. On the `Select Start Menu Folder` page, click `Next`.
+5. It is strongly recommended to **check all boxes** on the `Select Additional Tasks` page. <br> ![Additional Tasks|400](../_static/images/training/devenv/devenv-vscode-2.png){w=400px}
+6. Then, click `Next`.
+7. Click `Install`.
+8. Wait for VSCode to install.
+9. Click `Finish`.
 
 ## Cloning the Polar Robotics repository
 
@@ -33,55 +49,17 @@ https://github.com/PolarRobotics/PR-ESPIDFCodebase
 ```
 
 1. Open GitHub Desktop.
-2. Click `File -> Clone repository...` <br> ![Step 3](../_static/images/training/devenv/devenv-clone-1.png){w=250px}
+2. Click `File -> Clone repository...` <br> ![Step 3|50%](../_static/images/training/devenv/devenv-clone-1.png){w=250px}
 3. Switch to the `URL` tab on the right. <br>![Step 4|400](../_static/images/training/devenv/devenv-clone-2.png){w=400px}
 4. In the first box (hint text `URL or username/repository`), paste the URL you copied earlier. <br> ![Step 5|400](../_static/images/training/devenv/devenv-clone-3.png){w=400px}
 
 - Alternatively, you can simply type `PolarRobotics/PR-ESPIDFCodebase`.
 
-1. It is strongly recommended to **change the directory** (`Local path`) to **something other than** `C:\Users\YourName\Documents\GitHub`.
-
-- It is recommended to create a folder on your desktop or somewhere else memorable to house all your code projects. Better yet, create a subfolder there specifically for Polar Robotics, as you will eventually use more than one repo.
-- **Note this directory for later.**
+- Next, change the directory to `\\wsl.localhost\Ubuntu\home\<your-username>\PolarRobotics\PR-ESPIDFCodebase` (replace `<your-username>` with your WSL username).
+  - If you don't know your WSL username, you can open a WSL terminal by opening Command Prompt, running `wsl` to enter WSL terminal, and then runing the command `echo $USER` to find out.
+  - The repository must be cloned within WSL, or disk operations will be extremely slow. This is because the Dev Container runs in a Linux environment, so it can only access files within WSL. If you clone the repository to a location outside of WSL, such as your Windows user directory, then the Dev Container will have to access those files through a network share (`\\wsl$\`), which is very slow for disk operations.
 
 1. Click `Clone`, and wait for Git to clone the repository from GitHub.
-
-## Installing Visual Studio Code
-
-1. If you have administrator privileges on your computer, click this link to download the system-level VSCode installer (recommended): <https://code.visualstudio.com/sha/download?build=stable&os=win32-x64>
-
-- Otherwise, download the user-level VSCode installer from [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) <br> ![Step 1|550](../_static/images/training/devenv/devenv-vscode-1.png){w=500px}
-
-1. Run the installer.
-2. Select `I accept the agreement`, then click `Next`.
-3. If desired, change the installation directory. You may leave it at the default location. Click `Next`.
-4. On the `Select Start Menu Folder` page, click `Next`.
-5. It is strongly recommended to **check all boxes** on the `Select Additional Tasks` page. <br> ![Additional Tasks|400](../_static/images/training/devenv/devenv-vscode-2.png){w=400px}
-6. Then, click `Next`.
-7. Click `Install`.
-8. Wait for VSCode to install.
-9. Click `Finish`.
-
-## Installing ESP-IDF
-
-1. If VSCode is not already open, launch it.
-2. Navigate to the extensions menu on the navigation sidebar: ![Step 2|550](../_static/images/training/devenv/devenv-pio-1.png)
-3. Search for `ESP-IDF`. When you find the entry depicted below (should be at the top) click `Install`. <br> ![Step 2|250](../_static/images/training/devenv/devenv-pio-2.png){w=225px}
-4. Wait for ESP-IDF to install. You will see some console output at the bottom of your screen. Wait until you see "Please restart VSCode." in the output or the toast message on the bottom left. <br> ![Step 4|550](../_static/images/training/devenv/devenv-pio-3.png)
-5. Restart VSCode as requested by the IDE (just close the window normally and relaunch).
-6. PlatformIO should now be installed. You should see the alien head icon on the left-hand navigation sidebar. Click on it to open the PlatformIO IDE menu: <br> ![Step 6|200](../_static/images/training/devenv/devenv-pio-4.png){w=225px}
-7. In the bottom half of the left pane, under `QUICK ACCESS`, under the `PIO Home` dropdown, double-click `Open`: <br> ![Step 7|200](../_static/images/training/devenv/devenv-pio-5.png){w=225px}
-8. Your screen should now look like the image below. This is the PlatformIO IDE homepage. ![Step 8|550](../_static/images/training/devenv/devenv-pio-6.png)
-9. Within the PlatformIO IDE main view, under **Quick Access**, select `Open Project`: <br> ![Step 9|550](../_static/images/training/devenv/devenv-pio-7.png)
-10. In the `Open PlatformIO Project` dialog that opens, navigate to the directory where you cloned our repo, `PR-ESPIDFCodebase`. In this example, that directory is `C:\Home\Projects\PR-ESPIDFCodebase`. <br> ![Step 10|400](../_static/images/training/devenv/devenv-pio-8.png){w=400px}
-11. Optional: Click the star icon in the top left to favorite this directory for later usage.
-12. Click the `Open "PR-ESPIDFCodebase"` button.
-13. A dialog like the one pictured below may appear. Optionally, check the box to trust the parent folder. Then, click `Yes, I trust the authors`. <br> ![Step 13|400](../_static/images/training/devenv/devenv-pio-9.png){w=350px}
-14. Wait ESP-IDF to configure the project. Watch the toast in the lower right corner. This may take several minutes. <br> ![Step 14|300](../_static/images/training/devenv/devenv-pio-10.png){w=300px}
-
-- You may be asked to sign into GitHub during this process. If so, a dialog will pop up. Follow the steps to sign in and then you should be able to return to VSCode.
-
-1. The toast message should disappear once the project is configured. You may see some console output ending with `Project has been successfully updated!` – if you reach this point, you've successfully installed PlatformIO and configured the project! Now all that's left is to do a test build, then you can upload code to a robot.
 
 ## Installing ESP32 USB Drivers
 
