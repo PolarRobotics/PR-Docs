@@ -23,7 +23,7 @@ maxdepth: 1
 ---
 training/upbase
 training/git
-training/devenv
+training/devenv-windows
 training/uploading-code
 training/pairing
 training/programming-cyoa
