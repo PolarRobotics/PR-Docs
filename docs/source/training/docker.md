@@ -4,7 +4,7 @@
 
 - In this tutorial, you will install Docker which is a containerization platform that allows you to run applications in isolated environments called containers. It is used in our development environment to ensure consistency across different machines and to simplify the setup process!
   - For Windows and macOS users, Docker Desktop is the recommended way to install Docker. It provides a user-friendly interface and includes all the necessary components to run Docker on your machine.
-    - Windows users will need WSL 2 to run Docker Desktop, which is a compatibility layer for running Linux binary executables natively on Windows 10 and later.
+    - Windows users will need [WSL 2](./wsl.md) to run Docker Desktop, which is a compatibility layer for running Linux binary executables natively on Windows 10 and later. It is automatically installed by Docker Desktop, so you don't need to follow the guide.
   - For Linux users, you can install Docker Engine directly from the command line.
 
 ### Prerequisites
